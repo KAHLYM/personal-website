@@ -1,0 +1,30 @@
+$color-background: #FFFFFF;
+$color-primary: #1F1F1F;
+$color-accent: #4285F4;
+$color-highlight: rgba(#F4B400, 0.32);
+$color-selection: #1F1F1F;
+
+$color-text-primary: rgba($color-primary, 1.00);
+$color-text-secondary: rgba($color-primary, 0.64);
+
+:root {
+  --color-background: #{$color-background};
+  --color-primary: #{$color-primary};
+  --color-accent: #{$color-accent};
+  --color-highlight: #{$color-highlight};
+  --color-selection: #{$color-selection};
+
+  --color-text-primary: #{$color-text-primary};
+  --color-text-secondary: #{$color-text-secondary};
+}
+
+:export {
+  colorbackground: $color-background;
+  colorprimary: $color-primary;
+  coloraccent: $color-accent;
+  colorhighlight: $color-highlight;
+  colorselection: $color-selection;
+
+  colortextprimary: $color-text-primary;
+  colortextsecondary: $color-text-secondary;
+}
