@@ -3,6 +3,7 @@ import './App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import About from './components/About.js'
+import Header from './components/Header.js'
 import Home from './components/Home.js'
 import Portfolio from './components/Portfolio.js';
 import Sophos from './components/Sophos.js';
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Header></Header>
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/about' component={About} />
