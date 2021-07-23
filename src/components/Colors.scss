@@ -17,14 +17,3 @@ $color-text-secondary: rgba($color-primary, 0.64);
   --color-text-primary: #{$color-text-primary};
   --color-text-secondary: #{$color-text-secondary};
 }
-
-:export {
-  colorbackground: $color-background;
-  colorprimary: $color-primary;
-  coloraccent: $color-accent;
-  colorhighlight: $color-highlight;
-  colorselection: $color-selection;
-
-  colortextprimary: $color-text-primary;
-  colortextsecondary: $color-text-secondary;
-}
