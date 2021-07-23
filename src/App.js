@@ -3,6 +3,7 @@ import './App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import About from './components/About.js'
+import Footer from './components/Footer.js'
 import Header from './components/Header.js'
 import Home from './components/Home.js'
 import Portfolio from './components/Portfolio.js';
@@ -21,6 +22,7 @@ function App() {
           <Route path='/portfolio' component={Portfolio} />
           <Route path='/whanalysis' component={Whanalysis} />
         </Switch>
+        <Footer></Footer>
       </Router>
     </div>
   );

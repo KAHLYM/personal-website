@@ -1,0 +1,32 @@
+@import './Colors.scss';
+
+.Footer {
+    padding: 16px;
+    display: flex;
+}
+
+.FooterWrapper {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 64px;
+}
+
+.FooterLink {
+    font-size: 0.75rem;
+    margin: 0px 8px;
+    line-height: 50px;
+    color: $color-primary;
+}
+
+.FooterLink:hover {
+    color: $color-accent !important;
+}
+
+.FooterLink:visited {
+    color: $color-primary;
+}
+
+.LastUpdated {
+    font-size: 0.75rem;
+    color: $color-text-secondary;
+}
