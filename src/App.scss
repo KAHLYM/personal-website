@@ -3,4 +3,17 @@
   margin: 0 auto;
   padding: 0px 64px 0px 64px;
   font-family: 'Open Sans';
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Header, .Footer{
+  display: flex;
+}
+
+.Container
+{
+  display: flex;
+  flex-grow: 1;
 }

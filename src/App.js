@@ -14,15 +14,17 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header></Header>
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/about' component={About} />
-          <Route path='/sophos' component={Sophos} />
-          <Route path='/portfolio' component={Portfolio} />
-          <Route path='/whanalysis' component={Whanalysis} />
-        </Switch>
-        <Footer></Footer>
+        <Header class="Header"></Header>
+        <div class="Container">
+          <Switch>
+            <Route path='/' exact component={Home} />
+            <Route path='/about' component={About} />
+            <Route path='/sophos' component={Sophos} />
+            <Route path='/portfolio' component={Portfolio} />
+            <Route path='/whanalysis' component={Whanalysis} />
+          </Switch>
+        </div>
+        <Footer class="Footer"></Footer>
       </Router>
     </div>
   );
