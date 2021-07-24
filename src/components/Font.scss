@@ -1,0 +1,12 @@
+$font-primary: 'Arial';
+$font-secondary: 'DM Serif Text';
+
+$font-weight-normal: 400;
+$font-weight-bold: 900;
+
+:root {
+  --font-primary: #{$font-primary};
+  --font-secondary: #{$font-secondary};
+  --font-weight-normal: #{$font-weight-normal};
+  --font-weight-bold: #{$font-secondary};
+}
