@@ -1,4 +1,5 @@
 @import './Colors.scss';
+@import './Fonts.scss';
 @import './Width.scss';
 
 .Body {
@@ -6,9 +7,8 @@
 }
 
 .Preface {
-    font-family: 'Noticia Text';
+    font-family: $font-secondary;
     font-size: 3rem;
-    font-weight: 900;
     color: $color-text-primary;
     margin: 64px 0px 64px 0px;
     width: 75%;
@@ -19,4 +19,83 @@
     .Preface {
         font-size: 2.5rem !important;
     }
+}
+
+.Experience
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.Experience > div > p
+{
+    font-family: $font-secondary;
+    font-size: 2rem;
+    color: $color-accent;
+    margin-bottom: 0rem;
+}
+
+.Experience > div > div
+{
+    padding-left: 16px;
+}
+
+.Title
+{
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+}
+
+.Title > div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Title > div > img
+{
+    height: 3rem;
+    width: 3rem;
+    padding-right: 1rem;
+}
+
+.Title > div > p
+{
+    margin: 0px;
+}
+
+.Title > div > p:nth-child(1)
+{
+    font-family: $font-primary;
+    font-size: 1rem;
+    font-weight: $font-weight-bold;
+    color: $color-text-primary;
+}
+
+.Title > div > p:nth-child(2),
+.Title > div > p:nth-child(3)
+{
+    font-family: $font-primary;
+    font-size: 1rem;
+    color: $color-text-secondary;
+}
+
+.Details
+{
+    flex-direction: column;
+    padding-left: 5rem;
+    padding-bottom: .25rem;
+}
+
+.Details > p
+{
+    line-height: .4rem;
+    color: $color-text-secondary;
+}
+
+.Details > p:nth-child(1)
+{
+    color: $color-text-primary;
 }
