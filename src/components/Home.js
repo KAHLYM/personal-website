@@ -74,7 +74,7 @@ export class Home extends Component {
                                 </div>
                                 <div>
                                     <p>Personal Website</p>
-                                    <p>cybersecurity</p>
+                                    <p>this website</p>
                                     <p>Jun 2020 - Jul 2020</p>
                                 </div>
                             </div>
