@@ -6,19 +6,35 @@
     padding: 32px 0px;
 }
 
-.Preface {
+.Preface 
+{
+    display: flex;
+    flex-direction: row;
+    margin: 64px 0px 64px 0px;
+}
+
+.PrefaceProfile
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 3rem 0rem 0rem;
+}
+
+.PrefaceProfile img
+{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 11rem;
+    width: 11rem;
+}
+
+.Preface > div:nth-child(2) > span
+{
     font-family: $font-secondary;
     font-size: 3rem;
     color: $color-text-primary;
-    margin: 64px 0px 64px 0px;
-    width: 75%;
     text-align: left;
-}
-
-@media only screen and (max-width: $breakpoint-m) {
-    .Preface {
-        font-size: 2.5rem !important;
-    }
 }
 
 .Experience
