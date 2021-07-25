@@ -11,6 +11,11 @@ import SophosLogo from '../assets/sophos.png';
 import WhanalysisLogo from '../assets/whanalysis.png';
 
 export class Home extends Component {
+
+    nextPath(path) {
+        this.props.history.push(path);
+      }
+
     render() {
         return (
             <div>
@@ -46,6 +51,7 @@ export class Home extends Component {
                                     <p>Sophos</p>
                                     <p>cybersecurity</p>
                                     <p>3 yrs 3 mos</p>
+                                    <p onClick={() => this.nextPath('sophos')}>Read More</p>
                                 </div>
                             </div>
                             <div class="Details">
@@ -76,6 +82,7 @@ export class Home extends Component {
                                     <p>Personal Website</p>
                                     <p>this website</p>
                                     <p>Jun 2020 - Jul 2020</p>
+                                    <p onClick={() => this.nextPath('portfolio')}>Read More</p>
                                 </div>
                             </div>
                         </div>
@@ -88,6 +95,7 @@ export class Home extends Component {
                                     <p>Whanalysis</p>
                                     <p>whatsapp analysis</p>
                                     <p>Dec 2019 - May 2020</p>
+                                    <p onClick={() => this.nextPath('whanalysis')}>Read More</p>
                                 </div>
                             </div>
                         </div>

@@ -77,8 +77,8 @@
 
 .Title > div > img
 {
-    height: 3rem;
-    width: 3rem;
+    height: 4rem;
+    width: 4rem;
     padding-right: 1rem;
 }
 
@@ -103,14 +103,30 @@
     color: $color-text-secondary;
 }
 
+.Title > div > p:nth-child(4)
+{
+    font-family: $font-primary;
+    font-size: 1rem;
+    color: $color-text-primary;
+}
+
+.Title > div > p:nth-child(4):hover
+{
+    font-family: $font-primary;
+    font-size: 1rem;
+    color: $color-accent;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .Professional .Details:nth-of-type(n+3)::before
 {
     content: "";
     position: absolute;
     height: 3rem;
-    width: 1px;
+    width: 2px;
     background-color: $color-text-secondary;
-    margin-left: -2.5rem;
+    margin-left: calc(-3rem - 1px);
     margin-top: -4rem;
 }
 
@@ -121,7 +137,7 @@
     height: .5rem;
     width: .5rem;
     background-color: $color-text-secondary;
-    margin-left: -2.75rem;
+    margin-left: -3.25rem;
     margin-top: -4.25rem;
     border-radius: 50%;
 }
@@ -129,7 +145,7 @@
 .Details
 {
     flex-direction: column;
-    padding-left: 5rem;
+    padding-left: 6rem;
     padding-bottom: .25rem;
 }
 
