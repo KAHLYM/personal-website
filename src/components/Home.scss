@@ -25,11 +25,16 @@
 {
     object-fit: cover;
     border-radius: 50%;
-    height: 11rem;
-    width: 11rem;
+    height: 16rem;
+    width: 16rem;
 }
 
-.Preface > div:nth-child(2) > span
+.PrefaceText
+{
+    padding: 0rem 0rem 2rem 0rem;
+}
+
+.PrefaceText > span
 {
     font-family: $font-secondary;
     font-size: 3rem;
