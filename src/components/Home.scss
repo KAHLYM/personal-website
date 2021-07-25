@@ -103,6 +103,29 @@
     color: $color-text-secondary;
 }
 
+.Professional .Details:nth-of-type(n+3)::before
+{
+    content: "";
+    position: absolute;
+    height: 3rem;
+    width: 1px;
+    background-color: $color-text-secondary;
+    margin-left: -2.5rem;
+    margin-top: -4rem;
+}
+
+.Professional .Details::after
+{
+    content: "";
+    position: absolute;
+    height: .5rem;
+    width: .5rem;
+    background-color: $color-text-primary;
+    margin-left: -2.75rem;
+    margin-top: -4.25rem;
+    border-radius: 50%;
+}
+
 .Details
 {
     flex-direction: column;
