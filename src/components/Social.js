@@ -6,6 +6,15 @@ import { Github, Gmail, Linkedin } from '@icons-pack/react-simple-icons';
 
 export class Social extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            socialIconGithub: "rgba(31, 31, 31, 0.64)",
+            socialIconLinkedin: "rgba(31, 31, 31, 0.64)",
+            socialIconGmailColor: "rgba(31, 31, 31, 0.64)",
+        };
+    }
+    
     render() {
         return (
             <div className='SocialWrapper' style={{marginBottom: this.props.bottom + 'px'}}>
