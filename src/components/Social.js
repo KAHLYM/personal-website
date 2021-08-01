@@ -6,6 +6,10 @@ import { Github, Gmail, Linkedin } from '@icons-pack/react-simple-icons';
 
 export class Social extends Component {
 
+    constructor(props) {
+        super(props);
+    }
+    
     render() {
         return (
             <div className='SocialWrapper' style={{marginBottom: this.props.bottom + 'px'}}>
