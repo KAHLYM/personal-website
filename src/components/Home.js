@@ -21,7 +21,7 @@ export class Home extends Component {
             <div>
                 <div className='Preface'>
                     <div class="PrefaceProfile">
-                        <img src={Profile}></img>
+                        <img src={Profile} alt="Profile"></img>
                     </div>
                     <div>
                         <div class="PrefaceText">
@@ -45,7 +45,7 @@ export class Home extends Component {
                         <div>
                             <div class="Title">
                                 <div>
-                                    <img src={SophosLogo}></img>
+                                    <img src={SophosLogo} alt="Sophos Logo"></img>
                                 </div>
                                 <div>
                                     <p>Sophos</p>
@@ -76,7 +76,7 @@ export class Home extends Component {
                         <div>
                             <div class="Title">
                                 <div>
-                                    <img src={PersonalWebsiteLogo}></img>
+                                    <img src={PersonalWebsiteLogo} alt="Personal Website Logo"></img>
                                 </div>
                                 <div>
                                     <p>Personal Website</p>
@@ -89,7 +89,7 @@ export class Home extends Component {
                         <div>
                             <div class="Title">
                                 <div>
-                                    <img src={WhanalysisLogo}></img>
+                                    <img src={WhanalysisLogo} alt="Whanlysis Logo"></img>
                                 </div>
                                 <div>
                                     <p>Whanalysis</p>
