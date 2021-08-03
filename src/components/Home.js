@@ -42,7 +42,7 @@ export class Home extends Component {
                 <div className="Experience">
                     <div class="Professional">
                         <p>Professional</p>
-                        <div>
+                        <div style={{borderRight: "8px solid #225a99"}}>
                             <div class="Title">
                                 <div>
                                     <img src={SophosLogo} alt="Sophos Logo"></img>
@@ -73,7 +73,7 @@ export class Home extends Component {
                     </div>
                     <div class="Personal">
                         <p>Personal</p>
-                        <div>
+                        <div style={{borderRight: "8px solid #4285f4"}}>
                             <div class="Title">
                                 <div>
                                     <img src={PersonalWebsiteLogo} alt="Personal Website Logo"></img>
@@ -86,7 +86,7 @@ export class Home extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div style={{borderRight: "8px solid #128c7e"}}>
                             <div class="Title">
                                 <div>
                                     <img src={WhanalysisLogo} alt="Whanlysis Logo"></img>
