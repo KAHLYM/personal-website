@@ -39,7 +39,7 @@ export class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="Experience">
+                <div class="ExperienceContainer">
                     <div class="Professional">
                         <p>Professional</p>
                         <div style={{borderRight: "8px solid #225a99"}}>

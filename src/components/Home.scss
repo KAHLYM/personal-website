@@ -41,13 +41,13 @@
     text-align: left;
 }
 
-.Experience
+.ExperienceContainer
 {
     display: flex;
     flex-direction: column;
 }
 
-.Experience > div > p
+.ExperienceContainer > div > p
 {
     font-family: $font-secondary;
     font-size: 2rem;
@@ -55,7 +55,7 @@
     margin-bottom: 0rem;
 }
 
-.Experience > div > div
+.ExperienceContainer > div > div
 {
     padding-left: 16px;
     margin-bottom: 8px;
