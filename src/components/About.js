@@ -36,35 +36,36 @@ export class About extends Component {
 
     render() {
         return (
-            <div className='About'>
-                <div className='Personal Column'>
-                    <img src={Profile} />
-                </div>
-                <div className='AboutContainer DoubleColumn'>
-                    <div className='AboutTitle'>{this.aboutTitle}</div>
-
-                    <div className='Description'>
-                        <p>
-                            I’m a Software Engineer with professional experience developing 
-                            industry leading <span class='Highlight'>cybersecurity software</span>. Enthused by <span class='Highlight'>consistent and well 
-                            structured design</span>, I also take interest in web development 
-                            technologies as they offer opportunities that are more design 
-                            orientated.
-                        </p>
-                        <p>
-                            Although I’m happy to spend copious time immersed in technology, I 
-                            often take time to keep active and strive to outperform previous 
-                            personal records.
-                        </p>
-                        <span className='AboutSubTitle'>Experience</span>
-                        <div className='SkillsContainer'>
-                            <span className='SkillsType'>Professional</span>
-                            <div className='SkillsProfessional'>
-                                {this.skillsProfessional.sort().map(skill => <div className='Skill'>{React.createElement(RciMap[skill][0], { 'color': RciMap[skill][1], 'size': 20 })}<span>{skill}</span></div>)}
-                            </div>
-                            <span className='SkillsType'>Personal</span>
-                            <div className='SkillsPersonal'>
-                                {this.skillsPersonal.sort().map(skill => <div className='Skill'>{React.createElement(RciMap[skill][0], { 'color': RciMap[skill][1], 'size': 16 }, '')}<span>{skill}</span></div>)}
+            <div>
+                <div class="About">
+                    <div className='Personal'>
+                        <img src={Profile} />
+                    </div>
+                    <div>
+                        <div className='AboutTitle'>{this.aboutTitle}</div>
+                        <div className='Description'>
+                            <p>
+                                I’m a Software Engineer with professional experience developing 
+                                industry leading <span class='Highlight'>cybersecurity software</span>. Enthused by <span class='Highlight'>consistent and well 
+                                structured design</span>, I also take interest in web development 
+                                technologies as they offer opportunities that are more design 
+                                orientated.
+                            </p>
+                            <p>
+                                Although I’m happy to spend copious time immersed in technology, I 
+                                often take time to keep active and strive to outperform previous 
+                                personal records.
+                            </p>
+                            <span className='AboutSubTitle'>Experience</span>
+                            <div className='SkillsContainer'>
+                                <span className='SkillsType'>Professional</span>
+                                <div className='SkillsProfessional'>
+                                    {this.skillsProfessional.sort().map(skill => <div className='Skill'>{React.createElement(RciMap[skill][0], { 'color': RciMap[skill][1], 'size': 20 })}<span>{skill}</span></div>)}
+                                </div>
+                                <span className='SkillsType'>Personal</span>
+                                <div className='SkillsPersonal'>
+                                    {this.skillsPersonal.sort().map(skill => <div className='Skill'>{React.createElement(RciMap[skill][0], { 'color': RciMap[skill][1], 'size': 16 }, '')}<span>{skill}</span></div>)}
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -2,34 +2,30 @@
 @import './Fonts.scss';
 @import './Width.scss';
 
-.Column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-}
-
-.DoubleColumn {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-}
-
 .About {
     display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 4rem;
+    flex-direction: row;
+    margin: 64px 0px 64px 0px;
 }
 
-.AboutContainer {
-    padding-left: 4rem;
+.Personal {
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    padding: 0rem 3rem 0rem 0rem;
+}
+
+.Personal img {
+    object-fit: cover;
+    border-radius: 1rem;
+    height: 16rem;
+    width: 16rem;
 }
 
 .AboutTitle {
     font-family: $font-secondary;
     font-size: 3rem;
     color: $color-accent;
-    margin: 2rem 0px 0px 0px;
 }
 
 .Description {
@@ -72,18 +68,6 @@
 
 .Skill span {
     margin-left: 2rem;
-}
-
-.Personal {
-    align-items: center;
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
-.Personal img {
-    height: auto;
-    width: 100%;
-    border-radius: 1rem;
 }
 
 @media only screen and (min-width: $breakpoint-m) {
