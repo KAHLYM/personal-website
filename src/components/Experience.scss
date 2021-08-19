@@ -1,0 +1,60 @@
+@import './Colors.scss';
+@import './Fonts.scss';
+@import './Width.scss';
+
+.Experience {
+    padding: 32px 0px;
+}
+
+.ExperienceTitle {
+    font-family: $font-secondary;
+    font-size: 3rem;
+    color: $color-accent;
+    margin: 0px 0px 8px 0px;
+}
+
+.ExperienceType {
+    margin: 0px 0px 1rem 0px;
+    color: $color-text-secondary;
+}
+
+.ExperienceChip {
+    font-size: 0.75rem;
+    display: inline-block;
+    padding: 0 1rem;
+    height: 32px;
+    line-height: 2rem;
+    border-radius: 1rem;
+    border: 1px solid $color-text-secondary;
+    margin: 0px 8px 8px 0px;
+}
+
+.ExperienceVisit {
+    background-color: transparent;
+    color: $color-text-secondary;
+}
+
+.ExperienceVisit:hover {
+    background-color: transparent;
+    color: $color-accent;
+    border: 1px solid $color-accent;
+}
+
+.ExperienceSkills {
+    margin: 0px 0px 1rem 0px;
+}
+
+.ExperienceSkills svg {
+    margin: 0px 8px 0px 0px;
+}
+
+.ExperienceDescription {
+    margin: 2rem 0px 2rem 0px;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.Experience img {
+    padding-left: 16rem;
+    width: calc(100% - 32rem);
+}

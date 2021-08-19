@@ -1,0 +1,32 @@
+@import './Colors.scss';
+@import './Fonts.scss';
+@import './Width.scss';
+
+.ExperienceSection {
+    display: block;
+}
+
+.ExperienceSectionTitle {
+    font-family: $font-secondary;
+    font-size: 2rem;
+    color: $color-accent;
+}
+
+.ExperienceSectionSubTitle
+{
+    font-family: $font-secondary;
+    font-size: 1rem;
+    color: $color-text-primary;
+}
+
+.ExperienceSectionBody {
+    padding: 2rem 3rem 2rem 3rem;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+    .ExperienceSectionBody {
+        padding: 2rem 0px 2rem 0px;
+    }
+}
