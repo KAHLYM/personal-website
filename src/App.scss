@@ -1,7 +1,9 @@
+@import 'components/Width.scss';
+
 .App {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0px 64px 0px 64px;
+  padding: 0 4rem 0 4rem;
   font-family: 'Roboto';
   display: flex;
   flex-direction: column;
@@ -15,4 +17,10 @@
 .Container {
   display: flex;
   flex-grow: 1;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+  .App {
+    padding: 0 1rem 0 1rem;
+  }
 }

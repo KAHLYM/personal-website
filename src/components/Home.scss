@@ -1,15 +1,12 @@
 @import './Colors.scss';
 @import './Fonts.scss';
-
-.Body {
-    padding: 32px 0px;
-}
+@import './Width.scss';
 
 .Preface 
 {
     display: flex;
     flex-direction: row;
-    margin: 64px 0px 64px 0px;
+    margin: 4rem 0 4rem 0;
 }
 
 .PrefaceProfile
@@ -58,7 +55,7 @@
 
 .ExperienceContainer > div > div
 {
-    padding-left: 16px;
+    padding-left: 1rem;
     margin-bottom: 8px;
     border-right-width: 8px;
 }
@@ -67,7 +64,7 @@
 {
     display: flex;
     flex-direction: row;
-    padding: 16px;
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 .Title > div
@@ -153,11 +150,34 @@
 
 .Details > p
 {
-    line-height: .4rem;
+    line-height: 1rem;
+    margin: .4rem 0;
     color: $color-text-secondary;
 }
 
 .Details > p:nth-child(1)
 {
     color: $color-text-primary;
+}
+
+@media only screen and (max-width: $breakpoint-m) {
+    .Preface {
+        margin: 0 0 0 0;
+    }
+
+    .PrefaceProfile {
+        display: none;
+    }
+
+    .ExperienceContainer > div > div {
+        padding: 0 0 0 0;
+    }
+
+    .Title {
+        padding: 1rem 1rem 1rem 0;
+    }
+
+    .Details {
+        padding-left: 5rem;
+    }
 }
