@@ -39,7 +39,7 @@ export class About extends Component {
             <div>
                 <div class="About">
                     <div className='Personal'>
-                        <img src={Profile} />
+                        <img src={Profile}  alt="Profile"/>
                     </div>
                     <div>
                         <div className='AboutTitle'>{this.aboutTitle}</div>

@@ -29,7 +29,7 @@ export class Whanalysis extends Component {
 
                     <ExperienceSection title="Motivation">
                         The concept was conceived long ago as a means to learn Python. Developed without consideration of the analysis to be accessed remotely, conversing with friends and colleagues highlighted the difficulties demonstrating the process and displaying the analysis. These difficulties later presented a great opportunity when motivated to learn a new web development framework.
-                        <img src={HumaaansWhanalysisMotivation} />
+                        <img src={HumaaansWhanalysisMotivation} alt="Whanalysis Motivation"/>
                     </ExperienceSection>
 
                     <ExperienceSection title="Process">
@@ -47,7 +47,7 @@ export class Whanalysis extends Component {
                         The user is given an access code which they may share with others. This is a justified tradeoff between shareability and security. The user is reminded of the security concerns.
                         <p class='ExperienceSectionSubTitle'>Demo</p>
                         People are inpatient; they want to see results fast. With a single click, the user has insight into what is available. A demo should ease privacy concerns as the user need not sacrifice any of their privacy to understand what is available.
-                        <img src={HumaaansWhanalysisProcess} />
+                        <img src={HumaaansWhanalysisProcess} alt="Whanalysis Process"/>
                     </ExperienceSection>
 
                     <ExperienceSection title="Review">

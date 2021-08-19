@@ -31,7 +31,7 @@ export class Sophos extends Component {
                         <p class="ExperienceSectionSubTitle">Further Experience</p>
                         As my understanding of the product increased I developed broader aspects of work i.e refactoring the tracking of system proceses and associated metadata to reduce complexity and increase maintainability while eliminating various edge cases.
                     </ExperienceSection>
-                    <img src={HumaaansSophos} />
+                    <img src={HumaaansSophos}  alt="Sophos"/>
                     <ExperienceSection title='Learnings'>
                         <p class="ExperienceSectionSubTitle">Internship</p>
                         The placement provided a valuable introduction to the software industry, allowing me to gain a clear understanding of industry practices i.e. Agile Methodology and appropriate software and processes. Writing predominantly in C++ allowed me to consolidate my understanding of object orientated programming concepts which can be translated across many languages.
