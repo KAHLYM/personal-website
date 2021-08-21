@@ -29,3 +29,19 @@
 .Highlight {
   background-color: $color-highlight;
 }
+
+a.Highlight {
+  text-decoration: none;
+  border-bottom: .2rem solid $color-text-primary;
+  background-color: rgba($color-accent, .2);
+}
+
+a.Highlight:hover, a.Highlight:visited, a.Highlight:link, a.Highlight:active
+{
+    color: $color-text-primary;
+}
+
+a.Highlight:hover {
+  border-bottom: .2rem solid $color-accent;
+  cursor: pointer;
+}
