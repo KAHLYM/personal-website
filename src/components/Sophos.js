@@ -30,8 +30,8 @@ export class Sophos extends Component {
                         Subsequently, after graduating I returned to Sophos as a Software Engineer II and to a different team, I was introduced to HitmanPro.Alert; a behavioural based exploit mitigation product. Being behavioural based, the product was susceptible to false positives. My initial focus was to accommodate existing customer requirements and develop features to <span class='Highlight'>support and streamline implementation</span> of similar requirements in future.
                         <p class="ExperienceSectionSubTitle">Further Experience</p>
                         As my understanding of the product increased I developed broader aspects of work i.e refactoring the tracking of system proceses and associated metadata to reduce complexity and increase maintainability while eliminating various edge cases.
+                        <img src={HumaaansSophos}  alt="Sophos"/>
                     </ExperienceSection>
-                    <img src={HumaaansSophos}  alt="Sophos"/>
                     <ExperienceSection title='Learnings'>
                         <p class="ExperienceSectionSubTitle">Internship</p>
                         The placement provided a valuable introduction to the software industry, allowing me to gain a clear understanding of industry practices i.e. Agile Methodology and appropriate software and processes. Writing predominantly in C++ allowed me to consolidate my understanding of object orientated programming concepts which can be translated across many languages.
