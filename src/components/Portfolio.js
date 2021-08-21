@@ -28,7 +28,7 @@ export class Portfolio extends Component {
                     </ExperienceSection>
 
                     <ExperienceSection title="Design">
-                        The key objective was to create a <span className='Highlight'>clear consistent design</span> throughout. The limited use of images maintained a lightweight design that did not overwhelm. Those images that were used were designed using <span className='Highlight'>Humaaans</span>; a flexible illustration library.
+                        The key objective was to create a <span className='Highlight'>clear consistent design</span> throughout. The limited use of images maintained a lightweight design that did not overwhelm. Those images that were used were designed using <a className='Highlight' href="https://www.humaaans.com/" target="_blank" rel='noopener noreferrer'>Humaaans</a>; a flexible illustration library.
                         <br />
                         <br />
                         Another key objective was to make the website mobile friendly. This was made easy through the simplicity of the design.
