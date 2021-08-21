@@ -7,6 +7,7 @@ import Footer from './components/Footer.js'
 import Header from './components/Header.js'
 import Home from './components/Home.js'
 import Portfolio from './components/Portfolio.js';
+import ScrollToTop from './components/ScrollToTop.js';
 import Sophos from './components/Sophos.js';
 import Whanalysis from './components/Whanalysis.js';
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Header class="Header"></Header>
         <div class="Container">
           <Switch>
