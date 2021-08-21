@@ -31,7 +31,7 @@ export class Home extends Component {
                             <span className='animated fadeIn noWrap' style={{ color: 'var(--color-accent)' }}>Software </span>
                             <span className='animated fadeIn noWrap' style={{ color: 'var(--color-accent)', 'white-space': 'nowrap' }}>Engineer III</span>
                             <span className='animated fadeIn animatedDelay500ms'> at </span>
-                            <a className='animated fadeIn Highlight' style={{ color: 'var(--color-accent)' }} href="https://www.sophos.com/en-us.aspx" target="_blank">Sophos</a>
+                            <a className='animated fadeIn Highlight' style={{ color: 'var(--color-accent)' }} href="https://www.sophos.com/en-us.aspx" target="_blank" rel='noopener noreferrer'>Sophos</a>
                             <span className='animated fadeIn animatedDelay500ms'>, Abingdon.</span>
                         </div>
                         <div>
