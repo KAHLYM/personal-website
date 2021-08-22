@@ -8,7 +8,7 @@
 }
 
 .HeaderLeft .HeaderNavLink {
-    margin: 0px 16px 0px 0px;
+    margin: 0 16px 0 0;
 }
 
 .HeaderNavLink {
@@ -29,7 +29,9 @@
     color: $color-accent;
 }
 
-a:hover, a:visited, a:link, a:active
-{
+a:hover,
+a:visited,
+a:link,
+a:active {
     text-decoration: none;
 }
