@@ -1,19 +1,18 @@
-$color-background: #FFFFFF;
-$color-primary: #1F1F1F;
-$color-accent: #4285F4;
-$color-highlight: rgba(#F4B400, 0.32);
-$color-selection: #1F1F1F;
+$color-background: #fff;
+$color-primary: #1f1f1f;
+$color-accent: #4285f4;
+$color-highlight: rgba(#f4b400, 0.32);
+$color-selection: #1f1f1f;
 
-$color-text-primary: rgba($color-primary, 1.00);
+$color-text-primary: rgba($color-primary, 1);
 $color-text-secondary: rgba($color-primary, 0.64);
 
 :root {
-  --color-background: #{$color-background};
-  --color-primary: #{$color-primary};
-  --color-accent: #{$color-accent};
-  --color-highlight: #{$color-highlight};
-  --color-selection: #{$color-selection};
-
-  --color-text-primary: #{$color-text-primary};
-  --color-text-secondary: #{$color-text-secondary};
+    --color-background: #{$color-background};
+    --color-primary: #{$color-primary};
+    --color-accent: #{$color-accent};
+    --color-highlight: #{$color-highlight};
+    --color-selection: #{$color-selection};
+    --color-text-primary: #{$color-text-primary};
+    --color-text-secondary: #{$color-text-secondary};
 }
