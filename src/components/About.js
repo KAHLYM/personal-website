@@ -8,6 +8,10 @@ import RciMap from './RciMap.js';
 
 export class About extends Component {
 
+    componentDidMount(){
+        document.title = "Callum Wright - About"
+    }
+
     skillsProfessional = [
         'C++',
         'Python',

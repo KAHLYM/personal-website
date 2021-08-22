@@ -12,9 +12,13 @@ import WhanalysisLogo from '../assets/whanalysis.png';
 
 export class Home extends Component {
 
+    componentDidMount(){
+        document.title = "Callum Wright"
+    }
+
     nextPath(path) {
         this.props.history.push(path);
-      }
+    }
 
     render() {
         return (

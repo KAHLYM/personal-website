@@ -6,6 +6,11 @@ import Experience from './Experience.js'
 import ExperienceSection from './ExperienceSection';
 
 export class Portfolio extends Component {
+
+    componentDidMount(){
+        document.title = "Callum Wright - Portfolio"
+    }
+
     render() {
         return (
             <div> 

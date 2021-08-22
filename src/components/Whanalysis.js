@@ -9,6 +9,11 @@ import HumaaansWhanalysisMotivation from '../assets/humaaans-whanalysis-motivati
 import HumaaansWhanalysisProcess from '../assets/humaaans-whanalysis-process.png';
 
 export class Whanalysis extends Component {
+
+    componentDidMount(){
+        document.title = "Callum Wright - Whanalysis"
+    }
+
     render() {
         return (
             <div>
