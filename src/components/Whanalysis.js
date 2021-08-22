@@ -29,8 +29,9 @@ export class Whanalysis extends Component {
 
                     <ExperienceSection title="Motivation">
                         The concept was conceived long ago as a means to learn Python. Developed without consideration of the analysis to be accessed remotely, conversing with friends and colleagues highlighted the difficulties demonstrating the process and displaying the analysis. These difficulties later presented a great opportunity when motivated to learn a new web development framework.
-                        <img src={HumaaansWhanalysisMotivation} alt="Whanalysis Motivation"/>
                     </ExperienceSection>
+
+                    <img class="ExperienceSectionBody" src={HumaaansWhanalysisMotivation} alt="Whanalysis Motivation"/>
 
                     <ExperienceSection title="Process">
                         <p class='ExperienceSectionSubTitle'>Material Design</p>
@@ -47,8 +48,9 @@ export class Whanalysis extends Component {
                         The user is given an access code which they may share with others. This is a justified tradeoff between shareability and security. The user is reminded of the security concerns.
                         <p class='ExperienceSectionSubTitle'>Demo</p>
                         People are inpatient; they want to see results fast. With a single click, the user has insight into what is available. A demo should ease privacy concerns as the user need not sacrifice any of their privacy to understand what is available.
-                        <img src={HumaaansWhanalysisProcess} alt="Whanalysis Process"/>
                     </ExperienceSection>
+
+                    <img class="ExperienceSectionBody" src={HumaaansWhanalysisProcess} alt="Whanalysis Process"/>
 
                     <ExperienceSection title="Review">
                         Angular provided a <span className='Highlight'>holistic experience</span>; one that was less challenging than anticipated given the higher complexity in comparison to alternatives React and <a class="Highlight" href="https://vuejs.org/" target="_blank" rel='noopener noreferrer'>Vue</a>. Being a fully-fledged framework, Angular eliminated the choice of libraries and allowed focus to remain on the concepts rather than managerial decisions. With previous experience in type-based programming, the mandate to use TypeScript was welcome and offered a familiar experience. Having chosen another Google-backed technology, Firebase provided frictionless integration with Angular.
