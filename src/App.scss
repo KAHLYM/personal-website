@@ -1,11 +1,12 @@
 @import 'components/Colors.scss';
+@import 'components/Fonts.scss';
 @import 'components/Width.scss';
 
 .App {
     max-width: 1080px;
     margin: 0 auto;
     padding: 0 4rem 0 4rem;
-    font-family: 'Roboto';
+    font-family: $font-primary;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
