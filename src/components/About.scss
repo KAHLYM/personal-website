@@ -73,6 +73,7 @@
 @media only screen and (max-width: $breakpoint-m) {
     .About {
         margin: 0 0 0 0;
+        flex-direction: column;
     }
 
     .About .Personal {
@@ -85,9 +86,5 @@
     .About .Personal img {
         width: 100%;
         height: 100%;
-    }
-
-    .About {
-        flex-direction: column;
     }
 }
