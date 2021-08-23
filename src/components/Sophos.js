@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 
-import './Sophos.scss';
-
 import Experience from './Experience.js'
 import ExperienceSection from './ExperienceSection';
 
