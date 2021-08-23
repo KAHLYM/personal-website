@@ -77,12 +77,12 @@
     padding-right: 1rem;
 }
 
-.Details > p:nth-child(1) {
-    color: $color-text-primary;
-}
-
 .Title > div > p {
     margin: 0;
+}
+
+.Details > p:nth-child(1) {
+    color: $color-text-primary;
 }
 
 .Title > div > p:nth-child(1) {
