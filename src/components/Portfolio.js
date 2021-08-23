@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 
-import './Portfolio.scss';
-
 import Experience from './Experience.js'
 import ExperienceSection from './ExperienceSection';
 
