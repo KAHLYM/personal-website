@@ -40,11 +40,23 @@
     flex-direction: column;
 }
 
+.Details > p {
+    line-height: 1rem;
+    margin: 0.4rem 0;
+    color: $color-text-secondary;
+}
+
 .ExperienceContainer > div > p {
     font-family: $font-secondary;
     font-size: 2rem;
     color: $color-accent;
     margin-bottom: 0;
+}
+
+.Title > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .ExperienceContainer > div > div {
@@ -59,16 +71,14 @@
     padding: 1rem 1rem 1rem 1rem;
 }
 
-.Title > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .Title > div > img {
     height: 4rem;
     width: 4rem;
     padding-right: 1rem;
+}
+
+.Details > p:nth-child(1) {
+    color: $color-text-primary;
 }
 
 .Title > div > p {
@@ -128,16 +138,6 @@
     flex-direction: column;
     padding-left: 6rem;
     padding-bottom: 0.25rem;
-}
-
-.Details > p {
-    line-height: 1rem;
-    margin: 0.4rem 0;
-    color: $color-text-secondary;
-}
-
-.Details > p:nth-child(1) {
-    color: $color-text-primary;
 }
 
 @media only screen and (max-width: $breakpoint-m) {

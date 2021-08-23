@@ -7,14 +7,14 @@
     justify-content: space-between;
 }
 
-.HeaderLeft .HeaderNavLink {
-    margin: 0 16px 0 0;
-}
-
 .HeaderNavLink {
     font-size: 0.75rem;
     line-height: 50px;
     color: $color-primary;
+}
+
+.HeaderLeft .HeaderNavLink {
+    margin: 0 16px 0 0;
 }
 
 .HeaderNavLink:hover {
