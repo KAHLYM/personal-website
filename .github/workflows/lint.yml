@@ -28,7 +28,7 @@ jobs:
         with:
           auto_fix: true
           eslint: true
-          eslint_dir: src/
+          eslint_dir: src/components/
           stylelint: true
           git_name: "Personal Website Lint Action"
           git_email: "wrightci01s@gmail.com"
