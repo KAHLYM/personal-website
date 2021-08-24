@@ -6,6 +6,11 @@ import ExperienceSection from './ExperienceSection';
 import HumaaansSophos from '../assets/humaaans-sophos.png';
 
 export class Sophos extends Component {
+
+    componentDidMount(){
+        document.title = "Callum Wright - Sophos"
+    }
+
     render() {
         return (
             <div>
