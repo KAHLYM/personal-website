@@ -29,7 +29,7 @@ jobs:
           auto_fix: true
           eslint: true
           eslint_dir: src/components/
-          eslint_extensions: js, jsx
+          eslint_extensions: js,jsx
           stylelint: true
           git_name: "Personal Website Lint Action"
           git_email: "wrightci01s@gmail.com"
