@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
-import './Experience.scss';
-
-import RciMap from './RciMap.js';
+import RciMap from './RciMap';
 
 export class Experience extends Component {
   constructor(props) {

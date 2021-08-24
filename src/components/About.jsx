@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
 
-import './About.scss';
-
 import Profile from '../assets/profile.jpg';
 
-import RciMap from './RciMap.js';
+import RciMap from './RciMap';
 
 export class About extends Component {
-  componentDidMount() {
-    document.title = 'Callum Wright - About';
-  }
-
     skillsProfessional = [
       'C++',
       'Python',
@@ -37,6 +31,10 @@ export class About extends Component {
 
     aboutTitle = 'Hi, I\'m Callum';
 
+    componentDidMount() {
+      document.title = 'Callum Wright - About';
+    }
+
     render() {
       return (
         <div>
@@ -54,9 +52,8 @@ export class About extends Component {
                   <span className="Highlight">cybersecurity software</span>
                   . Enthused by
                   <span className="Highlight">
-                    consistent and well 
-                    structured design
-</span>
+                    consistent and well structured design
+                  </span>
                   , I also take interest in web development
                   technologies as they offer opportunities that are more design
                   orientated.

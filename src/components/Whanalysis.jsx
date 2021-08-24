@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Experience from './Experience.js';
+import Experience from './Experience.jsx';
 import ExperienceSection from './ExperienceSection';
 
 import HumaaansWhanalysisMotivation from '../assets/humaaans-whanalysis-motivation.png';

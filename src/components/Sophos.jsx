@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Experience from './Experience.js';
+import Experience from './Experience.jsx';
 import ExperienceSection from './ExperienceSection';
 
 import HumaaansSophos from '../assets/humaaans-sophos.png';
