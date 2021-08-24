@@ -1,47 +1,51 @@
 @import 'components/Colors.scss';
+@import 'components/Fonts.scss';
 @import 'components/Width.scss';
 
 .App {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 4rem 0 4rem;
-  font-family: 'Roboto';
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 4rem 0 4rem;
+    font-family: $font-primary;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.Header, .Footer {
-  display: flex;
+.Header,
+.Footer {
+    display: flex;
 }
 
 .Container {
-  display: flex;
-  flex-grow: 1;
+    display: flex;
+    flex-grow: 1;
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-  .App {
-    padding: 0 1rem 0 1rem;
-  }
+    .App {
+        padding: 0 1rem 0 1rem;
+    }
 }
 
 .Highlight {
-  background-color: $color-highlight;
+    background-color: $color-highlight;
 }
 
 a.Highlight {
-  text-decoration: none;
-  border-bottom: .2rem solid $color-text-primary;
-  background-color: rgba($color-accent, .2);
+    text-decoration: none;
+    border-bottom: 0.2rem solid $color-text-primary;
+    background-color: rgba($color-accent, 0.2);
 }
 
-a.Highlight:hover, a.Highlight:visited, a.Highlight:link, a.Highlight:active
-{
+a.Highlight:hover,
+a.Highlight:visited,
+a.Highlight:link,
+a.Highlight:active {
     color: $color-text-primary;
 }
 
 a.Highlight:hover {
-  border-bottom: .2rem solid $color-accent;
-  cursor: pointer;
+    border-bottom: 0.2rem solid $color-accent;
+    cursor: pointer;
 }
