@@ -11,6 +11,8 @@ import ScrollToTop from './components/ScrollToTop.jsx';
 import Sophos from './components/Sophos.jsx';
 import Whanalysis from './components/Whanalysis.jsx';
 
+require('dotenv').config();
+
 function App() {
   return (
     <div className="App">
