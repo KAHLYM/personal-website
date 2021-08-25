@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Social from './Social.js';
+import Social from './Social.jsx';
 
 import './Footer.scss';
 
