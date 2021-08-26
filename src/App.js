@@ -11,6 +11,18 @@ import ScrollToTop from './components/ScrollToTop.jsx';
 import Sophos from './components/Sophos.jsx';
 import Whanalysis from './components/Whanalysis.jsx';
 
+import './components/About.scss';
+import './components/Animation.scss';
+import './components/Colors.scss';
+import './components/Experience.scss';
+import './components/ExperienceSection.scss';
+import './components/Fonts.scss';
+import './components/Footer.scss';
+import './components/Header.scss';
+import './components/Home.scss';
+import './components/Social.scss';
+import './components/Width.scss';
+
 require('dotenv').config();
 
 function App() {
