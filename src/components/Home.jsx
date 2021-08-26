@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import Social from './Social';
 
-import './Animation.scss';
-import './Colors.scss';
-import './Home.scss';
+import Social from './Social';
 
 import PersonalWebsiteLogo from '../assets/personal-website.png';
 import Profile from '../assets/profile.jpg';
@@ -16,7 +13,8 @@ export class Home extends Component {
   }
 
   nextPath(path) {
-    this.props.history.push(path);
+    const { history } = this.context;
+    history.push(path);
   }
 
   render() {
@@ -32,9 +30,22 @@ export class Home extends Component {
               <span className="animated fadeIn" style={{ color: 'var(--color-accent)' }}>Callum Wright</span>
               <span className="animated fadeIn animatedDelay500ms"> currently works as a </span>
               <span className="animated fadeIn noWrap" style={{ color: 'var(--color-accent)' }}>Software </span>
-              <span className="animated fadeIn noWrap" style={{ color: 'var(--color-accent)', 'white-space': 'nowrap' }}>Engineer III</span>
+              <span
+                className="animated fadeIn noWrap"
+                style={{ color: 'var(--color-accent)', 'white-space': 'nowrap' }}
+              >
+                Engineer III
+              </span>
               <span className="animated fadeIn animatedDelay500ms"> at </span>
-              <a className="animated fadeIn Highlight" style={{ color: 'var(--color-accent)' }} href="https://www.sophos.com/en-us.aspx" target="_blank" rel="noopener noreferrer">Sophos</a>
+              <a
+                className="animated fadeIn Highlight"
+                style={{ color: 'var(--color-accent)' }}
+                href="https://www.sophos.com/en-us.aspx"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Sophos
+              </a>
               <span className="animated fadeIn animatedDelay500ms">, Abingdon.</span>
             </div>
             <div>
@@ -54,7 +65,7 @@ export class Home extends Component {
                   <p>Sophos</p>
                   <p>cybersecurity</p>
                   <p>3 yrs 3 mos</p>
-                  <p onClick={() => this.nextPath('sophos')}>Read More</p>
+                  <button type="button" onClick={() => this.nextPath('sophos')}>Read More</button>
                 </div>
               </div>
               <div className="Details">
@@ -85,7 +96,7 @@ export class Home extends Component {
                   <p>Personal Website</p>
                   <p>this website</p>
                   <p>Jun 2020 - Jul 2020</p>
-                  <p onClick={() => this.nextPath('portfolio')}>Read More</p>
+                  <button type="button" onClick={() => this.nextPath('portfolio')}>Read More</button>
                 </div>
               </div>
             </div>
@@ -98,7 +109,7 @@ export class Home extends Component {
                   <p>Whanalysis</p>
                   <p>whatsapp analysis</p>
                   <p>Dec 2019 - May 2020</p>
-                  <p onClick={() => this.nextPath('whanalysis')}>Read More</p>
+                  <button type="button" onClick={() => this.nextPath('whanalysis')}>Read More</button>
                 </div>
               </div>
             </div>

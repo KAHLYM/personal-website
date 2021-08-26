@@ -1,34 +1,77 @@
 import React, { Component } from 'react';
 
+import PropTypes from 'prop-types';
+
 import RciMap from './RciMap';
 
-export class Experience extends Component {
+class Experience extends Component {
   constructor(props) {
     super(props);
     this.refExperienceSkills = React.createRef();
   }
 
-    showWebsite = () => ((this.props.type === 'personal project') && (this.props.url))
+  showWebsite = () => {
+    const { type, url } = this.props;
+    return ((type === 'personal project') && (url));
+  }
 
-    render() {
-      return (
-        <div className="Experience">
-          <div className="ExperienceTitle">{this.props.title}</div>
-          <div className="ExperienceType">
-            {this.props.type}
-            {' '}
-            ·
-            {' '}
-            {this.props.time}
-            {' '}
-            min read
-          </div>
-          {this.props.skills ? <div className="ExperienceSkills">{this.props.skills.sort().map((skill) => React.createElement(RciMap[skill][0], { color: RciMap[skill][1] }, ''))}</div> : null}
-          {this.showWebsite() ? <div className="ExperienceVisitWrapper"><a className="ExperienceChip ExperienceVisit" href={this.props.url} target="_blank" rel="noopener noreferrer">visit website</a></div> : null}
-          <div>{this.props.children}</div>
+  render() {
+    const {
+      children, skills, time, title, type, url,
+    } = this.props;
+    return (
+      <div className="Experience">
+        <div className="ExperienceTitle">{title}</div>
+        <div className="ExperienceType">
+          {type}
+          {' '}
+          ·
+          {' '}
+          {time}
+          {' '}
+          min read
         </div>
-      );
-    }
+        {
+          skills ? (
+            <div className="ExperienceSkills">
+              { skills.sort().map((skill) => React.createElement(RciMap[skill][0], { color: RciMap[skill][1] }, '')) }
+            </div>
+          ) : null
+        }
+        {this.showWebsite() ? (
+          <div className="ExperienceVisitWrapper">
+            <a
+              className="ExperienceChip ExperienceVisit"
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              visit website
+            </a>
+          </div>
+        ) : null}
+        <div>{children}</div>
+      </div>
+    );
+  }
 }
+
+Experience.propTypes = {
+  children: PropTypes.node,
+  time: PropTypes.string,
+  title: PropTypes.string,
+  type: PropTypes.string,
+  skills: PropTypes.arrayOf(PropTypes.string),
+  url: PropTypes.string,
+};
+
+Experience.defaultProps = {
+  children: '',
+  time: 0,
+  title: '',
+  type: '',
+  skills: [],
+  url: '',
+};
 
 export default Experience;
