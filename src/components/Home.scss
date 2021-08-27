@@ -40,6 +40,21 @@
     flex-direction: column;
 }
 
+.ExperienceContainer button {
+    border-style: none;
+    background: none;
+    color: $color-primary;
+    font-family: $font-primary;
+    padding: 0;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.ExperienceContainer button:hover {
+    color: $color-accent;
+    cursor: pointer;
+}
+
 .Details > p {
     line-height: 1rem;
     margin: 0.4rem 0;

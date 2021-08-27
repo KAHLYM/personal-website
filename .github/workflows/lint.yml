@@ -8,7 +8,7 @@ on:
 
 jobs:
   run-linters:
-    name: Run linters
+    name: run linters
     runs-on: ubuntu-latest
 
     steps:
@@ -27,6 +27,9 @@ jobs:
         uses: wearerequired/lint-action@v1
         with:
           auto_fix: true
+          eslint: true
+          eslint_dir: src/components/
+          eslint_extensions: js,jsx
           stylelint: true
           git_name: "Personal Website Lint Action"
           git_email: "wrightci01s@gmail.com"
