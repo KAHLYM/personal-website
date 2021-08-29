@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import Social from './Social';
 
@@ -65,7 +66,9 @@ export class Home extends Component {
                   <p>Sophos</p>
                   <p>cybersecurity</p>
                   <p>3 yrs 3 mos</p>
-                  <button type="button" onClick={() => this.nextPath('sophos')}>Read More</button>
+                  <NavLink to="/sophos" activeClassName="IsActive">
+                    <span className="HomeNavLink">Read More</span>
+                  </NavLink>
                 </div>
               </div>
               <div className="Details">
@@ -96,7 +99,9 @@ export class Home extends Component {
                   <p>Personal Website</p>
                   <p>this website</p>
                   <p>Jun 2020 - Jul 2020</p>
-                  <button type="button" onClick={() => this.nextPath('portfolio')}>Read More</button>
+                  <NavLink to="/portfolio" activeClassName="IsActive">
+                    <span className="HomeNavLink">Read More</span>
+                  </NavLink>
                 </div>
               </div>
             </div>
@@ -109,7 +114,9 @@ export class Home extends Component {
                   <p>Whanalysis</p>
                   <p>whatsapp analysis</p>
                   <p>Dec 2019 - May 2020</p>
-                  <button type="button" onClick={() => this.nextPath('whanalysis')}>Read More</button>
+                  <NavLink to="/whanalysis" activeClassName="IsActive">
+                    <span className="HomeNavLink">Read More</span>
+                  </NavLink>
                 </div>
               </div>
             </div>
