@@ -21,7 +21,7 @@ export class Home extends Component {
     return (
       <div>
         <div className="Preface">
-          <div className="PrefaceProfile">
+          <div className="PrefaceProfile animated fadeIn animatedDelay500ms">
             <img src={Profile} alt="Profile" />
           </div>
           <div>
@@ -53,7 +53,7 @@ export class Home extends Component {
             </div>
           </div>
         </div>
-        <div className="ExperienceContainer">
+        <div className="ExperienceContainer animated fadeIn animatedDelay500ms">
           <div className="Professional">
             <p>Professional</p>
             <div style={{ borderRight: '8px solid #225a99' }}>
