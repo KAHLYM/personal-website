@@ -2,14 +2,28 @@ import './App.scss';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-import About from './components/About.js'
-import Footer from './components/Footer.js'
-import Header from './components/Header.js'
-import Home from './components/Home.js'
-import Portfolio from './components/Portfolio.js';
-import ScrollToTop from './components/ScrollToTop.js';
-import Sophos from './components/Sophos.js';
-import Whanalysis from './components/Whanalysis.js';
+import About from './components/About.jsx'
+import Footer from './components/Footer.jsx'
+import Header from './components/Header.jsx'
+import Home from './components/Home.jsx'
+import Portfolio from './components/Portfolio.jsx';
+import ScrollToTop from './components/ScrollToTop.jsx';
+import Sophos from './components/Sophos.jsx';
+import Whanalysis from './components/Whanalysis.jsx';
+
+import './components/About.scss';
+import './components/Animation.scss';
+import './components/Colors.scss';
+import './components/Experience.scss';
+import './components/ExperienceSection.scss';
+import './components/Fonts.scss';
+import './components/Footer.scss';
+import './components/Header.scss';
+import './components/Home.scss';
+import './components/Social.scss';
+import './components/Width.scss';
+
+require('dotenv').config();
 
 function App() {
   return (

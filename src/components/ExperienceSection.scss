@@ -12,8 +12,7 @@
     color: $color-accent;
 }
 
-.ExperienceSectionSubTitle
-{
+.ExperienceSectionSubTitle {
     font-family: $font-secondary;
     font-size: 1rem;
     color: $color-text-primary;
@@ -27,12 +26,12 @@
 
 @media only screen and (max-width: $breakpoint-m) {
     .ExperienceSectionBody {
-        padding: 2rem 0px 2rem 0px;
+        padding: 2rem 0 2rem 0;
     }
 
-    .ExperienceSectionBody img {
+    img.ExperienceSectionBody {
         padding-left: 0;
-        padding-top: 2rem;
+        padding-top: 0;
         width: 100%;
     }
 }
