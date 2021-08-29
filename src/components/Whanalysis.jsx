@@ -52,9 +52,9 @@ export class Whanalysis extends Component {
             >
               Angular Material
             </a>
-            &nbsp;offered intuitive and versatile components, optimized for web, mobile and desktop that was backed&nbsp;
-            by research to establish thorough design principles. These features enabled me to focus on learning&nbsp;
-            Angular and&nbsp;
+            &nbsp;offered intuitive and versatile components, optimized for web, mobile and desktop that was&nbsp;
+            backed by research to establish thorough design principles. These features enabled me to focus on&nbsp;
+            learning Angular and&nbsp;
             <span className="Highlight">increase development velocity</span>
             .
             <p className="ExperienceSectionSubTitle">Internationalization</p>
