@@ -36,7 +36,8 @@ export class Portfolio extends Component {
 
           <ExperienceSection title="Design">
             The key objective was to create a&nbsp;
-            <span className="Highlight">clear consistent design</span>&nbsp;
+            <span className="Highlight">clear consistent design</span>
+&nbsp;
             throughout. The limited use of images maintained a lightweight design that did not overwhelm. Those&nbsp;
             images that were used were designed using&nbsp;
             <a

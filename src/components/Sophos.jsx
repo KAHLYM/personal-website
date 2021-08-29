@@ -30,10 +30,12 @@ export class Sophos extends Component {
               Sophos Group plc&nbsp;
             </a>
             is a British&nbsp;
-            <span className="Highlight">security software</span>&nbsp;
+            <span className="Highlight">security software</span>
+&nbsp;
             and hardware company that develops network, end user and server protection. More than 200 million&nbsp;
             users in 150 countries rely on Sophos to&nbsp;
-            <span className="Highlight">end-to-end protection</span>&nbsp;
+            <span className="Highlight">end-to-end protection</span>
+&nbsp;
             against threats and data loss.
           </div>
 
@@ -67,7 +69,8 @@ export class Sophos extends Component {
             ; a behavioural based exploit mitigation product. Being behavioural based, the product was susceptible&nbsp;
             to false positives. My initial focus was to accommodate existing customer requirements and develop&nbsp;
             features to&nbsp;
-            <span className="Highlight">support and streamline implementation</span>&nbsp;
+            <span className="Highlight">support and streamline implementation</span>
+&nbsp;
             of similar requirements in future.
             <p className="ExperienceSectionSubTitle">Further Experience</p>
             As my understanding of the product increased I developed broader aspects of work i.e refactoring the&nbsp;
