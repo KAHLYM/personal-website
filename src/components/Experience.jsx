@@ -21,8 +21,8 @@ class Experience extends Component {
     } = this.props;
     return (
       <div className="Experience">
-        <div className="ExperienceTitle">{title}</div>
-        <div className="ExperienceType">
+        <div className="ExperienceTitle animated fadeIn">{title}</div>
+        <div className="ExperienceType animated fadeIn">
           {type}
           {' '}
           ·
@@ -33,15 +33,15 @@ class Experience extends Component {
         </div>
         {
           skills ? (
-            <div className="ExperienceSkills">
+            <div className="ExperienceSkills animated fadeIn">
               { skills.sort().map((skill) => React.createElement(RciMap[skill][0], { color: RciMap[skill][1] }, '')) }
             </div>
           ) : null
         }
         {this.showWebsite() ? (
-          <div className="ExperienceVisitWrapper">
+          <div className="ExperienceVisitWrapper animated fadeIn">
             <a
-              className="ExperienceChip ExperienceVisit"
+              className="ExperienceChip ExperienceVisit animated fadeIn"
               href={url}
               target="_blank"
               rel="noopener noreferrer"
@@ -50,7 +50,7 @@ class Experience extends Component {
             </a>
           </div>
         ) : null}
-        <div>{children}</div>
+        <div className="ExperienceChildren animated fadeIn animatedDelay500ms">{children}</div>
       </div>
     );
   }
