@@ -68,8 +68,8 @@ Social.propTypes = {
 };
 
 Social.defaultProps = {
-  bottom: "0rem",
-  size: "1rem",
+  bottom: '0rem',
+  size: '1rem',
 };
 
 export default Social;
