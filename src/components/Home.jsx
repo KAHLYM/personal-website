@@ -32,7 +32,7 @@ export class Home extends Component {
               <span className="animated fadeIn noWrap" style={{ color: 'var(--color-accent)' }}>Software </span>
               <span
                 className="animated fadeIn noWrap"
-                style={{ color: 'var(--color-accent)', 'white-space': 'nowrap' }}
+                style={{ color: 'var(--color-accent)', whiteSpace: 'nowrap' }}
               >
                 Engineer III
               </span>

@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className="Footer">
       <div className="FooterWrapper">
-        <Social size="24" bottom="16" />
+        <Social size="2rem" bottom="1rem" />
         <p className="LastUpdated">last updated July 23, 2021</p>
       </div>
     </div>
