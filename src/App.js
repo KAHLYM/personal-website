@@ -30,8 +30,8 @@ function App() {
     <div className="App">
       <Router>
         <ScrollToTop />
-        <Header class="Header"></Header>
-        <div class="Container">
+        <Header className="Header"></Header>
+        <div className="Container">
           <Switch>
             <Route path='/' exact component={Home} />
             <Route path='/about' component={About} />
@@ -40,7 +40,7 @@ function App() {
             <Route path='/whanalysis' component={Whanalysis} />
           </Switch>
         </div>
-        <Footer class="Footer"></Footer>
+        <Footer className="Footer"></Footer>
       </Router>
     </div>
   );

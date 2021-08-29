@@ -18,7 +18,7 @@ class Social extends Component {
     const { bottom, size } = this.props;
     const { socialIconGithub, socialIconGmailColor, socialIconLinkedin } = this.state;
     return (
-      <div className="SocialWrapper" style={{ marginBottom: `${bottom}rem` }}>
+      <div className="SocialWrapper" style={{ marginBottom: bottom }}>
         <a
           className="SocialIcon animated fadeIn animatedDelay500ms"
           href="https://www.github.com/KAHLYM"
@@ -63,13 +63,13 @@ class Social extends Component {
 }
 
 Social.propTypes = {
-  bottom: PropTypes.number,
-  size: PropTypes.number,
+  bottom: PropTypes.string,
+  size: PropTypes.string,
 };
 
 Social.defaultProps = {
-  bottom: 0,
-  size: 16,
+  bottom: '0rem',
+  size: '1rem',
 };
 
 export default Social;
