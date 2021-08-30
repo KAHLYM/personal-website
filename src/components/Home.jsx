@@ -15,32 +15,32 @@ export class Home extends Component {
     const sophosDateEnd = new Date(Date.now());
     const sophosDateStart = new Date(Date.UTC(2021, 6, 1));
     const sophosDuration = new Date(sophosDateEnd - sophosDateStart);
-    this.sophosDurationAsString = "";
+    this.sophosDurationAsString = '';
 
     const sophosDurationYear = sophosDuration.getFullYear() - 1970;
     switch (sophosDurationYear) {
       case 0:
         break;
       case 1:
-        this.sophosDurationAsString += (sophosDurationYear + " yr");
+        this.sophosDurationAsString += (`${sophosDurationYear} yr`);
         break;
       default:
-        this.sophosDurationAsString += (sophosDurationYear + " yrs");
+        this.sophosDurationAsString += (`${sophosDurationYear} yrs`);
         break;
     }
 
     const sophosDurationMonth = sophosDuration.getMonth() + 1;
     if (sophosDurationYear > 0 && sophosDurationMonth > 0) {
-      this.sophosDurationAsString += " ";
+      this.sophosDurationAsString += ' ';
     }
     switch (sophosDurationMonth) {
       case 0:
         break;
       case 1:
-        this.sophosDurationAsString += (sophosDurationMonth + " mon");
+        this.sophosDurationAsString += (`${sophosDurationMonth} mon`);
         break;
       default:
-        this.sophosDurationAsString += (sophosDurationMonth + " mos");
+        this.sophosDurationAsString += (`${sophosDurationMonth} mos`);
         break;
     }
   }
@@ -97,7 +97,7 @@ export class Home extends Component {
               color="#225a99"
               componentName="sophos"
               dateOverride="present"
-              datePresent={true}
+              datePresent
               dateStartMonth={5}
               dateStartYear={2018}
               description="cybersecurity"
@@ -106,7 +106,8 @@ export class Home extends Component {
             >
               <div className="SophosChild">
                 <p>Software Engineer III</p>
-                <p>Jul 2021 - Present ·&nbsp;
+                <p>
+                  Jul 2021 - Present ·&nbsp;
                   {
                     this.sophosDurationAsString
                   }
