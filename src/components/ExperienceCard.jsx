@@ -66,7 +66,7 @@ export class ExperienceCard extends Component {
       e.target.style.color = color;
     }
 
-    onMouseLeave = () => {
+    onMouseLeave = (e) => {
       e.target.style.color = 'white';
     }
 
