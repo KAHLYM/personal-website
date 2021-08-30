@@ -57,7 +57,7 @@ export class ExperienceCard extends Component {
         }
     }
 
-    onClickVisit = (e) => {
+    onClickVisit = () => {
         const { url } = this.props;
         window.open(url, "_blank");
     }
@@ -77,7 +77,7 @@ export class ExperienceCard extends Component {
             <div className="ExperienceCard" style={{ backgroundColor: color }}>
                 <div className="ExperienceCardContainer">
                     <div className="ExperienceCardImageContainer">
-                        <img className="ExperienceCardImage" src={image} alt="image" />
+                        <img className="ExperienceCardImage" src={image} alt="" />
                     </div>
                     <div className="ExperienceCardTextContainer">
                         <p className="ExperienceCardTitle">{title}</p>
@@ -99,6 +99,7 @@ export class ExperienceCard extends Component {
                                 className="ExperienceCardAction"
                                 onMouseEnter={this.onMouseEnter}
                                 onMouseLeave={this.onMouseLeave}
+                                type="button"
                             >
                                 read more
                             </button>
@@ -110,6 +111,7 @@ export class ExperienceCard extends Component {
                                 onClick={this.onClickVisit}
                                 onMouseEnter={this.onMouseEnter}
                                 onMouseLeave={this.onMouseLeave}
+                                type="button"
                             >
                                 visit
                             </button>
@@ -126,16 +128,27 @@ export class ExperienceCard extends Component {
 
 ExperienceCard.propTypes = {
     children: PropTypes.node,
-    color: PropTypes.string,
-    componentName: PropTypes.string,
+    color: PropTypes.string.isRequired,
+    componentName: PropTypes.string.isRequired,
+    dateEndMonth: PropTypes.number,
+    dateEndYear: PropTypes.number,
     dateOverride: PropTypes.string,
     datePresent: PropTypes.bool,
-    dateStartMonth: PropTypes.number,
-    dateStartYear: PropTypes.number,
-    description: PropTypes.string,
-    image: PropTypes.string,
-    title: PropTypes.string,
+    dateStartMonth: PropTypes.number.isRequired,
+    dateStartYear: PropTypes.number.isRequired,
+    description: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
     url: PropTypes.string,
+};
+
+ExperienceCard.defaultProps = {
+    children: '',
+    dateOverride: false,
+    datePresent: false,
+    dateStartMonth: 0,
+    dateStartYear: 1970,
+    url: '',
 };
 
 export default ExperienceCard;
