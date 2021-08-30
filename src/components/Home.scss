@@ -35,6 +35,13 @@
     text-align: left;
 }
 
+.SophosChild > p
+{
+    font-size: 1rem;
+    margin: 0 0 0 1rem;
+    color: white;
+}
+
 .ExperienceContainer > div > p {
     font-family: $font-secondary;
     font-size: 2rem;
@@ -96,13 +103,6 @@ a:active {
 .SophosChild
 {
     margin: 1rem 0 .5rem 6rem;
-}
-
-.SophosChild > p
-{
-    font-size: 1rem;
-    margin: 0 0 0 1rem;
-    color: white;
 }
 
 .SophosChild:nth-of-type(n+2)::before {
