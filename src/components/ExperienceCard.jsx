@@ -57,6 +57,11 @@ export class ExperienceCard extends Component {
         }
     }
 
+    onClickVisit = (e) => {
+        const { url } = this.props;
+        window.open(url, "_blank");
+    }
+
     onMouseEnter = (e) => {
         const { color } = this.props;
         e.target.style.color = color;
@@ -102,6 +107,7 @@ export class ExperienceCard extends Component {
                             url &&
                             <button
                                 className="ExperienceCardAction"
+                                onClick={this.onClickVisit}
                                 onMouseEnter={this.onMouseEnter}
                                 onMouseLeave={this.onMouseLeave}
                             >
