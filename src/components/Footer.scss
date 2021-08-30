@@ -15,18 +15,18 @@
     font-size: 0.75rem;
     margin: 0 8px;
     line-height: 50px;
-    color: $color-primary;
+    color: $color-light-primary;
 }
 
 .FooterLink:hover {
-    color: $color-accent !important;
+    color: $color-light-accent !important;
 }
 
 .FooterLink:visited {
-    color: $color-primary;
+    color: $color-light-primary;
 }
 
 .LastUpdated {
     font-size: 0.75rem;
-    color: $color-text-secondary;
+    color: $color-light-secondary;
 }

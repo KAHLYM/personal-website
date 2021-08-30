@@ -16,7 +16,7 @@
 .HeaderNavLink {
     font-size: 0.75rem;
     line-height: 50px;
-    color: $color-primary;
+    color: $color-light-primary;
 }
 
 .HeaderLeft .HeaderNavLink {
@@ -24,15 +24,15 @@
 }
 
 .HeaderNavLink:hover {
-    color: $color-accent !important;
+    color: $color-light-accent !important;
 }
 
 .HeaderNavLink:visited {
-    color: $color-primary;
+    color: $color-light-primary;
 }
 
 .IsActive .HeaderNavLink {
-    color: $color-accent;
+    color: $color-light-accent;
 }
 
 a:hover,

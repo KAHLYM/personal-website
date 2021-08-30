@@ -31,7 +31,7 @@
 .PrefaceText > a {
     font-family: $font-secondary;
     font-size: 3rem;
-    color: $color-text-primary;
+    color: $color-light-primary;
     text-align: left;
 }
 
@@ -44,7 +44,7 @@
 .ExperienceContainer > div > p {
     font-family: $font-secondary;
     font-size: 2rem;
-    color: $color-accent;
+    color: $color-light-accent;
     margin-bottom: 0;
 }
 
@@ -55,19 +55,19 @@
 }
 
 .HomeNavLink {
-    color: $color-primary;
+    color: $color-light-primary;
 }
 
 .HomeNavLink:hover {
-    color: $color-accent !important;
+    color: $color-light-accent !important;
 }
 
 .HomeNavLink:visited {
-    color: $color-primary;
+    color: $color-light-primary;
 }
 
 .IsActive .HomeNavLink {
-    color: $color-accent;
+    color: $color-light-accent;
 }
 
 a:hover,

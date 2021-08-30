@@ -1,18 +1,29 @@
-$color-background: #fff;
-$color-primary: #1f1f1f;
-$color-accent: #4285f4;
-$color-highlight: rgba(#f4b400, 0.32);
-$color-selection: #1f1f1f;
+$color-light-background: #FFFFFF;
+$color-light-primary: rgba(#1F1F1F, 1);
+$color-light-secondary: rgba(#1F1F1F, 0.64);
+$color-light-accent: #4285f4;
+$color-light-highlight: rgba(#F4B400, 0.32);
+$color-light-selection: #1F1F1F;
 
-$color-text-primary: rgba($color-primary, 1);
-$color-text-secondary: rgba($color-primary, 0.64);
+$color-dark-background: #FFFFFF;
+$color-dark-primary: rgba(#1F1F1F, 1);
+$color-dark-secondary: rgba(#1F1F1F, 0.64);
+$color-dark-accent: #4285f4;
+$color-dark-highlight: rgba(#F4B400, 0.32);
+$color-dark-selection: #1F1F1F;
 
 :root {
-    --color-background: #{$color-background};
-    --color-primary: #{$color-primary};
-    --color-accent: #{$color-accent};
-    --color-highlight: #{$color-highlight};
-    --color-selection: #{$color-selection};
-    --color-text-primary: #{$color-text-primary};
-    --color-text-secondary: #{$color-text-secondary};
+    --color-light-background: #{$color-light-background};
+    --color-light-primary: #{$color-light-primary};
+    --color-light-secondary: #{$color-light-secondary};
+    --color-light-accent: #{$color-light-accent};
+    --color-light-highlight: #{$color-light-highlight};
+    --color-light-selection: #{$color-light-selection};
+
+    --color-dark-background: #{$color-dark-background};
+    --color-dark-primary: #{$color-dark-primary};
+    --color-dark-secondary: #{$color-dark-secondary};
+    --color-dark-accent: #{$color-dark-accent};
+    --color-dark-highlight: #{$color-dark-highlight};
+    --color-dark-selection: #{$color-dark-selection};
 }
