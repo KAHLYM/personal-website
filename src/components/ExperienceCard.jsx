@@ -135,7 +135,7 @@ ExperienceCard.propTypes = {
   componentName: PropTypes.string.isRequired,
   dateEndMonth: PropTypes.number,
   dateEndYear: PropTypes.number,
-  dateOverride: PropTypes.string,
+  dateOverride: PropTypes.bool,
   datePresent: PropTypes.bool,
   dateStartMonth: PropTypes.number.isRequired,
   dateStartYear: PropTypes.number.isRequired,
