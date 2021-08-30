@@ -35,118 +35,11 @@
     text-align: left;
 }
 
-.ExperienceContainer {
-    display: flex;
-    flex-direction: column;
-}
-
-.ExperienceContainer button {
-    border-style: none;
-    background: none;
-    color: $color-primary;
-    font-family: $font-primary;
-    padding: 0;
-    text-align: left;
-    font-size: 1rem;
-}
-
-.ExperienceContainer button:hover {
-    color: $color-accent;
-    cursor: pointer;
-}
-
-.Details > p {
-    line-height: 1rem;
-    margin: 0.4rem 0;
-    color: $color-text-secondary;
-}
-
 .ExperienceContainer > div > p {
     font-family: $font-secondary;
     font-size: 2rem;
     color: $color-accent;
     margin-bottom: 0;
-}
-
-.Title > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.ExperienceContainer > div > div {
-    padding-left: 1rem;
-    margin-bottom: 8px;
-    border-right-width: 8px;
-}
-
-.Title {
-    display: flex;
-    flex-direction: row;
-    padding: 1rem 1rem 1rem 1rem;
-}
-
-.Title > div > img {
-    height: 4rem;
-    width: 4rem;
-    padding-right: 1rem;
-}
-
-.Title > div > p {
-    margin: 0;
-}
-
-.Details > p:nth-child(1) {
-    color: $color-text-primary;
-}
-
-.Title > div > p:nth-child(1) {
-    font-family: $font-primary;
-    font-size: 1rem;
-    font-weight: $font-weight-bold;
-    color: $color-text-primary;
-}
-
-.Title > div > p:nth-child(2),
-.Title > div > p:nth-child(3) {
-    font-family: $font-primary;
-    font-size: 1rem;
-    color: $color-text-secondary;
-}
-
-.Title > div > p:nth-child(4) {
-    font-family: $font-primary;
-    font-size: 1rem;
-    color: $color-text-primary;
-}
-
-.Title > div > p:nth-child(4):hover {
-    font-family: $font-primary;
-    font-size: 1rem;
-    color: $color-accent;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-.Professional .Details:nth-of-type(n+3)::before {
-    content: "";
-    position: absolute;
-    height: 3rem;
-    width: 2px;
-    background-color: $color-text-secondary;
-    margin-left: calc(-3rem - 1px);
-    margin-top: -4rem;
-}
-
-.Professional .Details::after {
-    content: "";
-    position: absolute;
-    height: 0.5rem;
-    width: 0.5rem;
-    background-color: $color-text-secondary;
-    margin-left: -3.25rem;
-    margin-top: -4.25rem;
-    border-radius: 50%;
 }
 
 .Details {
@@ -198,4 +91,47 @@ a:active {
     .Details {
         padding-left: 5rem;
     }
+}
+
+.SophosChild
+{
+    margin: 1rem 0 .5rem 6rem;
+}
+
+.SophosChild > p
+{
+    font-size: 1rem;
+    margin: 0 0 0 1rem;
+    color: white;
+}
+
+.SophosChild:nth-of-type(n+2)::before {
+    content: "";
+    position: absolute;
+    height: 3rem;
+    width: 2px;
+    background-color: rgba(white, 0.5);
+    margin-left: calc(-3rem - 1px);
+    margin-top: -3.25rem;
+}
+
+.SophosChild::after {
+    content: "";
+    position: absolute;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: rgba(white, 0.75);
+    margin-left: -3.25rem;
+    margin-top: -3.25rem;
+    border-radius: 50%;
+}
+
+.SophosChild > p:nth-child(1) {
+    font-family: $font-secondary;
+    color: rgba(white, 0.75);
+}
+
+.SophosChild > p:nth-child(2),
+.SophosChild > p:nth-child(3) {
+    color: rgba(white, 0.5);
 }
