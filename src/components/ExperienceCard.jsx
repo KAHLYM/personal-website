@@ -147,17 +147,10 @@ ExperienceCard.propTypes = {
 
 ExperienceCard.defaultProps = {
   children: '',
-  color: 'transparent',
-  componentName: 'Component Name',
   dateEndMonth: 0,
   dateEndYear: 1970,
   dateOverride: false,
   datePresent: false,
-  dateStartMonth: 0,
-  dateStartYear: 1970,
-  description: 'Description',
-  image: 'no image',
-  title: 'Title',
   url: '',
 };
 
