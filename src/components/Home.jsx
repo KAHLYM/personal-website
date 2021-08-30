@@ -13,7 +13,7 @@ export class Home extends Component {
     super();
 
     const sophosDateEnd = new Date(Date.now());
-    const sophosDateStart = new Date(Date.UTC(2021, 6, 1));
+    const sophosDateStart = new Date(Date.UTC(2021, 5, 1));
     const sophosDuration = new Date(sophosDateEnd - sophosDateStart);
     this.sophosDurationAsString = '';
 
