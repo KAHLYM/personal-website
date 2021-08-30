@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
 
+import ExperienceCard from './ExperienceCard';
 import Social from './Social';
 
 import PersonalWebsiteLogo from '../assets/personal-website.png';
@@ -9,6 +9,42 @@ import SophosLogo from '../assets/sophos.png';
 import WhanalysisLogo from '../assets/whanalysis.png';
 
 export class Home extends Component {
+  constructor() {
+    super();
+
+    const sophosDateEnd = new Date(Date.now());
+    const sophosDateStart = new Date(Date.UTC(2021, 6, 1));
+    const sophosDuration = new Date(sophosDateEnd - sophosDateStart);
+    this.sophosDurationAsString = '';
+
+    const sophosDurationYear = sophosDuration.getFullYear() - 1970;
+    switch (sophosDurationYear) {
+      case 0:
+        break;
+      case 1:
+        this.sophosDurationAsString += (`${sophosDurationYear} yr`);
+        break;
+      default:
+        this.sophosDurationAsString += (`${sophosDurationYear} yrs`);
+        break;
+    }
+
+    const sophosDurationMonth = sophosDuration.getMonth() + 1;
+    if (sophosDurationYear > 0 && sophosDurationMonth > 0) {
+      this.sophosDurationAsString += ' ';
+    }
+    switch (sophosDurationMonth) {
+      case 0:
+        break;
+      case 1:
+        this.sophosDurationAsString += (`${sophosDurationMonth} mon`);
+        break;
+      default:
+        this.sophosDurationAsString += (`${sophosDurationMonth} mos`);
+        break;
+    }
+  }
+
   componentDidMount() {
     document.title = 'Callum Wright';
   }
@@ -57,69 +93,64 @@ export class Home extends Component {
         <div className="ExperienceContainer animated fadeIn animatedDelay500ms">
           <div className="Professional">
             <p>Professional</p>
-            <div style={{ borderRight: '8px solid #225a99' }}>
-              <div className="Title">
-                <div>
-                  <img src={SophosLogo} alt="Sophos Logo" />
-                </div>
-                <div>
-                  <p>Sophos</p>
-                  <p>cybersecurity</p>
-                  <p>3 yrs 3 mos</p>
-                  <NavLink to="/sophos" activeClassName="IsActive">
-                    <span className="HomeNavLink">Read More</span>
-                  </NavLink>
-                </div>
-              </div>
-              <div className="Details">
+            <ExperienceCard
+              color="#225a99"
+              componentName="sophos"
+              dateOverride="present"
+              datePresent
+              dateStartMonth={5}
+              dateStartYear={2018}
+              description="cybersecurity"
+              image={SophosLogo}
+              title="Sophos"
+            >
+              <div className="SophosChild">
                 <p>Software Engineer III</p>
-                <p>Jul 2021 - Present · 1 mos</p>
-                <p>Abingdon, United Kingdon</p>
+                <p>
+                  Jul 2021 - Present ·&nbsp;
+                  {
+                    this.sophosDurationAsString
+                  }
+                </p>
+                <p>Abingdon, United Kingdom</p>
               </div>
-              <div className="Details">
+              <div className="SophosChild">
                 <p>Software Engineer II</p>
                 <p>Aug 2019 - Jul 2021 · 2 yrs</p>
-                <p>Abingdon, United Kingdon</p>
+                <p>Abingdon, United Kingdom</p>
               </div>
-              <div className="Details">
+              <div className="SophosChild">
                 <p>Software Engineer Intern</p>
                 <p>Jun 2017 - Aug 2018 · 1 yr 3 mos</p>
-                <p>Abingdon, United Kingdon</p>
+                <p>Abingdon, United Kingdom</p>
               </div>
-            </div>
+            </ExperienceCard>
           </div>
           <div className="Personal">
             <p>Personal</p>
-            <div style={{ borderRight: '8px solid #4285f4' }}>
-              <div className="Title">
-                <div>
-                  <img src={PersonalWebsiteLogo} alt="Personal Website Logo" />
-                </div>
-                <div>
-                  <p>Personal Website</p>
-                  <p>this website</p>
-                  <p>Jun 2020 - Jul 2020</p>
-                  <NavLink to="/portfolio" activeClassName="IsActive">
-                    <span className="HomeNavLink">Read More</span>
-                  </NavLink>
-                </div>
-              </div>
-            </div>
-            <div style={{ borderRight: '8px solid #128c7e' }}>
-              <div className="Title">
-                <div>
-                  <img src={WhanalysisLogo} alt="Whanlysis Logo" />
-                </div>
-                <div>
-                  <p>Whanalysis</p>
-                  <p>whatsapp analysis</p>
-                  <p>Dec 2019 - May 2020</p>
-                  <NavLink to="/whanalysis" activeClassName="IsActive">
-                    <span className="HomeNavLink">Read More</span>
-                  </NavLink>
-                </div>
-              </div>
-            </div>
+            <ExperienceCard
+              color="#4285f4"
+              componentName="portfolio"
+              dateEndMonth={6}
+              dateEndYear={2020}
+              dateStartMonth={5}
+              dateStartYear={2020}
+              description="this website"
+              image={PersonalWebsiteLogo}
+              title="Personal Website"
+            />
+            <ExperienceCard
+              color="#128c7e"
+              componentName="whanalysis"
+              dateEndMonth={4}
+              dateEndYear={2020}
+              dateStartMonth={11}
+              dateStartYear={2019}
+              description="whatsapp analysis"
+              image={WhanalysisLogo}
+              title="Whanalysis"
+              url="https://whanalysis.com"
+            />
           </div>
         </div>
       </div>
