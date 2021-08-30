@@ -22,6 +22,7 @@ import './components/Footer.scss';
 import './components/Header.scss';
 import './components/Home.scss';
 import './components/Social.scss';
+import './components/ThemeToggle.scss';
 import './components/Width.scss';
 
 require('dotenv').config();
