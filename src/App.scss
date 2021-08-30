@@ -2,15 +2,30 @@
 @import 'components/Fonts.scss';
 @import 'components/Width.scss';
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .App {
+    font-family: $font-primary;
+    color: $color-light-primary;
+    width: 100%;
+    height: 100%;
+    background-color: $color-light-background;
+}
+
+.App.Dark {
+    background-color: $color-dark-background;
+}
+
+.AppContainer {
     max-width: 1080px;
     margin: 0 auto;
     padding: 0 4rem 0 4rem;
-    font-family: $font-primary;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    color: $color-light-primary;
 }
 
 .Header,
