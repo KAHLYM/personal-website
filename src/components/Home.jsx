@@ -98,7 +98,7 @@ export class Home extends Component {
               componentName="sophos"
               dateOverride="present"
               datePresent
-              dateStartMonth={5}
+              dateStartMonth={3}
               dateStartYear={2018}
               description="cybersecurity"
               image={SophosLogo}
