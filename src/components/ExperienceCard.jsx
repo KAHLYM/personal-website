@@ -71,49 +71,53 @@ export class ExperienceCard extends Component {
     }
 
     render() {
-        const { children, color, componentName, dateOverride, description, image, title, url} = this.props;
-        return (
-            <div className="ExperienceCard" style={{ backgroundColor: color }}>
-                <div className="ExperienceCardContainer">
-                    <div className="ExperienceCardImageContainer">
-                        <img className="ExperienceCardImage" src={image} alt="" />
-                    </div>
-                    <div className="ExperienceCardTextContainer">
-                        <p className="ExperienceCardTitle">{title}</p>
-                        <p className="ExperienceCardDescription">{description}</p>
-                        <p className="ExperienceCardDate">
-                            {
-                                dateOverride &&
-                                dateOverride + " · " + this.durationAsString
+      const {
+        children, color, componentName, dateOverride, description, image, title, url,
+      } = this.props;
+      return (
+        <div className="ExperienceCard" style={{ backgroundColor: color }}>
+          <div className="ExperienceCardContainer">
+            <div className="ExperienceCardImageContainer">
+              <img className="ExperienceCardImage" src={image} alt="" />
+            </div>
+            <div className="ExperienceCardTextContainer">
+              <p className="ExperienceCardTitle">{title}</p>
+              <p className="ExperienceCardDescription">{description}</p>
+              <p className="ExperienceCardDate">
+                {
+                                dateOverride
+                                && `${dateOverride} · ${this.durationAsString}`
                             }
                 {
                                 !dateOverride
                                 && `${this.dateStartAsString} - ${this.dateEndAsString} · ${this.durationAsString}`
                             }
-                        </p>
-                    </div>
-                    <div className="ExperienceCardActionContainer">
-                        <NavLink to={"/" + componentName} activeClassName="IsActive">
+              </p>
+            </div>
+            <div className="ExperienceCardActionContainer">
+              <NavLink to={`/${componentName}`} activeClassName="IsActive">
+                <button
+                  className="ExperienceCardAction"
+                  onMouseEnter={this.onMouseEnter}
+                  onMouseLeave={this.onMouseLeave}
+                  type="button"
+                >
+                  read more
+                </button>
+              </NavLink>
+              {
+                            url
+                            && (
                             <button
-                                className="ExperienceCardAction"
-                                onMouseEnter={this.onMouseEnter}
-                                onMouseLeave={this.onMouseLeave}
-                                type="button"
-                            >
-                                read more
-                            </button>
-                        </NavLink>
-                        {
-                            url &&
-                            <button
-                                className="ExperienceCardAction"
-                                onClick={this.onClickVisit}
-                                onMouseEnter={this.onMouseEnter}
-                                onMouseLeave={this.onMouseLeave}
-                                type="button"
+                              className="ExperienceCardAction"
+                              onClick={this.onClickVisit}
+                              onMouseEnter={this.onMouseEnter}
+                              onMouseLeave={this.onMouseLeave}
+                              type="button"
                             >
                               visit
                             </button>
+                            )
                         }
             </div>
           </div>
@@ -126,28 +130,28 @@ export class ExperienceCard extends Component {
 }
 
 ExperienceCard.propTypes = {
-    children: PropTypes.node,
-    color: PropTypes.string.isRequired,
-    componentName: PropTypes.string.isRequired,
-    dateEndMonth: PropTypes.number,
-    dateEndYear: PropTypes.number,
-    dateOverride: PropTypes.string,
-    datePresent: PropTypes.bool,
-    dateStartMonth: PropTypes.number.isRequired,
-    dateStartYear: PropTypes.number.isRequired,
-    description: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    url: PropTypes.string,
+  children: PropTypes.node,
+  color: PropTypes.string.isRequired,
+  componentName: PropTypes.string.isRequired,
+  dateEndMonth: PropTypes.number,
+  dateEndYear: PropTypes.number,
+  dateOverride: PropTypes.string,
+  datePresent: PropTypes.bool,
+  dateStartMonth: PropTypes.number.isRequired,
+  dateStartYear: PropTypes.number.isRequired,
+  description: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string,
 };
 
 ExperienceCard.defaultProps = {
-    children: '',
-    dateOverride: false,
-    datePresent: false,
-    dateStartMonth: 0,
-    dateStartYear: 1970,
-    url: '',
+  children: '',
+  dateOverride: false,
+  datePresent: false,
+  dateStartMonth: 0,
+  dateStartYear: 1970,
+  url: '',
 };
 
 export default ExperienceCard;
