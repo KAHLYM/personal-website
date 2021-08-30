@@ -56,7 +56,7 @@ export class ExperienceCard extends Component {
     }
   }
 
-    onClickVisit = (e) => {
+    onClickVisit = () => {
       const { url } = this.props;
       window.open(url, '_blank');
     }
@@ -66,7 +66,7 @@ export class ExperienceCard extends Component {
       e.target.style.color = color;
     }
 
-    onMouseLeave(e) {
+    onMouseLeave = () => {
       e.target.style.color = 'white';
     }
 
@@ -85,13 +85,13 @@ export class ExperienceCard extends Component {
               <p className="ExperienceCardDescription">{description}</p>
               <p className="ExperienceCardDate">
                 {
-                                dateOverride
-                                && `${dateOverride} · ${this.durationAsString}`
-                            }
+                  dateOverride
+                  && `${dateOverride} · ${this.durationAsString}`
+                }
                 {
-                                !dateOverride
-                                && `${this.dateStartAsString} - ${this.dateEndAsString} · ${this.durationAsString}`
-                            }
+                  !dateOverride
+                  && `${this.dateStartAsString} - ${this.dateEndAsString} · ${this.durationAsString}`
+                }
               </p>
             </div>
             <div className="ExperienceCardActionContainer">
@@ -106,19 +106,19 @@ export class ExperienceCard extends Component {
                 </button>
               </NavLink>
               {
-                            url
-                            && (
-                            <button
-                              className="ExperienceCardAction"
-                              onClick={this.onClickVisit}
-                              onMouseEnter={this.onMouseEnter}
-                              onMouseLeave={this.onMouseLeave}
-                              type="button"
-                            >
-                              visit
-                            </button>
-                            )
-                        }
+                url
+                && (
+                <button
+                  className="ExperienceCardAction"
+                  onClick={this.onClickVisit}
+                  onMouseEnter={this.onMouseEnter}
+                  onMouseLeave={this.onMouseLeave}
+                  type="button"
+                >
+                  visit
+                </button>
+                )
+            }
             </div>
           </div>
           <div className="ExperienceCardChildren">
@@ -147,10 +147,17 @@ ExperienceCard.propTypes = {
 
 ExperienceCard.defaultProps = {
   children: '',
+  color: 'transparent',
+  componentName: 'Component Name',
+  dateEndMonth: 0,
+  dateEndYear: 1970,
   dateOverride: false,
   datePresent: false,
   dateStartMonth: 0,
   dateStartYear: 1970,
+  description: 'Description',
+  image: 'no image',
+  title: 'Title',
   url: '',
 };
 
