@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-export class ExperienceCard extends Component {
+class ExperienceCard extends Component {
   constructor(props) {
     super(props);
 
