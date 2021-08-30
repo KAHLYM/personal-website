@@ -14,14 +14,14 @@ class ThemeToggle extends Component {
         if (app.classList.contains("Dark"))
         {
             app.classList.remove("Dark");
-            themeToggleButton.style.backgroundColor = "#FFFFFF";
+            themeToggleButton.style.backgroundColor = "rgba(0, 0, 0, .1)";
             themeToggleButtonLight.style.transform = "translateY(0px)";
             themeToggleButtonDark.style.transform = "translateY(-50px)";
         }
         else
         {
             app.classList.add("Dark");
-            themeToggleButton.style.backgroundColor = "#1F1F1F";
+            themeToggleButton.style.backgroundColor = "rgba(255, 255, 255, .1)";
             themeToggleButtonLight.style.transform = "translateY(50px)";
             themeToggleButtonDark.style.transform = "translateY(0px)";
         }
