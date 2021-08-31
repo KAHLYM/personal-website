@@ -28,6 +28,10 @@
     color: $color-light-accent;
 }
 
+.Dark .AboutTitle {
+    color: $color-dark-accent;
+}
+
 .Description {
     font-size: 1rem;
     line-height: 2rem;
@@ -39,12 +43,20 @@
     color: $color-light-accent;
 }
 
+.Dark .AboutSubTitle {
+    color: $color-dark-accent;
+}
+
 .SkillsType {
     margin: 1rem 0 8px 0;
     display: block;
     font-family: $font-secondary;
     font-size: 1rem;
     color: $color-light-primary;
+}
+
+.Dark .SkillsType {
+    color: $color-dark-primary;
 }
 
 .Skill {

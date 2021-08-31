@@ -16,6 +16,7 @@ body {
 }
 
 .App.Dark {
+    color: $color-dark-primary;
     background-color: $color-dark-background;
 }
 
@@ -48,10 +49,19 @@ body {
     background-color: $color-light-highlight;
 }
 
+.Dark .Highlight {
+    background-color: $color-dark-highlight;
+}
+
 a.Highlight {
     text-decoration: none;
     border-bottom: 0.2rem solid $color-light-primary;
     background-color: rgba($color-light-accent, 0.2);
+}
+
+.Dark a.Highlight {
+    border-bottom: 0.2rem solid $color-dark-primary;
+    background-color: rgba($color-dark-accent, 0.2);
 }
 
 a.Highlight:hover,
@@ -61,7 +71,18 @@ a.Highlight:active {
     color: $color-light-primary;
 }
 
+.Dark a.Highlight:hover,
+.Dark a.Highlight:visited,
+.Dark a.Highlight:link,
+.Dark a.Highlight:active {
+    color: $color-dark-primary;
+}
+
 a.Highlight:hover {
     border-bottom: 0.2rem solid $color-light-accent;
     cursor: pointer;
+}
+
+.Dark a.Highlight:hover {
+    border-bottom: 0.2rem solid $color-dark-accent;
 }

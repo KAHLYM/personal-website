@@ -19,6 +19,10 @@
     color: $color-light-primary;
 }
 
+.Dark .HeaderNavLink {
+    color: $color-dark-primary;
+}
+
 .HeaderLeft .HeaderNavLink {
     margin: 0 0 0 1rem;
 }
@@ -27,12 +31,24 @@
     color: $color-light-accent !important;
 }
 
+.Dark .HeaderNavLink:hover {
+    color: $color-dark-accent !important;
+}
+
 .HeaderNavLink:visited {
     color: $color-light-primary;
 }
 
+.Dark .HeaderNavLink:visited {
+    color: $color-dark-primary;
+}
+
 .IsActive .HeaderNavLink {
     color: $color-light-accent;
+}
+
+.Dark .IsActive .HeaderNavLink {
+    color: $color-dark-accent;
 }
 
 a:hover,

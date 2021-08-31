@@ -5,12 +5,12 @@ $color-light-accent: #4285f4;
 $color-light-highlight: rgba(#F4B400, 0.32);
 $color-light-selection: #1F1F1F;
 
-$color-dark-background: #FFFFFF;
-$color-dark-primary: rgba(#1F1F1F, 1);
-$color-dark-secondary: rgba(#1F1F1F, 0.64);
+$color-dark-background: #121212;
+$color-dark-primary: rgba(#FFFFFF, .8);
+$color-dark-secondary: rgba(#FFFFFF, 0.64);
 $color-dark-accent: #4285f4;
 $color-dark-highlight: rgba(#F4B400, 0.32);
-$color-dark-selection: #1F1F1F;
+$color-dark-selection: #FFFFFF;
 
 :root {
     --color-light-background: #{$color-light-background};

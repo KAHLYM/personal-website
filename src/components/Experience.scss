@@ -13,9 +13,17 @@
     margin: 0 0 8px 0;
 }
 
+.Dark .ExperienceTitle {
+    color: $color-dark-accent;
+}
+
 .ExperienceType {
     margin: 0 0 1rem 0;
     color: $color-light-secondary;
+}
+
+.Dark .ExperienceType {
+    color: $color-dark-secondary;
 }
 
 .ExperienceChip {
@@ -29,15 +37,28 @@
     margin: 0 8px 8px 0;
 }
 
+.Dark .ExperienceChip {
+    border: 1px solid $color-dark-secondary;
+}
+
 .ExperienceVisit {
     background-color: transparent;
     color: $color-light-secondary;
+}
+
+.Dark .ExperienceVisit {
+    color: $color-dark-secondary;
 }
 
 .ExperienceVisit:hover {
     background-color: transparent;
     color: $color-light-accent;
     border: 1px solid $color-light-accent;
+}
+
+.Dark .ExperienceVisit:hover {
+    color: $color-dark-accent;
+    border: 1px solid $color-dark-accent;
 }
 
 .ExperienceSkills {
