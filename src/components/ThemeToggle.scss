@@ -5,7 +5,7 @@
     border: none;
     overflow: hidden;
     background-color: rgba(0, 0, 0, .1);
-    transition: background-color 500ms linear;
+    transition: background-color 250ms linear;
 }
 
 #ThemeToggleButton:hover {
@@ -15,7 +15,7 @@
 #ThemeToggleButton > img {
     max-width: 2.5rem;
     height: 1.5rem;
-    transition: all 0.3s linear;
+    transition: all 250ms linear;
 }
 
 #ThemeToggleButtonLight {
