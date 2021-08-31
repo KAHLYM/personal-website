@@ -1,3 +1,4 @@
+@import './Colors.scss';
 @import './Width.scss';
 
 .SocialIcon {
@@ -13,4 +14,32 @@
     .SocialWrapper {
         margin: 0 0 1rem 0;
     }
+}
+
+#IconGithub,
+#IconLinkedin,
+#IconGmail {
+    fill: $color-light-secondary;
+}
+
+.Dark #IconGithub,
+.Dark #IconLinkedin,
+.Dark #IconGmail {
+    fill: $color-dark-secondary;
+}
+
+#IconGithub:hover {
+    fill: #181717;
+}
+
+.Dark #IconGithub:hover {
+    fill: white;
+}
+
+#IconLinkedin:hover {
+    fill: #0077B5;
+}
+
+#IconGmail:hover {
+    fill: #D14836;
 }

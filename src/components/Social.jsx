@@ -7,16 +7,10 @@ import { Github, Gmail, Linkedin } from '@icons-pack/react-simple-icons';
 class Social extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      socialIconGithub: 'rgba(31, 31, 31, 0.64)',
-      socialIconLinkedin: 'rgba(31, 31, 31, 0.64)',
-      socialIconGmailColor: 'rgba(31, 31, 31, 0.64)',
-    };
   }
 
   render() {
     const { bottom, size } = this.props;
-    const { socialIconGithub, socialIconGmailColor, socialIconLinkedin } = this.state;
     return (
       <div className="SocialWrapper" style={{ marginBottom: bottom }}>
         <a
@@ -26,10 +20,9 @@ class Social extends Component {
           rel="noopener noreferrer"
         >
           <Github
-            color={socialIconGithub}
+            color={'rgba(31, 31, 31, 0.64)'}
             size={size}
-            onMouseEnter={() => this.setState({ socialIconGithub: '#181717' })}
-            onMouseLeave={() => this.setState({ socialIconGithub: 'rgba(31, 31, 31, 0.64)' })}
+            id="IconGithub"
           />
         </a>
         <a
@@ -37,12 +30,11 @@ class Social extends Component {
           href="https://www.linkedin.com/in/callum-wright-81baa3127/"
           target="_blank"
           rel="noopener noreferrer"
-        >
+          >
           <Linkedin
-            color={socialIconLinkedin}
+            color={'rgba(31, 31, 31, 0.64)'}
             size={size}
-            onMouseEnter={() => this.setState({ socialIconLinkedin: '#0077B5' })}
-            onMouseLeave={() => this.setState({ socialIconLinkedin: 'rgba(31, 31, 31, 0.64)' })}
+            id="IconLinkedin"
           />
         </a>
         <a
@@ -51,10 +43,9 @@ class Social extends Component {
           style={{ marginRight: '0px' }}
         >
           <Gmail
-            color={socialIconGmailColor}
+            color={'rgba(31, 31, 31, 0.64)'}
             size={size}
-            onMouseEnter={() => this.setState({ socialIconGmailColor: '#D14836' })}
-            onMouseLeave={() => this.setState({ socialIconGmailColor: 'rgba(31, 31, 31, 0.64)' })}
+            id="IconGmail"
           />
         </a>
       </div>
