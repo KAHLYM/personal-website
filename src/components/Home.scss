@@ -66,32 +66,16 @@
     color: $color-light-primary;
 }
 
-.Dark .HomeNavLink {
-    color: $color-dark-primary;
+.HomeNavLink:visited {
+    color: $color-light-primary;
 }
 
 .HomeNavLink:hover {
     color: $color-light-accent !important;
 }
 
-.Dark .HomeNavLink:hover {
-    color: $color-dark-accent !important;
-}
-
-.HomeNavLink:visited {
-    color: $color-light-primary;
-}
-
-.Dark .HomeNavLink:visited {
-    color: $color-dark-primary;
-}
-
 .IsActive .HomeNavLink {
     color: $color-light-accent;
-}
-
-.Dark .IsActive .HomeNavLink {
-    color: $color-dark-accent;
 }
 
 a:hover,
@@ -156,4 +140,20 @@ a:active {
 .SophosChild > p:nth-child(2),
 .SophosChild > p:nth-child(3) {
     color: rgba(white, 0.5);
+}
+
+.Dark .HomeNavLink {
+    color: $color-dark-primary;
+}
+
+.Dark .HomeNavLink:hover {
+    color: $color-dark-accent !important;
+}
+
+.Dark .HomeNavLink:visited {
+    color: $color-dark-primary;
+}
+
+.Dark .IsActive .HomeNavLink {
+    color: $color-dark-accent;
 }

@@ -72,16 +72,16 @@ a.Highlight:active {
     color: $color-light-primary;
 }
 
+a.Highlight:hover {
+    border-bottom: 0.2rem solid $color-light-accent;
+    cursor: pointer;
+}
+
 .Dark a.Highlight:hover,
 .Dark a.Highlight:visited,
 .Dark a.Highlight:link,
 .Dark a.Highlight:active {
     color: $color-dark-primary;
-}
-
-a.Highlight:hover {
-    border-bottom: 0.2rem solid $color-light-accent;
-    cursor: pointer;
 }
 
 .Dark a.Highlight:hover {

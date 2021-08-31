@@ -31,20 +31,20 @@
     color: $color-light-accent !important;
 }
 
-.Dark .HeaderNavLink:hover {
-    color: $color-dark-accent !important;
-}
-
 .HeaderNavLink:visited {
     color: $color-light-primary;
 }
 
-.Dark .HeaderNavLink:visited {
-    color: $color-dark-primary;
-}
-
 .IsActive .HeaderNavLink {
     color: $color-light-accent;
+}
+
+.Dark .HeaderNavLink:hover {
+    color: $color-dark-accent !important;
+}
+
+.Dark .HeaderNavLink:visited {
+    color: $color-dark-primary;
 }
 
 .Dark .IsActive .HeaderNavLink {

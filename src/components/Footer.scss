@@ -26,12 +26,12 @@
     color: $color-light-accent !important;
 }
 
-.Dark .FooterLink:hover {
-    color: $color-dark-accent !important;
-}
-
 .FooterLink:visited {
     color: $color-light-primary;
+}
+
+.Dark .FooterLink:hover {
+    color: $color-dark-accent !important;
 }
 
 .Dark .FooterLink:visited {
