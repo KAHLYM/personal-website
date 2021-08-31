@@ -25,7 +25,11 @@
 .AboutTitle {
     font-family: $font-secondary;
     font-size: 3rem;
-    color: $color-accent;
+    color: $color-light-accent;
+}
+
+.Dark .AboutTitle {
+    color: $color-dark-accent;
 }
 
 .Description {
@@ -36,7 +40,11 @@
 .AboutSubTitle {
     font-family: $font-secondary;
     font-size: 2rem;
-    color: $color-accent;
+    color: $color-light-accent;
+}
+
+.Dark .AboutSubTitle {
+    color: $color-dark-accent;
 }
 
 .SkillsType {
@@ -44,7 +52,11 @@
     display: block;
     font-family: $font-secondary;
     font-size: 1rem;
-    color: $color-text-primary;
+    color: $color-light-primary;
+}
+
+.Dark .SkillsType {
+    color: $color-dark-primary;
 }
 
 .Skill {
@@ -55,7 +67,7 @@
     height: 2rem;
     line-height: 2rem;
     border-radius: 1rem;
-    background-color: rgba(#000, 0.1);
+    background-color: rgba($color-light-primary, 0.1);
     margin: 8px 8px 8px 0;
 }
 
@@ -87,4 +99,8 @@
         width: 100%;
         height: 100%;
     }
+}
+
+.Dark .Skill {
+    background-color: rgba($color-dark-primary, 0.1);
 }

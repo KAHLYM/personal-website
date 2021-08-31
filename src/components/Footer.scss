@@ -15,18 +15,34 @@
     font-size: 0.75rem;
     margin: 0 8px;
     line-height: 50px;
-    color: $color-primary;
+    color: $color-light-primary;
+}
+
+.Dark .FooterLink {
+    color: $color-dark-primary;
 }
 
 .FooterLink:hover {
-    color: $color-accent !important;
+    color: $color-light-accent !important;
 }
 
 .FooterLink:visited {
-    color: $color-primary;
+    color: $color-light-primary;
+}
+
+.Dark .FooterLink:hover {
+    color: $color-dark-accent !important;
+}
+
+.Dark .FooterLink:visited {
+    color: $color-dark-primary;
 }
 
 .LastUpdated {
     font-size: 0.75rem;
-    color: $color-text-secondary;
+    color: $color-light-secondary;
+}
+
+.Dark .LastUpdated {
+    color: $color-dark-secondary;
 }

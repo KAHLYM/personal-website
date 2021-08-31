@@ -25,13 +25,17 @@
 
 .PrefaceText {
     padding: 0 0 2rem 0;
+    color: $color-light-primary;
+}
+
+.Dark .PrefaceText {
+    color: $color-dark-primary;
 }
 
 .PrefaceText > span,
 .PrefaceText > a {
     font-family: $font-secondary;
     font-size: 3rem;
-    color: $color-text-primary;
     text-align: left;
 }
 
@@ -44,7 +48,7 @@
 .ExperienceContainer > div > p {
     font-family: $font-secondary;
     font-size: 2rem;
-    color: $color-accent;
+    color: $color-light-accent;
     margin-bottom: 0;
 }
 
@@ -55,19 +59,19 @@
 }
 
 .HomeNavLink {
-    color: $color-primary;
-}
-
-.HomeNavLink:hover {
-    color: $color-accent !important;
+    color: $color-light-primary;
 }
 
 .HomeNavLink:visited {
-    color: $color-primary;
+    color: $color-light-primary;
+}
+
+.HomeNavLink:hover {
+    color: $color-light-accent !important;
 }
 
 .IsActive .HomeNavLink {
-    color: $color-accent;
+    color: $color-light-accent;
 }
 
 a:hover,
@@ -132,4 +136,24 @@ a:active {
 .SophosChild > p:nth-child(2),
 .SophosChild > p:nth-child(3) {
     color: rgba(white, 0.5);
+}
+
+.Dark .ExperienceContainer > div > p {
+    color: $color-dark-accent;
+}
+
+.Dark .HomeNavLink {
+    color: $color-dark-primary;
+}
+
+.Dark .HomeNavLink:hover {
+    color: $color-dark-accent !important;
+}
+
+.Dark .HomeNavLink:visited {
+    color: $color-dark-primary;
+}
+
+.Dark .IsActive .HomeNavLink {
+    color: $color-dark-accent;
 }

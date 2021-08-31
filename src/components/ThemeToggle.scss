@@ -1,0 +1,29 @@
+#ThemeToggleButton {
+    width: 5rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 250ms linear;
+}
+
+#ThemeToggleButton:hover {
+    cursor: pointer;
+}
+
+#ThemeToggleButton > img {
+    max-width: 2.5rem;
+    height: 1.5rem;
+    transition: all 250ms linear;
+}
+
+#ThemeToggleButtonLight {
+    float: left;
+}
+
+#ThemeToggleButtonDark {
+    float: right;
+    transform: translateY(-50px);
+    filter: invert(1);
+}

@@ -22,6 +22,7 @@ import './components/Footer.scss';
 import './components/Header.scss';
 import './components/Home.scss';
 import './components/Social.scss';
+import './components/ThemeToggle.scss';
 import './components/Width.scss';
 
 require('dotenv').config();
@@ -29,20 +30,22 @@ require('dotenv').config();
 function App() {
   return (
     <div className="App">
-      <Router>
-        <ScrollToTop />
-        <Header className="Header"></Header>
-        <div className="Container">
-          <Switch>
-            <Route path='/' exact component={Home} />
-            <Route path='/about' component={About} />
-            <Route path='/sophos' component={Sophos} />
-            <Route path='/portfolio' component={Portfolio} />
-            <Route path='/whanalysis' component={Whanalysis} />
-          </Switch>
-        </div>
-        <Footer className="Footer"></Footer>
-      </Router>
+      <div className="AppContainer">
+        <Router>
+          <ScrollToTop />
+          <Header className="Header"></Header>
+          <div className="Container">
+            <Switch>
+              <Route path='/' exact component={Home} />
+              <Route path='/about' component={About} />
+              <Route path='/sophos' component={Sophos} />
+              <Route path='/portfolio' component={Portfolio} />
+              <Route path='/whanalysis' component={Whanalysis} />
+            </Switch>
+          </div>
+          <Footer className="Footer"></Footer>
+        </Router>
+      </div>
     </div>
   );
 }

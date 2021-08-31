@@ -64,19 +64,19 @@ export class Home extends Component {
           <div>
             <div className="PrefaceText">
               {/* Callum Wright currently works as a Software Engineer III at Sophos, Abingdon. */}
-              <span className="animated fadeIn" style={{ color: 'var(--color-accent)' }}>Callum Wright</span>
+              <span className="animated fadeIn" style={{ color: 'var(--color-light-accent)' }}>Callum Wright</span>
               <span className="animated fadeIn animatedDelay500ms"> currently works as a </span>
-              <span className="animated fadeIn noWrap" style={{ color: 'var(--color-accent)' }}>Software </span>
+              <span className="animated fadeIn noWrap" style={{ color: 'var(--color-light-accent)' }}>Software </span>
               <span
                 className="animated fadeIn noWrap"
-                style={{ color: 'var(--color-accent)', whiteSpace: 'nowrap' }}
+                style={{ color: 'var(--color-light-accent)', whiteSpace: 'nowrap' }}
               >
                 Engineer III
               </span>
               <span className="animated fadeIn animatedDelay500ms"> at </span>
               <a
                 className="animated fadeIn Highlight"
-                style={{ color: 'var(--color-accent)' }}
+                style={{ color: 'var(--color-light-accent)' }}
                 href="https://www.sophos.com/en-us.aspx"
                 target="_blank"
                 rel="noopener noreferrer"

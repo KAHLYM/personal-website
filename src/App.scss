@@ -2,11 +2,29 @@
 @import 'components/Fonts.scss';
 @import 'components/Width.scss';
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .App {
+    font-family: $font-primary;
+    color: $color-light-primary;
+    width: 100%;
+    height: 100%;
+    background-color: $color-light-background;
+    transition: background-color 250ms linear;
+}
+
+.App.Dark {
+    color: $color-dark-primary;
+    background-color: $color-dark-background;
+}
+
+.AppContainer {
     max-width: 1080px;
     margin: 0 auto;
     padding: 0 4rem 0 4rem;
-    font-family: $font-primary;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -29,23 +47,43 @@
 }
 
 .Highlight {
-    background-color: $color-highlight;
+    background-color: $color-light-highlight;
+}
+
+.Dark .Highlight {
+    background-color: $color-dark-highlight;
 }
 
 a.Highlight {
     text-decoration: none;
-    border-bottom: 0.2rem solid $color-text-primary;
-    background-color: rgba($color-accent, 0.2);
+    border-bottom: 0.2rem solid $color-light-primary;
+    background-color: rgba($color-light-accent, 0.2);
+}
+
+.Dark a.Highlight {
+    border-bottom: 0.2rem solid $color-dark-primary;
+    background-color: rgba($color-dark-accent, 0.2);
 }
 
 a.Highlight:hover,
 a.Highlight:visited,
 a.Highlight:link,
 a.Highlight:active {
-    color: $color-text-primary;
+    color: $color-light-primary;
 }
 
 a.Highlight:hover {
-    border-bottom: 0.2rem solid $color-accent;
+    border-bottom: 0.2rem solid $color-light-accent;
     cursor: pointer;
+}
+
+.Dark a.Highlight:hover,
+.Dark a.Highlight:visited,
+.Dark a.Highlight:link,
+.Dark a.Highlight:active {
+    color: $color-dark-primary;
+}
+
+.Dark a.Highlight:hover {
+    border-bottom: 0.2rem solid $color-dark-accent;
 }

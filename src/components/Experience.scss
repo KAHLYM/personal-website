@@ -9,13 +9,21 @@
 .ExperienceTitle {
     font-family: $font-secondary;
     font-size: 3rem;
-    color: $color-accent;
+    color: $color-light-accent;
     margin: 0 0 8px 0;
+}
+
+.Dark .ExperienceTitle {
+    color: $color-dark-accent;
 }
 
 .ExperienceType {
     margin: 0 0 1rem 0;
-    color: $color-text-secondary;
+    color: $color-light-secondary;
+}
+
+.Dark .ExperienceType {
+    color: $color-dark-secondary;
 }
 
 .ExperienceChip {
@@ -25,19 +33,32 @@
     height: 32px;
     line-height: 2rem;
     border-radius: 1rem;
-    border: 1px solid $color-text-secondary;
+    border: 1px solid $color-light-secondary;
     margin: 0 8px 8px 0;
+}
+
+.Dark .ExperienceChip {
+    border: 1px solid $color-dark-secondary;
 }
 
 .ExperienceVisit {
     background-color: transparent;
-    color: $color-text-secondary;
+    color: $color-light-secondary;
+}
+
+.Dark .ExperienceVisit {
+    color: $color-dark-secondary;
 }
 
 .ExperienceVisit:hover {
     background-color: transparent;
-    color: $color-accent;
-    border: 1px solid $color-accent;
+    color: $color-light-accent;
+    border: 1px solid $color-light-accent;
+}
+
+.Dark .ExperienceVisit:hover {
+    color: $color-dark-accent;
+    border: 1px solid $color-dark-accent;
 }
 
 .ExperienceSkills {
