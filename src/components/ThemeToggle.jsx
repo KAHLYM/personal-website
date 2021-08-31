@@ -4,40 +4,52 @@ import ModeDark from '../assets/mode-dark.png';
 import ModeLight from '../assets/mode-light.png';
 
 class ThemeToggle extends Component {
-    switchTheme = () => {
-      const app = document.getElementsByClassName('App')[0];
+  componentDidMount() {
+    const now = new Date();
+    const hours = now.getHours();
 
-      const themeToggleButton = document.getElementById('ThemeToggleButton');
-      const themeToggleButtonLight = document.getElementById('ThemeToggleButtonLight');
-      const themeToggleButtonDark = document.getElementById('ThemeToggleButtonDark');
+    this.updateTheme(hours >= 9 && hours <= 18);
+  }
 
-      const metaThemeColor = document.querySelector("meta[name=theme-color]");
+  switchTheme = () => {
+    const app = document.getElementsByClassName('App')[0];
+    this.updateTheme(app.classList.contains('Dark'));
+  }
 
-      if (app.classList.contains('Dark')) {
-        app.classList.remove('Dark');
-        themeToggleButton.style.backgroundColor = 'rgba(0, 0, 0, .1)';
-        themeToggleButtonLight.style.transform = 'translateY(0px)';
-        themeToggleButtonDark.style.transform = 'translateY(-50px)';
-        metaThemeColor.setAttribute("content", "#FFFFFF");
-      } else {
-        app.classList.add('Dark');
-        themeToggleButton.style.backgroundColor = 'rgba(255, 255, 255, .1)';
-        themeToggleButtonLight.style.transform = 'translateY(50px)';
-        themeToggleButtonDark.style.transform = 'translateY(0px)';
-        metaThemeColor.setAttribute("content", "#121212");
-      }
+  updateTheme(enableLightTheme) {
+    const app = document.getElementsByClassName('App')[0];
+
+    const themeToggleButton = document.getElementById('ThemeToggleButton');
+    const themeToggleButtonLight = document.getElementById('ThemeToggleButtonLight');
+    const themeToggleButtonDark = document.getElementById('ThemeToggleButtonDark');
+
+    const metaThemeColor = document.querySelector("meta[name=theme-color]");
+
+    if (enableLightTheme) {
+      app.classList.remove('Dark');
+      themeToggleButton.style.backgroundColor = 'rgba(0, 0, 0, .1)';
+      themeToggleButtonLight.style.transform = 'translateY(0px)';
+      themeToggleButtonDark.style.transform = 'translateY(-50px)';
+      metaThemeColor.setAttribute("content", "#FFFFFF");
+    } else {
+      app.classList.add('Dark');
+      themeToggleButton.style.backgroundColor = 'rgba(255, 255, 255, .1)';
+      themeToggleButtonLight.style.transform = 'translateY(50px)';
+      themeToggleButtonDark.style.transform = 'translateY(0px)';
+      metaThemeColor.setAttribute("content", "#121212");
     }
+  }
 
-    render() {
-      return (
-        <div className="ThemeToggle">
-          <button id="ThemeToggleButton" onClick={this.switchTheme} type="button">
-            <img id="ThemeToggleButtonLight" src={ModeLight} alt="light theme" />
-            <img id="ThemeToggleButtonDark" src={ModeDark} alt="dark theme" />
-          </button>
-        </div>
-      );
-    }
+  render() {
+    return (
+      <div className="ThemeToggle">
+        <button id="ThemeToggleButton" onClick={this.switchTheme} type="button">
+          <img id="ThemeToggleButtonLight" src={ModeLight} alt="light theme" />
+          <img id="ThemeToggleButtonDark" src={ModeDark} alt="dark theme" />
+        </button>
+      </div>
+    );
+  }
 }
 
 export default ThemeToggle;
