@@ -9,7 +9,7 @@ function Header() {
   return (
     <div className="Header animated fadeIn animatedDelay500ms">
       <div className="HeaderLeft">
-        <ThemeToggle></ThemeToggle>
+        <ThemeToggle />
         <a className="HeaderNavLink" href={resume} target="_blank" rel="noopener noreferrer">RÉSUMÉ</a>
         <NavLink to="/about" activeClassName="IsActive">
           <span className="HeaderNavLink">ABOUT</span>

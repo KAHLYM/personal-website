@@ -20,7 +20,7 @@ class Social extends Component {
           rel="noopener noreferrer"
         >
           <Github
-            color={'rgba(31, 31, 31, 0.64)'}
+            color="rgba(31, 31, 31, 0.64)"
             size={size}
             id="IconGithub"
           />
@@ -30,9 +30,9 @@ class Social extends Component {
           href="https://www.linkedin.com/in/callum-wright-81baa3127/"
           target="_blank"
           rel="noopener noreferrer"
-          >
+        >
           <Linkedin
-            color={'rgba(31, 31, 31, 0.64)'}
+            color="rgba(31, 31, 31, 0.64)"
             size={size}
             id="IconLinkedin"
           />
@@ -43,7 +43,7 @@ class Social extends Component {
           style={{ marginRight: '0px' }}
         >
           <Gmail
-            color={'rgba(31, 31, 31, 0.64)'}
+            color="rgba(31, 31, 31, 0.64)"
             size={size}
             id="IconGmail"
           />
