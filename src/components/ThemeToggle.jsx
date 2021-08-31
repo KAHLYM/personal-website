@@ -23,20 +23,20 @@ class ThemeToggle extends Component {
     const themeToggleButtonLight = document.getElementById('ThemeToggleButtonLight');
     const themeToggleButtonDark = document.getElementById('ThemeToggleButtonDark');
 
-    const metaThemeColor = document.querySelector("meta[name=theme-color]");
+    const metaThemeColor = document.querySelector('meta[name=theme-color]');
 
     if (enableLightTheme) {
       app.classList.remove('Dark');
       themeToggleButton.style.backgroundColor = 'rgba(0, 0, 0, .1)';
       themeToggleButtonLight.style.transform = 'translateY(0px)';
       themeToggleButtonDark.style.transform = 'translateY(-50px)';
-      metaThemeColor.setAttribute("content", "#FFFFFF");
+      metaThemeColor.setAttribute('content', '#FFFFFF');
     } else {
       app.classList.add('Dark');
       themeToggleButton.style.backgroundColor = 'rgba(255, 255, 255, .1)';
       themeToggleButtonLight.style.transform = 'translateY(50px)';
       themeToggleButtonDark.style.transform = 'translateY(0px)';
-      metaThemeColor.setAttribute("content", "#121212");
+      metaThemeColor.setAttribute('content', '#121212');
     }
   }
 
