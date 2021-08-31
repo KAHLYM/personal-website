@@ -1,16 +1,16 @@
-$color-light-background: #FFFFFF;
-$color-light-primary: rgba(#1F1F1F, 1);
-$color-light-secondary: rgba(#1F1F1F, 0.64);
+$color-light-background: #fff;
+$color-light-primary: rgba(#1f1f1f, 1);
+$color-light-secondary: rgba(#1f1f1f, 0.64);
 $color-light-accent: #4285f4;
-$color-light-highlight: rgba(#F4B400, 0.32);
-$color-light-selection: #1F1F1F;
+$color-light-highlight: rgba(#f4b400, 0.32);
+$color-light-selection: #1f1f1f;
 
 $color-dark-background: #121212;
-$color-dark-primary: rgba(#FFFFFF, .8);
-$color-dark-secondary: rgba(#FFFFFF, 0.64);
+$color-dark-primary: rgba(#fff, 0.8);
+$color-dark-secondary: rgba(#fff, 0.64);
 $color-dark-accent: #4285f4;
-$color-dark-highlight: rgba(#F4B400, 0.32);
-$color-dark-selection: #FFFFFF;
+$color-dark-highlight: rgba(#f4b400, 0.32);
+$color-dark-selection: #fff;
 
 :root {
     --color-light-background: #{$color-light-background};
@@ -19,7 +19,6 @@ $color-dark-selection: #FFFFFF;
     --color-light-accent: #{$color-light-accent};
     --color-light-highlight: #{$color-light-highlight};
     --color-light-selection: #{$color-light-selection};
-
     --color-dark-background: #{$color-dark-background};
     --color-dark-primary: #{$color-dark-primary};
     --color-dark-secondary: #{$color-dark-secondary};
