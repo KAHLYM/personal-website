@@ -39,7 +39,7 @@ class ThemeToggle extends Component {
       themeToggleButtonLight.style.transform = 'translateY(50px)';
       themeToggleButtonDark.style.transform = 'translateY(0px)';
       if (metaThemeColor) {
-          metaThemeColor.setAttribute('content', '#121212');
+        metaThemeColor.setAttribute('content', '#121212');
       }
     }
   }
