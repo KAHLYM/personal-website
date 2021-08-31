@@ -37,10 +37,14 @@ body {
 
 .Container {
     display: flex;
-    flex-grow: 1;
+    flex-direction: column;
 }
 
 @media only screen and (max-width: $breakpoint-m) {
+    .App {
+        transition: background-color 0ms linear;
+    }
+
     .AppContainer {
         padding: 0 1rem 0 1rem;
     }

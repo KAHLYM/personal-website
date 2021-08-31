@@ -81,12 +81,12 @@
 }
 
 @media only screen and (max-width: $breakpoint-m) {
-    .ExperienceCardImageContainer {
-        padding: 0 2rem 0 0;
+    .ExperienceCard {
+        padding: 1rem;
     }
 
-    .SophosChild {
-        margin: 1rem 0 0.5rem 5rem !important;
+    .ExperienceCardImageContainer {
+        padding: 0 1rem 0 0;
     }
 
     .ExperienceCardActionContainer {

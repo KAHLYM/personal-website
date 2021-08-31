@@ -93,31 +93,37 @@ a:active {
     .Details {
         padding-left: 5rem;
     }
+
+    .SophosChild {
+        margin: 1rem 0 0.5rem 4rem !important;
+    }
 }
 
 .SophosChild {
     margin: 1rem 0 0.5rem 6rem;
 }
 
-.SophosChild:nth-of-type(n+2)::before {
-    content: "";
-    position: absolute;
-    height: 3rem;
-    width: 2px;
-    background-color: rgba(white, 0.5);
-    margin-left: calc(-3rem - 1px);
-    margin-top: -3.25rem;
-}
+@media only screen and (min-width: $breakpoint-m) {
+    .SophosChild:nth-of-type(n+2)::before {
+        content: "";
+        position: absolute;
+        height: 3rem;
+        width: 2px;
+        background-color: rgba(white, 0.5);
+        margin-left: calc(-3rem - 1px);
+        margin-top: -3.25rem;
+    }
 
-.SophosChild::after {
-    content: "";
-    position: absolute;
-    height: 0.5rem;
-    width: 0.5rem;
-    background-color: rgba(white, 0.75);
-    margin-left: -3.25rem;
-    margin-top: -3.25rem;
-    border-radius: 50%;
+    .SophosChild::after {
+        content: "";
+        position: absolute;
+        height: 0.5rem;
+        width: 0.5rem;
+        background-color: rgba(white, 0.75);
+        margin-left: -3.25rem;
+        margin-top: -3.25rem;
+        border-radius: 50%;
+    }
 }
 
 .SophosChild > p:nth-child(1) {

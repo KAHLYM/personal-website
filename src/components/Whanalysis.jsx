@@ -97,7 +97,7 @@ export class Whanalysis extends Component {
           <img className="ExperienceSectionBody" src={HumaaansWhanalysisProcess} alt="Whanalysis Process" />
 
           <ExperienceSection title="Review">
-            Angular provided a
+            Angular provided a&nbsp;
             <span className="Highlight">holistic experience</span>
             ; one that was less challenging than anticipated given the higher complexity in comparison to&nbsp;
             alternatives React and&nbsp;
