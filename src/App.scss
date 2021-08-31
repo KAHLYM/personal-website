@@ -7,6 +7,16 @@ body {
     padding: 0;
 }
 
+::selection {
+    background: $color-light-primary;
+    color: $color-light-background
+}
+
+.Dark ::selection {
+    background: $color-dark-primary;
+    color: $color-dark-background
+}
+
 .App {
     font-family: $font-primary;
     color: $color-light-primary;
