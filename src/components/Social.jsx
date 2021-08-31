@@ -4,11 +4,8 @@ import PropTypes from 'prop-types';
 
 import { Github, Gmail, Linkedin } from '@icons-pack/react-simple-icons';
 
+// eslint-disable-next-line react/prefer-stateless-function
 class Social extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const { bottom, size } = this.props;
     return (

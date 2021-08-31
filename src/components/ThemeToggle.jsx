@@ -27,9 +27,9 @@ class ThemeToggle extends Component {
     render() {
       return (
         <div className="ThemeToggle">
-          <button id="ThemeToggleButton" onClick={this.switchTheme}>
-            <img id="ThemeToggleButtonLight" src={ModeLight} />
-            <img id="ThemeToggleButtonDark" src={ModeDark} />
+          <button id="ThemeToggleButton" onClick={this.switchTheme} type="button">
+            <img id="ThemeToggleButtonLight" src={ModeLight} alt="light theme" />
+            <img id="ThemeToggleButtonDark" src={ModeDark} alt="dark theme" />
           </button>
         </div>
       );
