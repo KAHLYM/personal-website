@@ -90,14 +90,6 @@ a:active {
         display: none;
     }
 
-    .ExperienceContainer > div > div {
-        padding: 0 1rem 0 0;
-    }
-
-    .Title {
-        padding: 1rem 1rem 1rem 0;
-    }
-
     .Details {
         padding-left: 5rem;
     }
@@ -136,10 +128,6 @@ a:active {
 .SophosChild > p:nth-child(2),
 .SophosChild > p:nth-child(3) {
     color: rgba(white, 0.5);
-}
-
-.Dark .ExperienceContainer > div > p {
-    color: $color-dark-accent;
 }
 
 .Dark .HomeNavLink {
