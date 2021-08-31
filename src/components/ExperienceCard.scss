@@ -1,6 +1,10 @@
 @import './Fonts.scss';
+@import './Width.scss';
 
 .ExperienceCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     border-radius: 1rem;
     padding: 1rem;
     margin: 1rem 0;
@@ -8,6 +12,24 @@
 
 .ExperienceCardContainer {
     display: flex;
+    flex-direction: row;
+    flex: 1 0 50%;
+    order: 1;
+}
+
+.ExperienceCardActionContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 50%;
+    align-items: flex-end;
+    order: 2;
+}
+
+.ExperienceCardChildren {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    order: 3;
 }
 
 .ExperienceCardImageContainer {
@@ -40,13 +62,6 @@
     font-family: $font-secondary;
 }
 
-.ExperienceCardActionContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: auto;
-}
-
 .ExperienceCardAction {
     background-color: transparent;
     border: 1px solid white;
@@ -65,14 +80,19 @@
     cursor: pointer;
 }
 
-.Title > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+@media only screen and (max-width: $breakpoint-m) {
+    .ExperienceCardImageContainer {
+        padding: 0 2rem 0 0;
+    }
 
-.ExperienceContainer > div > div {
-    padding-left: 1rem;
-    margin-bottom: 8px;
-    border-right-width: 8px;
+    .SophosChild {
+        margin: 1rem 0 0.5rem 5rem !important;
+    }
+
+    .ExperienceCardActionContainer {
+        flex-direction: row;
+        order: 4;
+        margin-top: 1rem;
+        justify-content: space-between;
+    }
 }

@@ -94,32 +94,32 @@ class ExperienceCard extends Component {
                 }
               </p>
             </div>
-            <div className="ExperienceCardActionContainer">
-              <NavLink to={`/${componentName}`} activeClassName="IsActive">
-                <button
-                  className="ExperienceCardAction"
-                  onMouseEnter={this.onMouseEnter}
-                  onMouseLeave={this.onMouseLeave}
-                  type="button"
-                >
-                  read more
-                </button>
-              </NavLink>
-              {
-                url
-                && (
-                <button
-                  className="ExperienceCardAction"
-                  onClick={this.onClickVisit}
-                  onMouseEnter={this.onMouseEnter}
-                  onMouseLeave={this.onMouseLeave}
-                  type="button"
-                >
-                  visit
-                </button>
-                )
-            }
-            </div>
+          </div>
+          <div className="ExperienceCardActionContainer">
+            <NavLink to={`/${componentName}`} activeClassName="IsActive">
+              <button
+                className="ExperienceCardAction"
+                onMouseEnter={this.onMouseEnter}
+                onMouseLeave={this.onMouseLeave}
+                type="button"
+              >
+                read more
+              </button>
+            </NavLink>
+            {
+              url
+              && (
+              <button
+                className="ExperienceCardAction"
+                onClick={this.onClickVisit}
+                onMouseEnter={this.onMouseEnter}
+                onMouseLeave={this.onMouseLeave}
+                type="button"
+              >
+                visit
+              </button>
+              )
+          }
           </div>
           <div className="ExperienceCardChildren">
             {children}
