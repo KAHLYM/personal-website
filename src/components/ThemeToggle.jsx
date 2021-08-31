@@ -30,13 +30,17 @@ class ThemeToggle extends Component {
       themeToggleButton.style.backgroundColor = 'rgba(0, 0, 0, .1)';
       themeToggleButtonLight.style.transform = 'translateY(0px)';
       themeToggleButtonDark.style.transform = 'translateY(-50px)';
-      metaThemeColor.setAttribute('content', '#FFFFFF');
+      if (metaThemeColor) {
+        metaThemeColor.setAttribute('content', '#FFFFFF');
+      }
     } else {
       app.classList.add('Dark');
       themeToggleButton.style.backgroundColor = 'rgba(255, 255, 255, .1)';
       themeToggleButtonLight.style.transform = 'translateY(50px)';
       themeToggleButtonDark.style.transform = 'translateY(0px)';
-      metaThemeColor.setAttribute('content', '#121212');
+      if (metaThemeColor) {
+          metaThemeColor.setAttribute('content', '#121212');
+      }
     }
   }
 
