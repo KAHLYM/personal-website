@@ -52,10 +52,6 @@
     margin-bottom: 0;
 }
 
-.Dark .ExperienceContainer > div > p {
-    color: $color-dark-accent;
-}
-
 .Details {
     flex-direction: column;
     padding-left: 6rem;
@@ -140,6 +136,10 @@ a:active {
 .SophosChild > p:nth-child(2),
 .SophosChild > p:nth-child(3) {
     color: rgba(white, 0.5);
+}
+
+.Dark .ExperienceContainer > div > p {
+    color: $color-dark-accent;
 }
 
 .Dark .HomeNavLink {
