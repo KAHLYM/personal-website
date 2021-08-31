@@ -16,7 +16,7 @@ class ThemeToggle extends Component {
     this.updateTheme(app.classList.contains('Dark'));
   }
 
-  updateTheme(enableLightTheme) {
+  updateTheme = (enableLightTheme) => {
     const app = document.getElementsByClassName('App')[0];
 
     const themeToggleButton = document.getElementById('ThemeToggleButton');
