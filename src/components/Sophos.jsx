@@ -27,9 +27,9 @@ export class Sophos extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Sophos Group plc&nbsp;
+              Sophos Group plc
             </a>
-            is a British&nbsp;
+            &nbsp;is a British&nbsp;
             <span className="Highlight">security software</span>
 &nbsp;
             and hardware company that develops network, end user and server protection. More than 200 million&nbsp;
@@ -70,8 +70,7 @@ export class Sophos extends Component {
             to false positives. My initial focus was to accommodate existing customer requirements and develop&nbsp;
             features to&nbsp;
             <span className="Highlight">support and streamline implementation</span>
-&nbsp;
-            of similar requirements in future.
+            &nbsp;of similar requirements in future.
             <p className="ExperienceSectionSubTitle">Further Experience</p>
             As my understanding of the product increased I developed broader aspects of work i.e refactoring the&nbsp;
             tracking of system proceses and associated metadata to reduce complexity and increase maintainability&nbsp;
