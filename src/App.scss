@@ -7,6 +7,21 @@ body {
     padding: 0;
 }
 
+::selection {
+    background: $color-light-primary;
+    color: $color-light-background;
+}
+
+a:hover,
+button:hover {
+    cursor: url('assets/cursor.png'), auto !important;
+}
+
+.Dark ::selection {
+    background: $color-dark-primary;
+    color: $color-dark-background;
+}
+
 .App {
     font-family: $font-primary;
     color: $color-light-primary;
