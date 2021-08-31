@@ -46,22 +46,18 @@ export class About extends Component {
               <div className="AboutTitle">{this.aboutTitle}</div>
               <div className="Description">
                 <p>
-                  I’m a Software Engineer with professional experience developing
-                  industry leading
-                  {' '}
+                  I’m a Software Engineer with professional experience developing industry leading&nbsp;
                   <span className="Highlight">cybersecurity software</span>
-                  . Enthused by
+                  . Enthused by&nbsp;
                   <span className="Highlight">
                     consistent and well structured design
                   </span>
-                  , I also take interest in web development
-                  technologies as they offer opportunities that are more design
-                  orientated.
+                  , I also take interest in web development technologies as they offer opportunities that are more&nbsp;
+                  design orientated.
                 </p>
                 <p>
-                  Although I’m happy to spend copious time immersed in technology, I
-                  often take time to keep active and strive to outperform previous
-                  personal records.
+                  Although I’m happy to spend copious time immersed in technology, I often take time to keep&nbsp;
+                  active and strive to outperform previous personal records.
                 </p>
                 <span className="AboutSubTitle">Experience</span>
                 <div className="SkillsContainer">
