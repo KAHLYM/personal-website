@@ -9,7 +9,7 @@ body {
 
 ::selection {
     background: $color-light-primary;
-    color: $color-light-background
+    color: $color-light-background;
 }
 
 a:hover,
@@ -19,7 +19,7 @@ button:hover {
 
 .Dark ::selection {
     background: $color-dark-primary;
-    color: $color-dark-background
+    color: $color-dark-background;
 }
 
 .App {
