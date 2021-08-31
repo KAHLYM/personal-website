@@ -12,6 +12,11 @@ body {
     color: $color-light-background
 }
 
+a:hover,
+button:hover {
+    cursor: url('assets/cursor.png'), auto !important;
+}
+
 .Dark ::selection {
     background: $color-dark-primary;
     color: $color-dark-background
