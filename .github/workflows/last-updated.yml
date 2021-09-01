@@ -13,15 +13,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
     - name: run Python script
       run: python ./.github/workflows/last-updated.py
-    - name: switching from HTTPS to SSH
-      run: git remote set-url origin ${{ secrets.ssh }}
-    - name: git status, add, commit, fetch, push
+    - name: Commit changes
       run: |
-        git status
-        git add .
-        git commit -m "Auto updating last-updated.js"
-        git fetch origin master
-        git push origin HEAD:master
+        git config --global user.name 'Callum Wright'
+        git config --global user.email 'wrightci01s@gmail.com'
+        git commit -am "Auto updating last-updated.js"
+        git push
   
