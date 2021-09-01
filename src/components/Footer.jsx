@@ -2,7 +2,7 @@ import React from 'react';
 
 import Social from './Social';
 
-import LastUpdated from '../assets/LastUpdated.js';
+import LastUpdated from '../assets/LastUpdated';
 
 function Footer() {
   return (
