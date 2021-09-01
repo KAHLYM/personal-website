@@ -1,0 +1,27 @@
+name: Last Updated
+
+on:
+  push:
+    branches: [ release ]
+  pull_request:
+    branches: [ release ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: run Python script
+      run: python ./.github/workflows/last-updated.py
+    - name: switching from HTTPS to SSH
+      run: git remote set-url origin ${{ secrets.ssh }}
+    - name: git status, add, commit, fetch, push
+      run: |
+        git status
+        git add .
+        git commit -m "Auto updating last-updated.js"
+        git fetch origin master
+        git push origin HEAD:master
+  
