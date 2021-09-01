@@ -10,7 +10,7 @@ function Footer() {
       <div className="FooterWrapper">
         <Social size="2rem" bottom="1rem" />
         <p className="LastUpdated">
-          last updated
+          last updated&nbsp;
           {LastUpdated}
         </p>
       </div>
