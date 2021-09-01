@@ -1,0 +1,28 @@
+name: Last Updated
+
+on:
+  push:
+    branches: [ release ]
+  pull_request:
+    branches: [ release ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        ref: ${{ github.event.pull_request.head.ref }}
+    - name: run Python script
+      run: python ./.github/workflows/last-updated.py
+    - name: Commit changes
+      run: |
+        git config --global user.name 'Callum Wright'
+        git config --global user.email 'wrightci01s@gmail.com'
+        git add .
+        git commit -m "Auto updating last-updated.js"
+        git push
+  
