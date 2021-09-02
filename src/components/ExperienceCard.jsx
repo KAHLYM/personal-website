@@ -56,9 +56,14 @@ class ExperienceCard extends Component {
     }
   }
 
-    onClickVisit = () => {
-      const { url } = this.props;
-      window.open(url, '_blank');
+    onClickLive = () => {
+      const { live } = this.props;
+      window.open(live, '_blank');
+    }
+
+    onClickGitHub = () => {
+      const { github } = this.props;
+      window.open(github, '_blank');
     }
 
     onMouseEnter = (e) => {
@@ -72,7 +77,7 @@ class ExperienceCard extends Component {
 
     render() {
       const {
-        children, color, componentName, dateOverride, description, image, title, url,
+        children, color, componentName, dateOverride, description, github, image, live, title,
       } = this.props;
       return (
         <div className="ExperienceCard" style={{ backgroundColor: color }}>
@@ -107,11 +112,11 @@ class ExperienceCard extends Component {
               </button>
             </NavLink>
             {
-              url
+              live
               && (
               <button
                 className="ExperienceCardAction"
-                onClick={this.onClickVisit}
+                onClick={this.onClickLive}
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
                 type="button"
@@ -119,7 +124,21 @@ class ExperienceCard extends Component {
                 visit
               </button>
               )
-          }
+            }
+            {
+              github
+              && (
+              <button
+                className="ExperienceCardAction"
+                onClick={this.onClickGitHub}
+                onMouseEnter={this.onMouseEnter}
+                onMouseLeave={this.onMouseLeave}
+                type="button"
+              >
+                github
+              </button>
+              )
+            }
           </div>
           <div className="ExperienceCardChildren">
             {children}
@@ -140,9 +159,10 @@ ExperienceCard.propTypes = {
   dateStartMonth: PropTypes.number.isRequired,
   dateStartYear: PropTypes.number.isRequired,
   description: PropTypes.string.isRequired,
+  github: PropTypes.string,
   image: PropTypes.string.isRequired,
+  live: PropTypes.string,
   title: PropTypes.string.isRequired,
-  url: PropTypes.string,
 };
 
 ExperienceCard.defaultProps = {
@@ -151,7 +171,8 @@ ExperienceCard.defaultProps = {
   dateEndYear: 1970,
   dateOverride: '',
   datePresent: false,
-  url: '',
+  github: '',
+  live: '',
 };
 
 export default ExperienceCard;
