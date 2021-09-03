@@ -99,7 +99,7 @@ export class Home extends Component {
             <Professional
               color="#225a99"
               componentName="sophos"
-              datePresent={true}
+              datePresent
               dateStartMonth={3}
               dateStartYear={2018}
               description="cybersecurity"
