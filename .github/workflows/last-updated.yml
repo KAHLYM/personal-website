@@ -23,6 +23,5 @@ jobs:
         git config --global user.name 'Callum Wright'
         git config --global user.email 'wrightci01s@gmail.com'
         git add .
-        git commit -m "Auto updating last-updated.js"
+        git diff-index --quiet HEAD || git commit -m "Auto updating last-updated.js"
         git push
-  
