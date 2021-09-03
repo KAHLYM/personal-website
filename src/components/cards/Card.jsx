@@ -13,52 +13,73 @@ class Card extends Component {
             dateEndMonth, dateEndYear, datePresent, dateStartMonth, dateStartYear,
         } = this.props;
 
-        // Format Dates as strings
-        let dateEndAsDate;
-        let dateStartAsDate;
-        const dateFormat = { year: 'numeric', month: 'short' };
-        if (datePresent) {
-            dateEndAsDate = new Date(Date.now());
-            dateStartAsDate = new Date(Date.UTC(dateStartYear, dateStartMonth, 1));
-            this.dateEndAsString = 'present';
-            this.dateStartAsString = new Intl.DateTimeFormat('en-US', dateFormat).format(dateStartAsDate);
-        } else {
-            dateEndAsDate = new Date(Date.UTC(dateEndYear, dateEndMonth, 1));
-            dateStartAsDate = new Date(Date.UTC(dateStartYear, dateStartMonth, 1));
-            this.dateEndAsString = new Intl.DateTimeFormat('en-US', dateFormat).format(dateEndAsDate);
-            this.dateStartAsString = new Intl.DateTimeFormat('en-US', dateFormat).format(dateStartAsDate);
-        }
+        if (dateEndMonth && dateEndYear && dateStartMonth && dateStartYear) {
+            // Format Dates as strings
+            let dateEndAsDate;
+            let dateStartAsDate;
+            const dateFormat = { year: 'numeric', month: 'short' };
+            if (datePresent) {
+                dateEndAsDate = new Date(Date.now());
+                dateStartAsDate = new Date(Date.UTC(dateStartYear, dateStartMonth, 1));
+                this.dateEndAsString = 'present';
+                this.dateStartAsString = new Intl.DateTimeFormat('en-US', dateFormat).format(dateStartAsDate);
+            } else {
+                dateEndAsDate = new Date(Date.UTC(dateEndYear, dateEndMonth, 1));
+                dateStartAsDate = new Date(Date.UTC(dateStartYear, dateStartMonth, 1));
+                this.dateEndAsString = new Intl.DateTimeFormat('en-US', dateFormat).format(dateEndAsDate);
+                this.dateStartAsString = new Intl.DateTimeFormat('en-US', dateFormat).format(dateStartAsDate);
+            }
 
-        const duration = new Date(dateEndAsDate - dateStartAsDate);
-        this.durationAsString = '';
+            const duration = new Date(dateEndAsDate - dateStartAsDate);
+            this.durationAsString = '';
 
-        // Calculate Duration Year(s)
-        const durationYear = duration.getFullYear() - 1970;
-        switch (durationYear) {
-            case 0:
-                break;
-            case 1:
-                this.durationAsString += (`${durationYear} yr`);
-                break;
-            default:
-                this.durationAsString += (`${durationYear} yrs`);
-                break;
-        }
+            // Calculate Duration Year(s)
+            const durationYear = duration.getFullYear() - 1970;
+            switch (durationYear) {
+                case 0:
+                    break;
+                case 1:
+                    this.durationAsString += (`${durationYear} yr`);
+                    break;
+                default:
+                    this.durationAsString += (`${durationYear} yrs`);
+                    break;
+            }
 
-        // Calculate Duration Month(s)
-        const durationMonth = duration.getMonth() + 1;
-        if (durationYear > 0 && durationMonth > 0) {
-            this.durationAsString += ' ';
+            // Calculate Duration Month(s)
+            const durationMonth = duration.getMonth() + 1;
+            if (durationYear > 0 && durationMonth > 0) {
+                this.durationAsString += ' ';
+            }
+            switch (durationMonth) {
+                case 0:
+                    break;
+                case 1:
+                    this.durationAsString += (`${durationMonth} mon`);
+                    break;
+                default:
+                    this.durationAsString += (`${durationMonth} mos`);
+                    break;
+            }
         }
-        switch (durationMonth) {
-            case 0:
-                break;
-            case 1:
-                this.durationAsString += (`${durationMonth} mon`);
-                break;
-            default:
-                this.durationAsString += (`${durationMonth} mos`);
-                break;
+        // Assume Education Component
+        else if (dateEndYear && dateStartYear) {
+            const durationYear = dateEndYear - dateStartYear;
+            this.durationAsString = '';
+            
+            switch (durationYear) {
+                case 0:
+                    break;
+                case 1:
+                    this.durationAsString += (`${durationYear} yr`);
+                    break;
+                default:
+                    this.durationAsString += (`${durationYear} yrs`);
+                    break;
+            }
+
+            this.dateEndAsString = dateEndYear.toString();
+            this.dateStartAsString = dateStartYear.toString();
         }
     }
 

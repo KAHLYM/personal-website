@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
+import Education from './cards/Education';
 import Personal from './cards/Personal';
 import Professional from './cards/Professional';
 import Social from './Social';
 
+import LoughboroughUniversityLogo from '../assets/loughborough-university.png';
 import PersonalWebsiteLogo from '../assets/personal-website.png';
 import Profile from '../assets/profile.jpg';
 import SophosLogo from '../assets/sophos.png';
@@ -129,7 +131,7 @@ export class Home extends Component {
           <div>
             <p>Personal</p>
             <Personal
-              color="#4285f4"
+              color="#4285F4"
               componentName="portfolio"
               dateEndMonth={6}
               dateEndYear={2020}
@@ -140,7 +142,7 @@ export class Home extends Component {
               title="Personal Website"
             />
             <Personal
-              color="#128c7e"
+              color="#128C7E"
               componentName="whanalysis"
               dateEndMonth={4}
               dateEndYear={2020}
@@ -154,6 +156,15 @@ export class Home extends Component {
           </div>
           <div>
             <p>Education</p>
+            <Education
+              color="#4A1863"
+              componentName="university"
+              dateEndYear={2019}
+              dateStartYear={2015}
+              description="bachelor's degree, computer science, second class honours, upper division"
+              image={LoughboroughUniversityLogo}
+              title="Loughborough University"
+            />
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ class Education extends Card {
 
     render() {
         const {
-            color, date, description, duration, image, title
+            color, description, durationAsString, image, title
         } = this.props;
         return (
             <div className="Card" style={{ backgroundColor: color }}>
@@ -22,7 +22,7 @@ class Education extends Card {
                         <p className="CardDescription">{description}</p>
                         <p className="CardDate">
                             {
-                                `${date} · ${duration}`
+                                `${this.dateStartAsString} - ${this.dateEndAsString} · ${this.durationAsString}`
                             }
                         </p>
                     </div>
@@ -39,9 +39,9 @@ class Education extends Card {
 Education.propTypes = {
     color: PropTypes.string.isRequired,
     componentName: PropTypes.string.isRequired,
-    date: PropTypes.string.isRequired,
+    dateEndYear: PropTypes.number.isRequired,
+    dateStartYear: PropTypes.number.isRequired,
     description: PropTypes.string.isRequired,
-    duration: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
 };

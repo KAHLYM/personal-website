@@ -21,7 +21,7 @@ class Personal extends Card {
             <div className="Card" style={{ backgroundColor: color }}>
                 <div className="CardContainer">
                     <div className="CardImageContainer">
-                        <img className="CardImage" src={image} alt="" />
+                        <img className="CardImage Filter" src={image} alt="" />
                     </div>
                     <div className="CardTextContainer">
                         <p className="CardTitle">{title}</p>

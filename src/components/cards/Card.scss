@@ -40,9 +40,12 @@
 }
 
 .CardImage {
-    filter: brightness(0) invert(1);
     height: 4rem;
     width: 4rem;
+}
+
+.CardImage.Filter {
+    filter: brightness(0) invert(1);
 }
 
 .CardTextContainer {
