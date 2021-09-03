@@ -1,15 +1,12 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import Card from './Card';
 
 class Education extends Card {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const {
-      color, description, durationAsString, image, title,
+      color, description, image, title,
     } = this.props;
     return (
       <div className="Card" style={{ backgroundColor: color }}>
@@ -21,9 +18,9 @@ class Education extends Card {
             <p className="CardTitle">{title}</p>
             <p className="CardDescription">{description}</p>
             <p className="CardDate">
-              {
-                                `${this.dateStartAsString} - ${this.dateEndAsString} · ${this.durationAsString}`
-                            }
+            {
+                `${this.dateStartAsString} - ${this.dateEndAsString} · ${this.durationAsString}`
+            }
             </p>
           </div>
         </div>
