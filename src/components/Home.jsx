@@ -91,7 +91,7 @@ export class Home extends Component {
           </div>
         </div>
         <div className="ExperienceContainer animated fadeIn animatedDelay500ms">
-          <div className="Professional">
+          <div>
             <p>Professional</p>
             <ExperienceCard
               color="#225a99"
@@ -126,7 +126,7 @@ export class Home extends Component {
               </div>
             </ExperienceCard>
           </div>
-          <div className="Personal">
+          <div>
             <p>Personal</p>
             <ExperienceCard
               color="#4285f4"
@@ -151,6 +151,9 @@ export class Home extends Component {
               title="Whanalysis"
               url="https://whanalysis.com"
             />
+          </div>
+          <div>
+            <p>Education</p>
           </div>
         </div>
       </div>
