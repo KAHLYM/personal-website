@@ -13,7 +13,7 @@
 .CardContainer {
     display: flex;
     flex-direction: row;
-    flex: 1 0 50%;
+    flex: 1 0 auto;
     order: 1;
 }
 
@@ -86,6 +86,10 @@
 @media only screen and (max-width: $breakpoint-l) {
     .Card {
         padding: 1rem;
+    }
+    
+    .CardContainer {
+        flex: 1 0 100%;
     }
 
     .CardImageContainer {
