@@ -152,6 +152,9 @@ export class Home extends Component {
               url="https://whanalysis.com"
             />
           </div>
+          <div className="Professional">
+            <p>Education</p>
+          </div>
         </div>
       </div>
 
