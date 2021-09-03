@@ -10,7 +10,7 @@ const RciMap = {
   Firebase: [rci.Firebase, '#FFCA28'],
   Git: [rci.Git, '#F05032'],
   GitHub: [rci.Github, '#181717'],
-  'GitHub Actions': [rci.Githubactions, '##2088FF'],
+  'GitHub Actions': [rci.Githubactions, '#2088FF'],
   'Google Analytics': [rci.Googleanalytics, '#E37400'],
   HTML5: [rci.Html5, '#E34F26'],
   JavaScript: [rci.Javascript, '#F7DF1E'],
