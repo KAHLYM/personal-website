@@ -27,10 +27,6 @@ class Education extends Card {
                         </p>
                     </div>
                 </div>
-                <div className="CardActionContainer">
-
-                </div>
-
             </div>
         );
     }
