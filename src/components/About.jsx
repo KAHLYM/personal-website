@@ -8,25 +8,29 @@ export class About extends Component {
     skillsProfessional = [
       'C++',
       'Python',
-      // 'Atlassian',
-      // 'Git',
-      // 'Visual Studio',
-      // 'Visual Studio Code',
-      // 'Confluence',
-      // 'Jira',
     ];
 
     skillsPersonal = [
       'Angular',
       'TypeScript',
-      'Firebase',
       'HTML5',
       'Sass',
       'JavaScript',
-      'Google Analytics',
       'React',
-      // 'GitHub',
-      // 'Pandas',
+    ];
+
+    skillsTools = [
+      'Atlassian',
+      'Bitbucket',
+      'Confluence',
+      'Firebase',
+      'Git',
+      'GitHub',
+      'GitHub Actions',
+      'Google Analytics',
+      'Jira',
+      'Visual Studio',
+      'Visual Studio Code',
     ];
 
     aboutTitle = 'Hi, I\'m Callum';
@@ -59,7 +63,7 @@ export class About extends Component {
                   Although I’m happy to spend copious time immersed in technology, I often take time to keep&nbsp;
                   active and strive to outperform previous personal records.
                 </p>
-                <span className="AboutSubTitle">Experience</span>
+                <span className="AboutSubTitle">Languages</span>
                 <div className="SkillsContainer">
                   <span className="SkillsType">Professional</span>
                   <div className="SkillsProfessional">
@@ -79,6 +83,15 @@ export class About extends Component {
                       </div>
                     ))}
                   </div>
+                </div>
+                <span className="AboutSubTitle">Tools</span>
+                <div className="SkillsContainer">
+                 {this.skillsTools.sort().map((skill) => (
+                    <div className="Skill">
+                      {React.createElement(RciMap[skill][0], { color: RciMap[skill][1], size: 20 })}
+                      <span>{skill}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
