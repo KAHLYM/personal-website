@@ -81,7 +81,7 @@ a:active {
     text-decoration: none;
 }
 
-@media only screen and (max-width: $breakpoint-m) {
+@media only screen and (max-width: $breakpoint-l) {
     .Preface {
         margin: 0 0 0 0;
     }
@@ -103,7 +103,7 @@ a:active {
     margin: 1rem 0 0.5rem 6rem;
 }
 
-@media only screen and (min-width: $breakpoint-m) {
+@media only screen and (min-width: $breakpoint-l) {
     .SophosChild:nth-of-type(n+2)::before {
         content: "";
         position: absolute;
