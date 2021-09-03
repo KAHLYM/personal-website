@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import ExperienceCard from './ExperienceCard';
+import Personal from './cards/Personal';
+import Professional from './cards/Professional';
 import Social from './Social';
 
 import PersonalWebsiteLogo from '../assets/personal-website.png';
@@ -93,11 +94,10 @@ export class Home extends Component {
         <div className="ExperienceContainer animated fadeIn animatedDelay500ms">
           <div>
             <p>Professional</p>
-            <ExperienceCard
+            <Professional
               color="#225a99"
               componentName="sophos"
-              dateOverride="present"
-              datePresent
+              datePresent={true}
               dateStartMonth={3}
               dateStartYear={2018}
               description="cybersecurity"
@@ -124,11 +124,11 @@ export class Home extends Component {
                 <p>Jun 2017 - Aug 2018 · 1 yr 3 mos</p>
                 <p>Abingdon, United Kingdom</p>
               </div>
-            </ExperienceCard>
+            </Professional>
           </div>
           <div>
             <p>Personal</p>
-            <ExperienceCard
+            <Personal
               color="#4285f4"
               componentName="portfolio"
               dateEndMonth={6}
@@ -139,7 +139,7 @@ export class Home extends Component {
               image={PersonalWebsiteLogo}
               title="Personal Website"
             />
-            <ExperienceCard
+            <Personal
               color="#128c7e"
               componentName="whanalysis"
               dateEndMonth={4}
