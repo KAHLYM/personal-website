@@ -55,7 +55,7 @@ button:hover {
     flex-direction: column;
 }
 
-@media only screen and (max-width: $breakpoint-m) {
+@media only screen and (max-width: $breakpoint-l) {
     .App {
         transition: background-color 0ms linear;
     }
