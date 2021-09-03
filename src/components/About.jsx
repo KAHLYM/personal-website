@@ -86,7 +86,7 @@ export class About extends Component {
                 </div>
                 <span className="AboutSubTitle">Tools</span>
                 <div className="SkillsContainer">
-                 {this.skillsTools.sort().map((skill) => (
+                  {this.skillsTools.sort().map((skill) => (
                     <div className="Skill">
                       {React.createElement(RciMap[skill][0], { color: RciMap[skill][1], size: 20 })}
                       <span>{skill}</span>
