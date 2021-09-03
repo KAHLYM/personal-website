@@ -18,7 +18,7 @@ class Education extends Card {
             <p className="CardTitle">{title}</p>
             <p className="CardDescription">{description}</p>
             <p className="CardDate">
-            {
+              {
                 `${this.dateStartAsString} - ${this.dateEndAsString} · ${this.durationAsString}`
             }
             </p>
