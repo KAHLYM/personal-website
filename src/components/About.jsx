@@ -45,23 +45,23 @@ export class About extends Component {
                 <div className="About">
                     <div className="Personal">
                         <img src={Profile} alt="Profile" />
-                    </div>
+                  </div>
                     <div>
                         <div className="AboutTitle">{this.aboutTitle}</div>
                         <div className="Description">
                             <p>
-                                I’m a Software Engineer with professional experience developing industry leading&nbsp;
+                            I’m a Software Engineer with professional experience developing industry leading&nbsp;
                                 <span className="Highlight">cybersecurity software</span>
-                                . Enthused by&nbsp;
+                            . Enthused by&nbsp;
                                 <span className="Highlight">
-                                    consistent and well structured design
+                                  consistent and well structured design
                                 </span>
-                                , I also take interest in web development technologies as they offer opportunities that are more&nbsp;
-                                design orientated.
+                            , I also take interest in web development technologies as they offer opportunities that are more&nbsp;
+                            design orientated.
                             </p>
                             <p>
-                                Although I’m happy to spend copious time immersed in technology, I often take time to keep&nbsp;
-                                active and strive to outperform previous personal records.
+                            Although I’m happy to spend copious time immersed in technology, I often take time to keep&nbsp;
+                            active and strive to outperform previous personal records.
                             </p>
                             <span className="AboutSubTitle">Languages</span>
                             <div className="SkillsContainer">
@@ -71,32 +71,32 @@ export class About extends Component {
                                         <div className="Skill">
                                             {React.createElement(RciMap[skill][0], { color: RciMap[skill][1], size: 20 })}
                                             <span>{skill}</span>
-                                        </div>
+                                      </div>
                                     ))}
-                                </div>
+                              </div>
                                 <span className="SkillsType">Personal</span>
                                 <div className="SkillsPersonal">
                                     {this.skillsPersonal.sort().map((skill) => (
                                         <div className="Skill">
                                             {React.createElement(RciMap[skill][0], { color: RciMap[skill][1], size: 16 }, '')}
                                             <span>{skill}</span>
-                                        </div>
+                                      </div>
                                     ))}
-                                </div>
-                            </div>
+                              </div>
+                          </div>
                             <span className="AboutSubTitle">Tools</span>
                             <div className="SkillsContainer">
                                 {this.skillsTools.sort().map((skill) => (
                                     <div className="Skill">
                                         {React.createElement(RciMap[skill][0], { color: RciMap[skill][1], size: 20 })}
                                         <span>{skill}</span>
-                                    </div>
+                                  </div>
                                 ))}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
         );
     }
 }
