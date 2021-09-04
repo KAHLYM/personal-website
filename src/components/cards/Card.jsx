@@ -14,7 +14,8 @@ class Card extends Component {
       dateEndMonth, dateEndYear, datePresent, dateStartMonth, dateStartYear,
     } = this.props;
 
-    if (dateEndMonth && dateEndYear && dateStartMonth && dateStartYear) {
+    if ((dateEndMonth && dateEndYear && dateStartMonth && dateStartYear) ||
+        (dateStartMonth && dateStartYear && datePresent)) {
       // Format Dates as strings
       let dateEndAsDate;
       let dateStartAsDate;
