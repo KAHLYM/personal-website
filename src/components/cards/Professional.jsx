@@ -5,10 +5,6 @@ import PropTypes from 'prop-types';
 import Card from './Card';
 
 class Professional extends Card {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const {
       children, color, componentName, description, image, title,

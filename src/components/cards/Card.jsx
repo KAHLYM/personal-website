@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Card extends Component {
     constructor(props) {
@@ -61,9 +62,8 @@ class Card extends Component {
                     this.durationAsString += (`${durationMonth} mos`);
                     break;
             }
-        }
         // Assume Education Component
-        else if (dateEndYear && dateStartYear) {
+        } else if (dateEndYear && dateStartYear) {
             const durationYear = dateEndYear - dateStartYear;
             this.durationAsString = '';
 
