@@ -20,7 +20,7 @@ jobs:
       run: python ./.github/workflows/last-updated.py
     - name: Commit changes
       run: |
-        git config --global user.name 'Callum Wright'
+        git config --global user.name 'Personal Website Last Updated Action'
         git config --global user.email 'wrightci01s@gmail.com'
         git add .
         git diff-index --quiet HEAD || git commit -m "Auto updating last-updated.js"
