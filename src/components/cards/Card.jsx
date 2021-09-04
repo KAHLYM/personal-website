@@ -14,7 +14,8 @@ class Card extends Component {
       dateEndMonth, dateEndYear, datePresent, dateStartMonth, dateStartYear,
     } = this.props;
 
-    if (dateEndMonth && dateEndYear && dateStartMonth && dateStartYear) {
+    if ((dateEndMonth && dateEndYear && dateStartMonth && dateStartYear)
+        || (dateStartMonth && dateStartYear && datePresent)) {
       // Format Dates as strings
       let dateEndAsDate;
       let dateStartAsDate;
@@ -37,14 +38,14 @@ class Card extends Component {
       // Calculate Duration Year(s)
       const durationYear = duration.getFullYear() - 1970;
       switch (durationYear) {
-        case 0:
-          break;
-        case 1:
-          this.durationAsString += (`${durationYear} yr`);
-          break;
-        default:
-          this.durationAsString += (`${durationYear} yrs`);
-          break;
+      case 0:
+        break;
+      case 1:
+        this.durationAsString += (`${durationYear} yr`);
+        break;
+      default:
+        this.durationAsString += (`${durationYear} yrs`);
+        break;
       }
 
       // Calculate Duration Month(s)
@@ -53,14 +54,14 @@ class Card extends Component {
         this.durationAsString += ' ';
       }
       switch (durationMonth) {
-        case 0:
-          break;
-        case 1:
-          this.durationAsString += (`${durationMonth} mon`);
-          break;
-        default:
-          this.durationAsString += (`${durationMonth} mos`);
-          break;
+      case 0:
+        break;
+      case 1:
+        this.durationAsString += (`${durationMonth} mon`);
+        break;
+      default:
+        this.durationAsString += (`${durationMonth} mos`);
+        break;
       }
       // Assume Education Component
     } else if (dateEndYear && dateStartYear) {
@@ -68,14 +69,14 @@ class Card extends Component {
       this.durationAsString = '';
 
       switch (durationYear) {
-        case 0:
-          break;
-        case 1:
-          this.durationAsString += (`${durationYear} yr`);
-          break;
-        default:
-          this.durationAsString += (`${durationYear} yrs`);
-          break;
+      case 0:
+        break;
+      case 1:
+        this.durationAsString += (`${durationYear} yr`);
+        break;
+      default:
+        this.durationAsString += (`${durationYear} yrs`);
+        break;
       }
 
       this.dateEndAsString = dateEndYear.toString();

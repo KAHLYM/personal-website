@@ -22,14 +22,14 @@ export class Home extends Component {
 
     const sophosDurationYear = sophosDuration.getFullYear() - 1970;
     switch (sophosDurationYear) {
-      case 0:
-        break;
-      case 1:
-        this.sophosDurationAsString += (`${sophosDurationYear} yr`);
-        break;
-      default:
-        this.sophosDurationAsString += (`${sophosDurationYear} yrs`);
-        break;
+    case 0:
+      break;
+    case 1:
+      this.sophosDurationAsString += (`${sophosDurationYear} yr`);
+      break;
+    default:
+      this.sophosDurationAsString += (`${sophosDurationYear} yrs`);
+      break;
     }
 
     const sophosDurationMonth = sophosDuration.getMonth() + 1;
@@ -37,14 +37,14 @@ export class Home extends Component {
       this.sophosDurationAsString += ' ';
     }
     switch (sophosDurationMonth) {
-      case 0:
-        break;
-      case 1:
-        this.sophosDurationAsString += (`${sophosDurationMonth} mon`);
-        break;
-      default:
-        this.sophosDurationAsString += (`${sophosDurationMonth} mos`);
-        break;
+    case 0:
+      break;
+    case 1:
+      this.sophosDurationAsString += (`${sophosDurationMonth} mon`);
+      break;
+    default:
+      this.sophosDurationAsString += (`${sophosDurationMonth} mos`);
+      break;
     }
   }
 

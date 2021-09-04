@@ -20,8 +20,8 @@ class Professional extends Card {
             <p className="CardDescription">{description}</p>
             <p className="CardDate">
               {
-                                `${this.dateStartAsString} - ${this.dateEndAsString} · ${this.durationAsString}`
-                            }
+                `${this.dateStartAsString} - ${this.dateEndAsString} · ${this.durationAsString}`
+              }
             </p>
           </div>
         </div>
