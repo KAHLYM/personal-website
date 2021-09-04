@@ -158,7 +158,6 @@ export class Home extends Component {
             <p>Education</p>
             <Education
               color="#4A1863"
-              componentName="university"
               dateEndYear={2019}
               dateStartYear={2015}
               description="bachelor's degree, computer science, second class honours, upper division"

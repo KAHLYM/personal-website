@@ -31,7 +31,6 @@ class Education extends Card {
 
 Education.propTypes = {
   color: PropTypes.string.isRequired,
-  componentName: PropTypes.string.isRequired,
   dateEndYear: PropTypes.number.isRequired,
   dateStartYear: PropTypes.number.isRequired,
   description: PropTypes.string.isRequired,
