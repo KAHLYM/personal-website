@@ -27,7 +27,7 @@
 }
 
 .ExperienceSectionBody {
-    padding: 2rem 3rem 2rem 3rem;
+    padding: 2rem 3rem 0rem 3rem;
     font-size: 1rem;
     line-height: 2rem;
 }
@@ -36,7 +36,7 @@
     border-left: 0.2rem solid $color-light-secondary;
     color: $color-light-secondary;
     padding-left: 1rem;
-    margin: 2rem 0;
+    margin: 2rem 0 0 0;
 }
 
 .Dark .ExperienceSectionQuote {
@@ -46,7 +46,7 @@
 
 @media only screen and (max-width: $breakpoint-l) {
     .ExperienceSectionBody {
-        padding: 2rem 0 2rem 0;
+        padding: 2rem 0 0 0;
     }
 
     img.ExperienceSectionBody {
