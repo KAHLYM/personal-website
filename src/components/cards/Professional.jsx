@@ -7,7 +7,7 @@ import Card from './Card';
 class Professional extends Card {
   render() {
     const {
-      children, color, componentName, description, image, title,
+      children, color, componentName, dateOverride, description, image, title,
     } = this.props;
     return (
       <div className="Card" style={{ backgroundColor: color }}>
@@ -20,7 +20,12 @@ class Professional extends Card {
             <p className="CardDescription">{description}</p>
             <p className="CardDate">
               {
-                `${this.dateStartAsString} - ${this.dateEndAsString} · ${this.durationAsString}`
+                !dateOverride
+                && `${this.dateStartAsString} - ${this.dateEndAsString} · ${this.durationAsString}`
+              }
+              {
+                dateOverride
+                && `${dateOverride} · ${this.durationAsString}`
               }
             </p>
           </div>
@@ -51,6 +56,7 @@ Professional.propTypes = {
   componentName: PropTypes.string.isRequired,
   dateEndMonth: PropTypes.number,
   dateEndYear: PropTypes.number,
+  dateOverride: PropTypes.string,
   datePresent: PropTypes.bool,
   dateStartMonth: PropTypes.number.isRequired,
   dateStartYear: PropTypes.number.isRequired,
@@ -63,6 +69,7 @@ Professional.defaultProps = {
   children: '',
   dateEndMonth: 0,
   dateEndYear: 1970,
+  dateOverride: '',
   datePresent: false,
 };
 
