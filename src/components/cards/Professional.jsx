@@ -20,14 +20,13 @@ class Professional extends Card {
             <p className="CardDescription">{description}</p>
             <p className="CardDate">
               {
-                !dateOverride &&
-                `${this.dateStartAsString} - ${this.dateEndAsString} · ${this.durationAsString}`
+                !dateOverride
+                && `${this.dateStartAsString} - ${this.dateEndAsString} · ${this.durationAsString}`
               }
               {
-                dateOverride &&
-                `${dateOverride} · ${this.durationAsString}`
+                dateOverride
+                && `${dateOverride} · ${this.durationAsString}`
               }
-            </p>
           </div>
         </div>
         <div className="CardActionContainer">
