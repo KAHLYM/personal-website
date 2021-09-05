@@ -9,6 +9,7 @@ import Home from './components/Home.jsx'
 import Portfolio from './components/Portfolio.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
 import Sophos from './components/Sophos.jsx';
+import University from './components/University.jsx';
 import Whanalysis from './components/Whanalysis.jsx';
 
 import './components/cards/Card.scss';
@@ -38,8 +39,9 @@ function App() {
             <Switch>
               <Route path='/' exact component={Home} />
               <Route path='/about' component={About} />
-              <Route path='/sophos' component={Sophos} />
               <Route path='/portfolio' component={Portfolio} />
+              <Route path='/sophos' component={Sophos} />
+              <Route path='/university' component={University} />
               <Route path='/whanalysis' component={Whanalysis} />
             </Switch>
           </div>

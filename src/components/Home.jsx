@@ -102,6 +102,7 @@ export class Home extends Component {
               datePresent
               dateStartMonth={3}
               dateStartYear={2018}
+              dateOverride="Jun 2017 - present"
               description="cybersecurity"
               image={SophosLogo}
               title="Sophos"
@@ -158,6 +159,7 @@ export class Home extends Component {
             <p>Education</p>
             <Education
               color="#4A1863"
+              componentName="university"
               dateEndYear={2019}
               dateStartYear={2015}
               description="bachelor's degree, computer science, second class honours, upper division"
