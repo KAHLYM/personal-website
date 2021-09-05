@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import Card from './Card';
@@ -6,7 +7,7 @@ import Card from './Card';
 class Education extends Card {
   render() {
     const {
-      color, description, image, title,
+      color, componentName, description, image, title,
     } = this.props;
     return (
       <div className="Card" style={{ backgroundColor: color }}>
@@ -24,6 +25,18 @@ class Education extends Card {
             </p>
           </div>
         </div>
+        <div className="CardActionContainer">
+          <NavLink to={`/${componentName}`} activeClassName="IsActive">
+            <button
+              className="CardAction"
+              onMouseEnter={this.onMouseEnter}
+              onMouseLeave={this.onMouseLeave}
+              type="button"
+            >
+              read more
+            </button>
+          </NavLink>
+        </div>
       </div>
     );
   }
@@ -31,6 +44,7 @@ class Education extends Card {
 
 Education.propTypes = {
   color: PropTypes.string.isRequired,
+  componentName: PropTypes.string.isRequired,
   dateEndYear: PropTypes.number.isRequired,
   dateStartYear: PropTypes.number.isRequired,
   description: PropTypes.string.isRequired,
