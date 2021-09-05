@@ -27,6 +27,7 @@ class Professional extends Card {
                 dateOverride
                 && `${dateOverride} · ${this.durationAsString}`
               }
+            </p>
           </div>
         </div>
         <div className="CardActionContainer">
