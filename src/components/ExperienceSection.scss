@@ -35,8 +35,13 @@
 .ExperienceSectionQuote {
     border-left: .2rem solid $color-light-secondary;
     color: $color-light-secondary;
-    padding-left: 1.5rem;
-    margin: 1rem 0;
+    padding-left: 1rem;
+    margin: 2rem 0;
+}
+
+.Dark .ExperienceSectionQuote {
+    border-left: .2rem solid $color-dark-secondary;
+    color: $color-dark-secondary;
 }
 
 @media only screen and (max-width: $breakpoint-l) {
