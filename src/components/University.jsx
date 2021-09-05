@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Experience from './Experience';
 import ExperienceSection from './ExperienceSection';
