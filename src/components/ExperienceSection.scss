@@ -32,6 +32,13 @@
     line-height: 2rem;
 }
 
+.ExperienceSectionQuote {
+    border-left: .2rem solid $color-light-secondary;
+    color: $color-light-secondary;
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
 @media only screen and (max-width: $breakpoint-l) {
     .ExperienceSectionBody {
         padding: 2rem 0 2rem 0;

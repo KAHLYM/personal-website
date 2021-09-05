@@ -50,6 +50,21 @@ export class University extends Component {
                         >
                             Classification of Environmental Sounds Events
                         </a>
+                        <div className="ExperienceSectionQuote">
+                            <p>
+                                Environmental sound recognition is underdeveloped as a consequence of the scarcity of
+                                appropriate and openly available datasets. The release of ESC-50, UrbanSound8K and
+                                Google AudioSet have stimulated development of generalised audio research.
+                            </p>
+                            <p>
+                                This paper explores supervised classification and unsupervised clustering techniques on
+                                AudioSet-15; a fifteen-class subset of AudioSet. The highest obtained mean AUC for a
+                                given model was 0.698. The highest obtained AUC for a single class was 0.875 Although
+                                poor model metrics were obtained, certain test audio samples were associated with
+                                correct predictions of very high probabilityThis provides a promising foundation for
+                                further development.
+                            </p>
+                        </div>
                     </ExperienceSection>
 
                 </Experience>
