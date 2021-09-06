@@ -50,7 +50,7 @@ class Personal extends Card {
                 onMouseLeave={this.onMouseLeave}
                 type="button"
               >
-                visit
+                visit website
               </button>
             )
           }

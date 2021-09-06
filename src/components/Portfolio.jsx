@@ -12,6 +12,7 @@ export class Portfolio extends Component {
     return (
       <div>
         <Experience
+          github="https://github.com/KAHLYM/personal-website"
           title="Portfolio"
           type="personal project"
           skills={['React', 'JavaScript', 'HTML5', 'Sass']}
