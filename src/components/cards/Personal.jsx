@@ -5,14 +5,13 @@ import PropTypes from 'prop-types';
 import Card from './Card';
 
 class Personal extends Card {
-  onClickVisit = () => {
-    const { url } = this.props;
+  onClick = (url) => {
     window.open(url, '_blank');
   }
 
   render() {
     const {
-      color, componentName, description, image, title, url,
+      color, componentName, description, github, image, title, visit,
     } = this.props;
     return (
       <div className="Card" style={{ backgroundColor: color }}>
@@ -42,16 +41,30 @@ class Personal extends Card {
             </button>
           </NavLink>
           {
-            url
+            visit
             && (
               <button
                 className="CardAction"
-                onClick={this.onClickVisit}
+                onClick={() => this.onClick(visit)}
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
                 type="button"
               >
                 visit
+              </button>
+            )
+          }
+          {
+            github
+            && (
+              <button
+                className="CardAction"
+                onClick={() => this.onClick(github)}
+                onMouseEnter={this.onMouseEnter}
+                onMouseLeave={this.onMouseLeave}
+                type="button"
+              >
+                github
               </button>
             )
           }
@@ -69,15 +82,17 @@ Personal.propTypes = {
   dateStartMonth: PropTypes.number.isRequired,
   dateStartYear: PropTypes.number.isRequired,
   description: PropTypes.string.isRequired,
+  github: PropTypes.string,
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  url: PropTypes.string,
+  visit: PropTypes.string,
 };
 
 Personal.defaultProps = {
   dateEndMonth: 0,
   dateEndYear: 1970,
-  url: '',
+  github: '',
+  visit: '',
 };
 
 export default Personal;
