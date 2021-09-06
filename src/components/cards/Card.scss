@@ -102,6 +102,11 @@
         flex-flow: wrap;
     }
 
+    .CardActionContainer button {
+        height: 3rem;
+        border-radius: 1.5rem;
+    }
+
     .CardActionContainer > a,
     .CardActionContainer > button {
         width: calc(100% - .5rem);
@@ -109,10 +114,5 @@
 
     .CardActionContainer > a > button {
         width: 100%;
-    }
-
-    .CardActionContainer button {
-        height: 3rem;
-        border-radius: 1.5rem;
     }
 }
