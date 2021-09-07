@@ -63,7 +63,7 @@ export class About extends Component {
                 Although I’m happy to spend copious time immersed in technology, I often take time to keep&nbsp;
                 active and strive to outperform previous personal records.
               </p>
-              <span className="AboutSubTitle">Languages</span>
+              <span className="AboutSubTitle">Languages, Libraries &amp; Frameworks</span>
               <div className="SkillsContainer">
                 <span className="SkillsType">Professional</span>
                 <div className="SkillsProfessional">
