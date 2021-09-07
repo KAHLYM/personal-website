@@ -67,19 +67,19 @@
 
 .CardAction {
     background-color: transparent;
-    border: 1px solid white;
+    border: none;
     border-radius: 1rem;
-    padding: 0.5rem 1rem;
     font-size: 0.8rem;
     height: calc(1.8rem + 2px);
+    line-height: 2rem;
     width: 8rem;
     margin: 0.25rem;
     color: white;
+    text-align: center;
 }
 
 .CardAction:hover {
-    background-color: white;
-    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
@@ -97,9 +97,16 @@
     }
 
     .CardActionContainer {
-        flex-direction: row;
         order: 4;
         margin-top: 1rem;
-        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .CardAction {
+        height: 3rem;
+        line-height: 3rem;
+        border-radius: 1.5rem;
+        flex: 1;
     }
 }

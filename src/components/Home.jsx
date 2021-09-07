@@ -52,11 +52,6 @@ export class Home extends Component {
     document.title = 'Callum Wright';
   }
 
-  nextPath(path) {
-    const { history } = this.context;
-    history.push(path);
-  }
-
   render() {
     return (
       <div>
@@ -139,6 +134,7 @@ export class Home extends Component {
               dateStartMonth={5}
               dateStartYear={2020}
               description="this website"
+              github="https://github.com/KAHLYM/personal-website"
               image={PersonalWebsiteLogo}
               title="Personal Website"
             />
@@ -152,7 +148,7 @@ export class Home extends Component {
               description="whatsapp analysis"
               image={WhanalysisLogo}
               title="Whanalysis"
-              url="https://whanalysis.com"
+              visit="https://whanalysis.com"
             />
           </div>
           <div>

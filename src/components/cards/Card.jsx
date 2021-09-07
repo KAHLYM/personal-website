@@ -83,19 +83,9 @@ class Card extends Component {
       this.dateStartAsString = dateStartYear.toString();
     }
   }
-
-    onMouseEnter = (e) => {
-      const { color } = this.props;
-      e.target.style.color = color;
-    }
-
-    onMouseLeave = (e) => {
-      e.target.style.color = 'white';
-    }
 }
 
 Card.propTypes = {
-  color: PropTypes.string.isRequired,
   dateEndMonth: PropTypes.string.isRequired,
   dateEndYear: PropTypes.string.isRequired,
   datePresent: PropTypes.number,

@@ -5,14 +5,13 @@ import PropTypes from 'prop-types';
 import Card from './Card';
 
 class Personal extends Card {
-  onClickVisit = () => {
-    const { url } = this.props;
+  onClick = (url) => {
     window.open(url, '_blank');
   }
 
   render() {
     const {
-      color, componentName, description, image, title, url,
+      color, componentName, description, github, image, title, visit,
     } = this.props;
     return (
       <div className="Card" style={{ backgroundColor: color }}>
@@ -31,27 +30,30 @@ class Personal extends Card {
           </div>
         </div>
         <div className="CardActionContainer">
-          <NavLink to={`/${componentName}`} activeClassName="IsActive">
-            <button
-              className="CardAction"
-              onMouseEnter={this.onMouseEnter}
-              onMouseLeave={this.onMouseLeave}
-              type="button"
-            >
-              read more
-            </button>
+          <NavLink to={`/${componentName}`} activeClassName="IsActive" className="CardAction">
+            READ MORE
           </NavLink>
           {
-            url
+            visit
             && (
               <button
                 className="CardAction"
-                onClick={this.onClickVisit}
-                onMouseEnter={this.onMouseEnter}
-                onMouseLeave={this.onMouseLeave}
+                onClick={() => this.onClick(visit)}
                 type="button"
               >
-                visit
+                WESBITE
+              </button>
+            )
+          }
+          {
+            github
+            && (
+              <button
+                className="CardAction"
+                onClick={() => this.onClick(github)}
+                type="button"
+              >
+                GITHUB
               </button>
             )
           }
@@ -69,15 +71,17 @@ Personal.propTypes = {
   dateStartMonth: PropTypes.number.isRequired,
   dateStartYear: PropTypes.number.isRequired,
   description: PropTypes.string.isRequired,
+  github: PropTypes.string,
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  url: PropTypes.string,
+  visit: PropTypes.string,
 };
 
 Personal.defaultProps = {
   dateEndMonth: 0,
   dateEndYear: 1970,
-  url: '',
+  github: '',
+  visit: '',
 };
 
 export default Personal;
