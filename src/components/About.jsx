@@ -43,7 +43,7 @@ export class About extends Component {
     return (
       <div>
         <div className="About">
-          <div className="Personal animated fadeIn animatedDelay500ms">
+          <div className="Personal animated fadeIn">
             <img src={Profile} alt="Profile" />
           </div>
           <div>
