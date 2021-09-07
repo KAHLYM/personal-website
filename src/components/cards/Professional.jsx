@@ -31,15 +31,8 @@ class Professional extends Card {
           </div>
         </div>
         <div className="CardActionContainer">
-          <NavLink to={`/${componentName}`} activeClassName="IsActive">
-            <button
-              className="CardAction"
-              onMouseEnter={this.onMouseEnter}
-              onMouseLeave={this.onMouseLeave}
-              type="button"
-            >
-              read more
-            </button>
+          <NavLink to={`/${componentName}`} activeClassName="IsActive" className="CardAction">
+            READ MORE
           </NavLink>
         </div>
         <div className="CardChildren">

@@ -52,11 +52,6 @@ export class Home extends Component {
     document.title = 'Callum Wright';
   }
 
-  nextPath(path) {
-    const { history } = this.context;
-    history.push(path);
-  }
-
   render() {
     return (
       <div>

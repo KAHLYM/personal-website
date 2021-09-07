@@ -30,15 +30,8 @@ class Personal extends Card {
           </div>
         </div>
         <div className="CardActionContainer">
-          <NavLink to={`/${componentName}`} activeClassName="IsActive">
-            <button
-              className="CardAction"
-              onMouseEnter={this.onMouseEnter}
-              onMouseLeave={this.onMouseLeave}
-              type="button"
-            >
-              read more
-            </button>
+          <NavLink to={`/${componentName}`} activeClassName="IsActive" className="CardAction">
+            READ MORE
           </NavLink>
           {
             visit
@@ -46,11 +39,9 @@ class Personal extends Card {
               <button
                 className="CardAction"
                 onClick={() => this.onClick(visit)}
-                onMouseEnter={this.onMouseEnter}
-                onMouseLeave={this.onMouseLeave}
                 type="button"
               >
-                visit website
+                WESBITE
               </button>
             )
           }
@@ -60,11 +51,9 @@ class Personal extends Card {
               <button
                 className="CardAction"
                 onClick={() => this.onClick(github)}
-                onMouseEnter={this.onMouseEnter}
-                onMouseLeave={this.onMouseLeave}
                 type="button"
               >
-                github
+                GITHUB
               </button>
             )
           }
