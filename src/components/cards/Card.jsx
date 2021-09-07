@@ -86,7 +86,6 @@ class Card extends Component {
 }
 
 Card.propTypes = {
-  color: PropTypes.string.isRequired,
   dateEndMonth: PropTypes.string.isRequired,
   dateEndYear: PropTypes.string.isRequired,
   datePresent: PropTypes.number,
