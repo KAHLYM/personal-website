@@ -47,6 +47,10 @@
     color: $color-dark-accent;
 }
 
+.SkillsContainer {
+    margin: 1rem 0 2rem 0;
+}
+
 .SkillsType {
     margin: 1rem 0 8px 0;
     display: block;
@@ -82,7 +86,7 @@
     margin-left: 2rem;
 }
 
-@media only screen and (max-width: $breakpoint-m) {
+@media only screen and (max-width: $breakpoint-l) {
     .About {
         margin: 0 0 0 0;
         flex-direction: column;

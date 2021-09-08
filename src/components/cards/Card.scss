@@ -1,7 +1,7 @@
-@import './Fonts.scss';
-@import './Width.scss';
+@import '../Fonts.scss';
+@import '../Width.scss';
 
-.ExperienceCard {
+.Card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -10,89 +10,103 @@
     margin: 1rem 0;
 }
 
-.ExperienceCardContainer {
+.CardContainer {
     display: flex;
     flex-direction: row;
-    flex: 1 0 50%;
+    flex: 1 0 auto;
     order: 1;
 }
 
-.ExperienceCardActionContainer {
+.CardActionContainer {
     display: flex;
     flex-direction: column;
-    flex: 1 0 50%;
+    flex: 1 0 auto;
     align-items: flex-end;
     order: 2;
 }
 
-.ExperienceCardChildren {
+.CardChildren {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
     order: 3;
 }
 
-.ExperienceCardImageContainer {
+.CardImageContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 2rem 0 1rem;
 }
 
-.ExperienceCardImage {
-    filter: brightness(0) invert(1);
+.CardImage {
     height: 4rem;
     width: 4rem;
 }
 
-.ExperienceCardTextContainer {
+.CardImage.Filter {
+    filter: brightness(0) invert(1);
+}
+
+.CardTextContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.ExperienceCardTitle,
-.ExperienceCardDescription,
-.ExperienceCardDate {
+.CardTitle,
+.CardDescription,
+.CardDate {
     margin: 0;
     color: white;
 }
 
-.ExperienceCardTitle {
+.CardTitle {
     font-family: $font-secondary;
 }
 
-.ExperienceCardAction {
+.CardAction {
     background-color: transparent;
-    border: 1px solid white;
+    border: none;
     border-radius: 1rem;
-    padding: 0.5rem 1rem;
     font-size: 0.8rem;
     height: calc(1.8rem + 2px);
+    line-height: 2rem;
     width: 8rem;
     margin: 0.25rem;
     color: white;
+    text-align: center;
 }
 
-.ExperienceCardAction:hover {
-    background-color: white;
-    border: 1px solid white;
+.CardAction:hover {
+    background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
-@media only screen and (max-width: $breakpoint-m) {
-    .ExperienceCard {
+@media only screen and (max-width: $breakpoint-l) {
+    .Card {
         padding: 1rem;
     }
 
-    .ExperienceCardImageContainer {
+    .CardContainer {
+        flex: 1 0 100%;
+    }
+
+    .CardImageContainer {
         padding: 0 1rem 0 0;
     }
 
-    .ExperienceCardActionContainer {
-        flex-direction: row;
+    .CardActionContainer {
         order: 4;
         margin-top: 1rem;
-        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .CardAction {
+        height: 3rem;
+        line-height: 3rem;
+        border-radius: 1.5rem;
+        flex: 1;
     }
 }

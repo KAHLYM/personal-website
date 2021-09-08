@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 
-import ExperienceCard from './ExperienceCard';
+import Education from './cards/Education';
+import Personal from './cards/Personal';
+import Professional from './cards/Professional';
 import Social from './Social';
 
+import LoughboroughUniversityLogo from '../assets/loughborough-university.png';
 import PersonalWebsiteLogo from '../assets/personal-website.png';
 import Profile from '../assets/profile.jpg';
 import SophosLogo from '../assets/sophos.png';
@@ -19,14 +22,14 @@ export class Home extends Component {
 
     const sophosDurationYear = sophosDuration.getFullYear() - 1970;
     switch (sophosDurationYear) {
-      case 0:
-        break;
-      case 1:
-        this.sophosDurationAsString += (`${sophosDurationYear} yr`);
-        break;
-      default:
-        this.sophosDurationAsString += (`${sophosDurationYear} yrs`);
-        break;
+    case 0:
+      break;
+    case 1:
+      this.sophosDurationAsString += (`${sophosDurationYear} yr`);
+      break;
+    default:
+      this.sophosDurationAsString += (`${sophosDurationYear} yrs`);
+      break;
     }
 
     const sophosDurationMonth = sophosDuration.getMonth() + 1;
@@ -34,24 +37,19 @@ export class Home extends Component {
       this.sophosDurationAsString += ' ';
     }
     switch (sophosDurationMonth) {
-      case 0:
-        break;
-      case 1:
-        this.sophosDurationAsString += (`${sophosDurationMonth} mon`);
-        break;
-      default:
-        this.sophosDurationAsString += (`${sophosDurationMonth} mos`);
-        break;
+    case 0:
+      break;
+    case 1:
+      this.sophosDurationAsString += (`${sophosDurationMonth} mon`);
+      break;
+    default:
+      this.sophosDurationAsString += (`${sophosDurationMonth} mos`);
+      break;
     }
   }
 
   componentDidMount() {
     document.title = 'Callum Wright';
-  }
-
-  nextPath(path) {
-    const { history } = this.context;
-    history.push(path);
   }
 
   render() {
@@ -91,15 +89,15 @@ export class Home extends Component {
           </div>
         </div>
         <div className="ExperienceContainer animated fadeIn animatedDelay500ms">
-          <div className="Professional">
+          <div>
             <p>Professional</p>
-            <ExperienceCard
+            <Professional
               color="#225a99"
               componentName="sophos"
-              dateOverride="present"
               datePresent
               dateStartMonth={3}
               dateStartYear={2018}
+              dateOverride="Jun 2017 - present"
               description="cybersecurity"
               image={SophosLogo}
               title="Sophos"
@@ -124,23 +122,24 @@ export class Home extends Component {
                 <p>Jun 2017 - Aug 2018 · 1 yr 3 mos</p>
                 <p>Abingdon, United Kingdom</p>
               </div>
-            </ExperienceCard>
+            </Professional>
           </div>
-          <div className="Personal">
+          <div>
             <p>Personal</p>
-            <ExperienceCard
-              color="#4285f4"
+            <Personal
+              color="#4285F4"
               componentName="portfolio"
               dateEndMonth={6}
               dateEndYear={2020}
               dateStartMonth={5}
               dateStartYear={2020}
               description="this website"
+              github="https://github.com/KAHLYM/personal-website"
               image={PersonalWebsiteLogo}
               title="Personal Website"
             />
-            <ExperienceCard
-              color="#128c7e"
+            <Personal
+              color="#128C7E"
               componentName="whanalysis"
               dateEndMonth={4}
               dateEndYear={2020}
@@ -149,7 +148,19 @@ export class Home extends Component {
               description="whatsapp analysis"
               image={WhanalysisLogo}
               title="Whanalysis"
-              url="https://whanalysis.com"
+              visit="https://whanalysis.com"
+            />
+          </div>
+          <div>
+            <p>Education</p>
+            <Education
+              color="#4A1863"
+              componentName="university"
+              dateEndYear={2019}
+              dateStartYear={2015}
+              description="bachelor's degree, computer science, second class honours, upper division"
+              image={LoughboroughUniversityLogo}
+              title="Loughborough University"
             />
           </div>
         </div>

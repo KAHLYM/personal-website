@@ -31,11 +31,11 @@ export class Sophos extends Component {
             </a>
             &nbsp;is a British&nbsp;
             <span className="Highlight">security software</span>
-&nbsp;
+            &nbsp;
             and hardware company that develops network, end user and server protection. More than 200 million&nbsp;
             users in 150 countries rely on Sophos to&nbsp;
             <span className="Highlight">end-to-end protection</span>
-&nbsp;
+            &nbsp;
             against threats and data loss.
           </div>
 

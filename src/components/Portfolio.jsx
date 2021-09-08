@@ -12,6 +12,7 @@ export class Portfolio extends Component {
     return (
       <div>
         <Experience
+          github="https://github.com/KAHLYM/personal-website"
           title="Portfolio"
           type="personal project"
           skills={['React', 'JavaScript', 'HTML5', 'Sass']}
@@ -37,7 +38,7 @@ export class Portfolio extends Component {
           <ExperienceSection title="Design">
             The key objective was to create a&nbsp;
             <span className="Highlight">clear consistent design</span>
-&nbsp;
+            &nbsp;
             throughout. The limited use of images maintained a lightweight design that did not overwhelm. Those&nbsp;
             images that were used were designed using&nbsp;
             <a

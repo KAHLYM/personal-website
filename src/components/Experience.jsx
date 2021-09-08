@@ -15,9 +15,14 @@ class Experience extends Component {
     return ((type === 'personal project') && (url));
   }
 
+  showGitHub = () => {
+    const { type, github } = this.props;
+    return ((type === 'personal project') && (github));
+  }
+
   render() {
     const {
-      children, skills, time, title, type, url,
+      children, github, skills, time, title, type, url,
     } = this.props;
     return (
       <div className="Experience">
@@ -50,6 +55,18 @@ class Experience extends Component {
             </a>
           </div>
         ) : null}
+        {this.showGitHub() ? (
+          <div className="ExperienceVisitWrapper animated fadeIn">
+            <a
+              className="ExperienceChip ExperienceVisit animated fadeIn"
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github
+            </a>
+          </div>
+        ) : null}
         <div className="ExperienceChildren animated fadeIn animatedDelay500ms">{children}</div>
       </div>
     );
@@ -58,6 +75,7 @@ class Experience extends Component {
 
 Experience.propTypes = {
   children: PropTypes.node,
+  github: PropTypes.string,
   time: PropTypes.string,
   title: PropTypes.string,
   type: PropTypes.string,
@@ -67,6 +85,7 @@ Experience.propTypes = {
 
 Experience.defaultProps = {
   children: '',
+  github: '',
   time: 0,
   title: '',
   type: '',
