@@ -3,15 +3,15 @@
 
 # Personal Wesbite
 
-# Languages, Libraries & Frameworks
+## Languages, Libraries & Frameworks
 
 The frontend is built with [React](https://reactjs.org/) and makes use of [Sass](https://sass-lang.com/).
 
 The backend is built with [Firebase](https://firebase.google.com/). Although, Firebase is currently only used to host the website.
 
-# Automation
+## Automation
 
-## Main
+### Main
 
 When a pull request is raised against `main` the following automation executes:
 * Node.js build
@@ -20,6 +20,6 @@ When a pull request is raised against `main` the following automation executes:
   
 This is true for pushes to pull requests against `main` too.
 
-## Release
+### Release
 
 When a pull request is raised against `release` the "last-updated" string will be auto-updated. On a push to `release` the changes will be auto-published to Firebase.
