@@ -16,7 +16,7 @@ The backend is built with [Firebase](https://firebase.google.com/). Although, Fi
 When a pull request is raised against `main` the following automation executes:
 * Node.js build
 * Node.js tests
-* Linting with [ESLint](https://eslint.org/) following airbnb style and [stylelint](https://stylelint.io/) are auto-fixed)
+* Linting with [ESLint](https://eslint.org/) following airbnb style and [stylelint](https://stylelint.io/) are auto-fixed
   
 This is true for pushes to pull requests against `main` too.
 
