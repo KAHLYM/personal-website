@@ -1,4 +1,4 @@
-![GitHub branch checks state](https://img.shields.io/github/checks-status/KAHLYM/personal-website/main?style=for-the-badge)
-![GitHub branch checks state](https://img.shields.io/github/checks-status/KAHLYM/personal-website/release?style=for-the-badge)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/KAHLYM/personal-website/Node.js/main?label=build%20%28main%29&style=flat-square)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/KAHLYM/personal-website/Node.js/main?label=build%20%28release%29&style=flat-square)
 
 # Personal Wesbite
