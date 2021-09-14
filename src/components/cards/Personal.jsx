@@ -41,7 +41,7 @@ class Personal extends Card {
                 onClick={() => this.onClick(visit)}
                 type="button"
               >
-                WESBITE
+                WEBSITE
               </button>
             )
           }
