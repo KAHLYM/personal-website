@@ -28,6 +28,22 @@ import './components/Width.scss';
 
 require('dotenv').config();
 
+import * as firebase from 'firebase'
+import 'firebase/analytics'
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBn6hxxiWlrkfqjRw_2KS9MqjLIdcSuWss",
+  authDomain: "personal-website-2d0be.firebaseapp.com",
+  projectId: "personal-website-2d0be",
+  storageBucket: "personal-website-2d0be.appspot.com",
+  messagingSenderId: "1003861772544",
+  appId: "1:1003861772544:web:bede1ba23a8c1d30444be5",
+  measurementId: "G-SYK8S6TJB7"
+};
+
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
 function App() {
   return (
     <div className="App">
