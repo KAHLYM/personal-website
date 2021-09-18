@@ -28,8 +28,8 @@ import './components/Width.scss';
 
 require('dotenv').config();
 
-import * as firebase from 'firebase'
-import 'firebase/analytics'
+import { initializeApp } from 'firebase/app'
+import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBn6hxxiWlrkfqjRw_2KS9MqjLIdcSuWss",
@@ -41,8 +41,8 @@ const firebaseConfig = {
   measurementId: "G-SYK8S6TJB7"
 };
 
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+initializeApp(firebaseConfig);
+getAnalytics();
 
 function App() {
   return (
