@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Experience from './Experience';
 import ExperienceSection from './ExperienceSection';
+import ExternalLink from './ExternalLink';
 
 export class Portfolio extends Component {
   componentDidMount() {
@@ -41,14 +42,11 @@ export class Portfolio extends Component {
             &nbsp;
             throughout. The limited use of images maintained a lightweight design that did not overwhelm. Those&nbsp;
             images that were used were designed using&nbsp;
-            <a
-              className="Highlight"
-              href="https://www.humaaans.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Humaaans
-            </a>
+            <ExternalLink
+                classNames={["Highlight"]}
+                href="https://www.humaaans.com/"
+                text="Humaaans"
+              />
             ; a flexible illustration library.&nbsp;
             <br />
             <br />

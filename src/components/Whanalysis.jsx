@@ -5,6 +5,7 @@ import ExperienceSection from './ExperienceSection';
 
 import HumaaansWhanalysisMotivation from '../assets/humaaans-whanalysis-motivation.png';
 import HumaaansWhanalysisProcess from '../assets/humaaans-whanalysis-process.png';
+import ExternalLink from './ExternalLink';
 
 export class Whanalysis extends Component {
   componentDidMount() {
@@ -44,14 +45,11 @@ export class Whanalysis extends Component {
           <ExperienceSection title="Process">
             <p className="ExperienceSectionSubTitle">Material Design</p>
             Given that Angular was the chosen framework, Material Design was the obvious choice.&nbsp;
-            <a
-              className="Highlight"
+            <ExternalLink
+              classNames={["Highlight"]}
               href="https://material.angular.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Angular Material
-            </a>
+              text="Angular Material"
+            />
             &nbsp;offered intuitive and versatile components, optimized for web, mobile and desktop that was&nbsp;
             backed by research to establish thorough design principles. These features enabled me to focus on&nbsp;
             learning Angular and&nbsp;
@@ -70,14 +68,11 @@ export class Whanalysis extends Component {
             . The ability to share analysis emphasised the importance of these concerns.
             <br />
             <br />
-            <a
-              className="Highlight"
+            <ExternalLink
+              classNames={["Highlight"]}
               href="https://firebase.google.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Google Firebase
-            </a>
+              text="Google Firebase"
+            />
             &nbsp;recommended security rules to block unauthorized access to data; these were enforced. In&nbsp;
             <span className="Highlight">accordance with GDPR</span>
             , data is retained for the limited time that is deemed necessary. The user submitted chat messages are&nbsp;
@@ -101,14 +96,11 @@ export class Whanalysis extends Component {
             <span className="Highlight">holistic experience</span>
             ; one that was less challenging than anticipated given the higher complexity in comparison to&nbsp;
             alternatives React and&nbsp;
-            <a
-              className="Highlight"
+            <ExternalLink
+              classNames={["Highlight"]}
               href="https://vuejs.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Vue
-            </a>
+              text="Vue"
+            />
             . Being a fully-fledged framework, Angular eliminated the choice of libraries and allowed focus to&nbsp;
             remain on the concepts rather than managerial decisions. With previous experience in type-based&nbsp;
             programming, the mandate to use TypeScript was welcome and offered a familiar experience. Having&nbsp;

@@ -151,3 +151,11 @@ a:active {
 .Dark .IsActive .HomeNavLink {
     color: $color-dark-accent;
 }
+
+.HomeHighlight {
+    color: $color-light-accent !important;
+}
+
+.Dark .HomeHighlight {
+    color: $color-dark-accent !important;
+}

@@ -4,6 +4,7 @@ import Experience from './Experience';
 import ExperienceSection from './ExperienceSection';
 
 import dissertation from '../assets/dissertation.pdf';
+import ExternalLink from './ExternalLink';
 
 function University() {
   return (
@@ -14,14 +15,11 @@ function University() {
         time="1"
       >
         <div className="ExperienceDescription">
-          <a
-            className="Highlight"
+          <ExternalLink
+            classNames={["Highlight"]}
             href="https://www.lboro.ac.uk/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Loughborough University
-          </a>
+            text="Loughborough University"
+          />
           &nbsp;is a public research university in the market town of Loughborough, Leicestershire,&nbsp;
           in the East Midlands of England.
         </div>
@@ -41,14 +39,11 @@ function University() {
             <li>Robotics</li>
           </ul>
           <p className="ExperienceSectionSubTitle">Project &amp; Dissertation</p>
-          <a
-            className="Highlight"
+          <ExternalLink
+            classNames={["Highlight"]}
             href={dissertation}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Classification of Environmental Sounds Events
-          </a>
+            text="Classification of Environmental Sounds Events"
+          />
           <div className="ExperienceSectionQuote">
             <p>
               Environmental sound recognition is underdeveloped as a consequence of the scarcity of

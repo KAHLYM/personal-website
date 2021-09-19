@@ -3,12 +3,9 @@ import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import Card from './Card';
+import ExternalLink from '../ExternalLink';
 
 class Personal extends Card {
-  onClick = (url) => {
-    window.open(url, '_blank');
-  }
-
   render() {
     const {
       color, componentName, description, github, image, title, visit,
@@ -36,25 +33,21 @@ class Personal extends Card {
           {
             visit
             && (
-              <button
-                className="CardAction"
-                onClick={() => this.onClick(visit)}
-                type="button"
-              >
-                WEBSITE
-              </button>
+              <ExternalLink
+                classNames={["CardAction"]}
+                href={visit}
+                text="WEBSITE"
+              />
             )
           }
           {
             github
             && (
-              <button
-                className="CardAction"
-                onClick={() => this.onClick(github)}
-                type="button"
-              >
-                GITHUB
-              </button>
+              <ExternalLink
+                classNames={["CardAction"]}
+                href={github}
+                text="GITHUB"
+              />
             )
           }
         </div>

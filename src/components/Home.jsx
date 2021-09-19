@@ -10,6 +10,7 @@ import PersonalWebsiteLogo from '../assets/personal-website.png';
 import Profile from '../assets/profile.jpg';
 import SophosLogo from '../assets/sophos.png';
 import WhanalysisLogo from '../assets/whanalysis.png';
+import ExternalLink from './ExternalLink';
 
 export class Home extends Component {
   constructor() {
@@ -62,25 +63,21 @@ export class Home extends Component {
           <div>
             <div className="PrefaceText">
               {/* Callum Wright currently works as a Software Engineer III at Sophos, Abingdon. */}
-              <span className="animated fadeIn" style={{ color: 'var(--color-light-accent)' }}>Callum Wright</span>
+              <span className="animated fadeIn HomeHighlight">Callum Wright</span>
               <span className="animated fadeIn animatedDelay500ms"> currently works as a </span>
-              <span className="animated fadeIn noWrap" style={{ color: 'var(--color-light-accent)' }}>Software </span>
+              <span className="animated fadeIn noWrap HomeHighlight">Software </span>
               <span
-                className="animated fadeIn noWrap"
-                style={{ color: 'var(--color-light-accent)', whiteSpace: 'nowrap' }}
+                className="animated fadeIn noWrap HomeHighlight"
+                style={{ whiteSpace: 'nowrap' }}
               >
                 Engineer III
               </span>
               <span className="animated fadeIn animatedDelay500ms"> at </span>
-              <a
-                className="animated fadeIn Highlight"
-                style={{ color: 'var(--color-light-accent)' }}
+              <ExternalLink
+                classNames={["animated", "fadeIn", "Highlight", "HomeHighlight"]}
                 href="https://www.sophos.com/en-us.aspx"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Sophos
-              </a>
+                text="Sophos"
+              />
               <span className="animated fadeIn animatedDelay500ms">, Abingdon.</span>
             </div>
             <div>

@@ -4,6 +4,7 @@ import Experience from './Experience';
 import ExperienceSection from './ExperienceSection';
 
 import HumaaansSophos from '../assets/humaaans-sophos.png';
+import ExternalLink from './ExternalLink';
 
 export class Sophos extends Component {
   componentDidMount() {
@@ -21,14 +22,11 @@ export class Sophos extends Component {
         >
 
           <div className="ExperienceDescription">
-            <a
-              className="Highlight"
+            <ExternalLink
+              classNames={["Highlight"]}
               href="https://www.sophos.com/en-us.aspx"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Sophos Group plc
-            </a>
+              text="Sophos Group plc"
+            />
             &nbsp;is a British&nbsp;
             <span className="Highlight">security software</span>
             &nbsp;
@@ -44,28 +42,22 @@ export class Sophos extends Component {
             My career at Sophos began as a Software Engineer Intern during my university year in industry. I&nbsp;
             worked alongside other software engineers of varying levels from graduate to senior. The team that I&nbsp;
             was assigned to -&nbsp;
-            <a
-              className="Highlight"
+            <ExternalLink
+              classNames={["Highlight"]}
               href="https://www.sophos.com/en-us/products/server-security.aspx"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Windows Cloud Server
-            </a>
+              text="Windows Cloud Server"
+            />
             , developed three products: Update Cache, Message Relay and Server Lockdown.&nbsp;
             <br />
             <br />
             <p className="ExperienceSectionSubTitle">Post Graduation</p>
             Subsequently, after graduating I returned to Sophos as a Software Engineer II and to a different team,&nbsp;
             I was introduced to&nbsp;
-            <a
-              className="Highlight"
+            <ExternalLink
+              classNames={["Highlight"]}
               href="https://www.hitmanpro.com/en-us/alert"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              HitmanPro.Alert
-            </a>
+              text="HitmanPro.Alert"
+            />
             ; a behavioural based exploit mitigation product. Being behavioural based, the product was susceptible&nbsp;
             to false positives. My initial focus was to accommodate existing customer requirements and develop&nbsp;
             features to&nbsp;
@@ -89,14 +81,11 @@ export class Sophos extends Component {
             <br />
             <p className="ExperienceSectionSubTitle">Post Graduation and Further Experience</p>
             Working on&nbsp;
-            <a
-              className="Highlight"
+            <ExternalLink
+              classNames={["Highlight"]}
               href="https://www.hitmanpro.com/en-us/alert"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              HitmanPro.Alert&nbsp;
-            </a>
+              text="HitmanPro.Alert"
+            />
             , low level driver features highlighted the importance of writing high quality code with thorough&nbsp;
             error handling to accommodate edge cases that could result in critical failure. This further enforced&nbsp;
             the&nbsp;
