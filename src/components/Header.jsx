@@ -14,8 +14,9 @@ function Header() {
         <ExternalLink
           classNames={["HeaderNavLink"]}
           href={resume}
-          text="RÉSUMÉ"
-        />
+        >
+          RÉSUMÉ
+        </ExternalLink>
         <NavLink to="/about" activeClassName="IsActive">
           <span className="HeaderNavLink">ABOUT</span>
         </NavLink>

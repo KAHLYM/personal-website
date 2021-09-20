@@ -16,9 +16,7 @@ class ExternalLink extends Component {
   }
 
   render() {
-    const {
-        href, text
-    } = this.props;
+    const { children, href } = this.props;
     return (
       <a
         className={ this.classNamesAsString }
@@ -27,21 +25,20 @@ class ExternalLink extends Component {
         rel="noopener noreferrer"
         onClick={() => LogEventExternalLink(href)}
       >
-        { text }
+        {children}
       </a>
     );
-
   }
 }
 
 ExternalLink.propTypes = {
+  children: PropTypes.node.isRequired,
   classNames: PropTypes.arrayOf(PropTypes.string),
   href: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
 };
 
 ExternalLink.defaultProps = {
-    classNames: '',
+  classNames: '',
 };
 
 export default ExternalLink;

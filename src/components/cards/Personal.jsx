@@ -36,8 +36,9 @@ class Personal extends Card {
               <ExternalLink
                 classNames={["CardAction"]}
                 href={visit}
-                text="WEBSITE"
-              />
+              >
+                WEBSITE
+              </ExternalLink>
             )
           }
           {
@@ -46,8 +47,9 @@ class Personal extends Card {
               <ExternalLink
                 classNames={["CardAction"]}
                 href={github}
-                text="GITHUB"
-              />
+              >
+                GITHUB
+              </ExternalLink>
             )
           }
         </div>

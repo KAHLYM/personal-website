@@ -48,8 +48,9 @@ export class Whanalysis extends Component {
             <ExternalLink
               classNames={["Highlight"]}
               href="https://material.angular.io"
-              text="Angular Material"
-            />
+            >
+              Angular Material
+            </ExternalLink>
             &nbsp;offered intuitive and versatile components, optimized for web, mobile and desktop that was&nbsp;
             backed by research to establish thorough design principles. These features enabled me to focus on&nbsp;
             learning Angular and&nbsp;
@@ -71,8 +72,9 @@ export class Whanalysis extends Component {
             <ExternalLink
               classNames={["Highlight"]}
               href="https://firebase.google.com"
-              text="Google Firebase"
-            />
+            >
+              Google Firebase
+            </ExternalLink>
             &nbsp;recommended security rules to block unauthorized access to data; these were enforced. In&nbsp;
             <span className="Highlight">accordance with GDPR</span>
             , data is retained for the limited time that is deemed necessary. The user submitted chat messages are&nbsp;
@@ -99,8 +101,9 @@ export class Whanalysis extends Component {
             <ExternalLink
               classNames={["Highlight"]}
               href="https://vuejs.org"
-              text="Vue"
-            />
+            >
+              Vue
+            </ExternalLink>
             . Being a fully-fledged framework, Angular eliminated the choice of libraries and allowed focus to&nbsp;
             remain on the concepts rather than managerial decisions. With previous experience in type-based&nbsp;
             programming, the mandate to use TypeScript was welcome and offered a familiar experience. Having&nbsp;

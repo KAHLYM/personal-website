@@ -18,8 +18,9 @@ function University() {
           <ExternalLink
             classNames={["Highlight"]}
             href="https://www.lboro.ac.uk"
-            text="Loughborough University"
-          />
+          >
+            Loughborough University
+          </ExternalLink>
           &nbsp;is a public research university in the market town of Loughborough, Leicestershire,&nbsp;
           in the East Midlands of England.
         </div>
@@ -42,8 +43,9 @@ function University() {
           <ExternalLink
             classNames={["Highlight"]}
             href={dissertation}
-            text="Classification of Environmental Sounds Events"
-          />
+          >
+            Classification of Environmental Sounds Events
+          </ExternalLink>
           <div className="ExperienceSectionQuote">
             <p>
               Environmental sound recognition is underdeveloped as a consequence of the scarcity of

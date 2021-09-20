@@ -43,10 +43,11 @@ export class Portfolio extends Component {
             throughout. The limited use of images maintained a lightweight design that did not overwhelm. Those&nbsp;
             images that were used were designed using&nbsp;
             <ExternalLink
-                classNames={["Highlight"]}
-                href="https://www.humaaans.com"
-                text="Humaaans"
-              />
+              classNames={["Highlight"]}
+              href="https://www.humaaans.com"
+            >
+              Humaaans
+            </ExternalLink>
             ; a flexible illustration library.&nbsp;
             <br />
             <br />

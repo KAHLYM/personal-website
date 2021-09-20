@@ -25,8 +25,9 @@ export class Sophos extends Component {
             <ExternalLink
               classNames={["Highlight"]}
               href="https://www.sophos.com/en-us.aspx"
-              text="Sophos Group plc"
-            />
+            >
+              Sophos Group plc
+            </ExternalLink>
             &nbsp;is a British&nbsp;
             <span className="Highlight">security software</span>
             &nbsp;
@@ -45,8 +46,9 @@ export class Sophos extends Component {
             <ExternalLink
               classNames={["Highlight"]}
               href="https://www.sophos.com/en-us/products/server-security.aspx"
-              text="Windows Cloud Server"
-            />
+            >
+              Windows Cloud Server
+            </ExternalLink>
             , developed three products: Update Cache, Message Relay and Server Lockdown.&nbsp;
             <br />
             <br />
@@ -56,8 +58,9 @@ export class Sophos extends Component {
             <ExternalLink
               classNames={["Highlight"]}
               href="https://www.hitmanpro.com/en-us/alert"
-              text="HitmanPro.Alert"
-            />
+            >
+              HitmanPro.Alert
+            </ExternalLink>
             ; a behavioural based exploit mitigation product. Being behavioural based, the product was susceptible&nbsp;
             to false positives. My initial focus was to accommodate existing customer requirements and develop&nbsp;
             features to&nbsp;
@@ -84,8 +87,9 @@ export class Sophos extends Component {
             <ExternalLink
               classNames={["Highlight"]}
               href="https://www.hitmanpro.com/en-us/alert"
-              text="HitmanPro.Alert"
-            />
+            >
+              HitmanPro.Alert
+            </ExternalLink>
             , low level driver features highlighted the importance of writing high quality code with thorough&nbsp;
             error handling to accommodate edge cases that could result in critical failure. This further enforced&nbsp;
             the&nbsp;

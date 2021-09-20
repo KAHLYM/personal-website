@@ -50,8 +50,9 @@ class Experience extends Component {
             <ExternalLink
               classNames={["ExperienceChip", "ExperienceVisit", "animated", "fadeIn"]}
               href={url}
-              text="visit website"
-            />
+            >
+              visit website
+            </ExternalLink>
           </div>
         ) : null}
         {this.showGitHub() ? (
@@ -59,8 +60,9 @@ class Experience extends Component {
             <ExternalLink
               classNames={["ExperienceChip", "ExperienceVisit", "animated", "fadeIn"]}
               href={github}
-              text="github"
-            />
+            >
+              github
+            </ExternalLink>
           </div>
         ) : null}
         <div className="ExperienceChildren animated fadeIn animatedDelay500ms">{children}</div>
