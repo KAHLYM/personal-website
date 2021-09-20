@@ -47,7 +47,7 @@ export class Whanalysis extends Component {
             Given that Angular was the chosen framework, Material Design was the obvious choice.&nbsp;
             <ExternalLink
               classNames={["Highlight"]}
-              href="https://material.angular.io/"
+              href="https://material.angular.io"
               text="Angular Material"
             />
             &nbsp;offered intuitive and versatile components, optimized for web, mobile and desktop that was&nbsp;
@@ -70,7 +70,7 @@ export class Whanalysis extends Component {
             <br />
             <ExternalLink
               classNames={["Highlight"]}
-              href="https://firebase.google.com/"
+              href="https://firebase.google.com"
               text="Google Firebase"
             />
             &nbsp;recommended security rules to block unauthorized access to data; these were enforced. In&nbsp;
@@ -98,7 +98,7 @@ export class Whanalysis extends Component {
             alternatives React and&nbsp;
             <ExternalLink
               classNames={["Highlight"]}
-              href="https://vuejs.org/"
+              href="https://vuejs.org"
               text="Vue"
             />
             . Being a fully-fledged framework, Angular eliminated the choice of libraries and allowed focus to&nbsp;

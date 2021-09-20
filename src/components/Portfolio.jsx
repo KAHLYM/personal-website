@@ -44,7 +44,7 @@ export class Portfolio extends Component {
             images that were used were designed using&nbsp;
             <ExternalLink
                 classNames={["Highlight"]}
-                href="https://www.humaaans.com/"
+                href="https://www.humaaans.com"
                 text="Humaaans"
               />
             ; a flexible illustration library.&nbsp;

@@ -24,7 +24,7 @@ class Social extends Component {
         </a>
         <a
           className="SocialIcon animated fadeIn animatedDelay500ms"
-          href="https://www.linkedin.com/in/callum-wright-81baa3127/"
+          href="https://www.linkedin.com/in/callum-wright-81baa3127"
           target="_blank"
           rel="noopener noreferrer"
         >

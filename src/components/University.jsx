@@ -17,7 +17,7 @@ function University() {
         <div className="ExperienceDescription">
           <ExternalLink
             classNames={["Highlight"]}
-            href="https://www.lboro.ac.uk/"
+            href="https://www.lboro.ac.uk"
             text="Loughborough University"
           />
           &nbsp;is a public research university in the market town of Loughborough, Leicestershire,&nbsp;
