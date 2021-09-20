@@ -33,7 +33,7 @@ class Social extends Component {
         </ExternalLink>
         <ExternalLink
         classNames={["SocialIcon", "animated", "fadeIn", "animatedDelay500ms"]}
-          href="mailto:wrightci01w@gmail.com"
+          href="mailto:wrightci01s@gmail.com"
           style={{ marginRight: '0px' }}
         >
           <Gmail
