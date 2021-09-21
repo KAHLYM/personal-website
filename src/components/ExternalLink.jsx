@@ -13,7 +13,7 @@ class ExternalLink extends Component {
     for (const classNameIndex in classNames) {
       this.classNamesAsString += ' ';
       this.classNamesAsString += classNames[classNameIndex];
-    };
+    }
   }
 
   render() {
