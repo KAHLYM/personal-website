@@ -23,7 +23,7 @@ export class Sophos extends Component {
 
           <div className="ExperienceDescription">
             <ExternalLink
-              classNames={["Highlight"]}
+              classNames={['Highlight']}
               href="https://www.sophos.com/en-us.aspx"
             >
               Sophos Group plc
@@ -44,7 +44,7 @@ export class Sophos extends Component {
             worked alongside other software engineers of varying levels from graduate to senior. The team that I&nbsp;
             was assigned to -&nbsp;
             <ExternalLink
-              classNames={["Highlight"]}
+              classNames={['Highlight']}
               href="https://www.sophos.com/en-us/products/server-security.aspx"
             >
               Windows Cloud Server
@@ -56,7 +56,7 @@ export class Sophos extends Component {
             Subsequently, after graduating I returned to Sophos as a Software Engineer II and to a different team,&nbsp;
             I was introduced to&nbsp;
             <ExternalLink
-              classNames={["Highlight"]}
+              classNames={['Highlight']}
               href="https://www.hitmanpro.com/en-us/alert"
             >
               HitmanPro.Alert
@@ -85,7 +85,7 @@ export class Sophos extends Component {
             <p className="ExperienceSectionSubTitle">Post Graduation and Further Experience</p>
             Working on&nbsp;
             <ExternalLink
-              classNames={["Highlight"]}
+              classNames={['Highlight']}
               href="https://www.hitmanpro.com/en-us/alert"
             >
               HitmanPro.Alert

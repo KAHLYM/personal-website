@@ -16,7 +16,7 @@ function University() {
       >
         <div className="ExperienceDescription">
           <ExternalLink
-            classNames={["Highlight"]}
+            classNames={['Highlight']}
             href="https://www.lboro.ac.uk"
           >
             Loughborough University
@@ -41,7 +41,7 @@ function University() {
           </ul>
           <p className="ExperienceSectionSubTitle">Project &amp; Dissertation</p>
           <ExternalLink
-            classNames={["Highlight"]}
+            classNames={['Highlight']}
             href={dissertation}
           >
             Classification of Environmental Sounds Events

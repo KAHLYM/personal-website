@@ -50,7 +50,7 @@ class ThemeToggle extends Component {
 
     // LogEventTheme if user input and not initial componentDidMount
     if (this.isComponentMounted) {
-      LogEventTheme(enableLightTheme ? "light" : "dark");
+      LogEventTheme(enableLightTheme ? 'light' : 'dark');
     }
   }
 

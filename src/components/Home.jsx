@@ -74,7 +74,7 @@ export class Home extends Component {
               </span>
               <span className="animated fadeIn animatedDelay500ms"> at </span>
               <ExternalLink
-                classNames={["animated", "fadeIn", "Highlight", "HomeHighlight"]}
+                classNames={['animated', 'fadeIn', 'Highlight', 'HomeHighlight']}
                 href="https://www.sophos.com/en-us.aspx"
               >
                 Sophos

@@ -46,7 +46,7 @@ export class Whanalysis extends Component {
             <p className="ExperienceSectionSubTitle">Material Design</p>
             Given that Angular was the chosen framework, Material Design was the obvious choice.&nbsp;
             <ExternalLink
-              classNames={["Highlight"]}
+              classNames={['Highlight']}
               href="https://material.angular.io"
             >
               Angular Material
@@ -70,7 +70,7 @@ export class Whanalysis extends Component {
             <br />
             <br />
             <ExternalLink
-              classNames={["Highlight"]}
+              classNames={['Highlight']}
               href="https://firebase.google.com"
             >
               Google Firebase
@@ -99,7 +99,7 @@ export class Whanalysis extends Component {
             ; one that was less challenging than anticipated given the higher complexity in comparison to&nbsp;
             alternatives React and&nbsp;
             <ExternalLink
-              classNames={["Highlight"]}
+              classNames={['Highlight']}
               href="https://vuejs.org"
             >
               Vue
