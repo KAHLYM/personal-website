@@ -9,10 +9,11 @@ class ExternalLink extends Component {
     super(props);
 
     this.classNamesAsString = "ExternalLink";
-    for (const className of this.props.classNames) {
-        this.classNamesAsString += " ";
-        this.classNamesAsString += className;
-    }
+    const { classNames } = this.props;
+    classNames.array.forEach(className => {
+      this.classNamesAsString += " ";
+      this.classNamesAsString += className;
+    });
   }
 
   render() {
