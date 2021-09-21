@@ -8,10 +8,10 @@ class ExternalLink extends Component {
   constructor(props) {
     super(props);
 
-    this.classNamesAsString = "ExternalLink";
+    this.classNamesAsString = 'ExternalLink';
     const { classNames } = this.props;
     classNames.array.forEach(className => {
-      this.classNamesAsString += " ";
+      this.classNamesAsString += ' ';
       this.classNamesAsString += className;
     });
   }
@@ -20,8 +20,8 @@ class ExternalLink extends Component {
     const { children, href } = this.props;
     return (
       <a
-        className={ this.classNamesAsString }
-        href={ href }
+        className={this.classNamesAsString}
+        href={href}
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => LogEventExternalLink(href)}

@@ -34,7 +34,7 @@ class Personal extends Card {
             visit
             && (
               <ExternalLink
-                classNames={["CardAction"]}
+                classNames={['CardAction']}
                 href={visit}
               >
                 WEBSITE
@@ -45,7 +45,7 @@ class Personal extends Card {
             github
             && (
               <ExternalLink
-                classNames={["CardAction"]}
+                classNames={['CardAction']}
                 href={github}
               >
                 GITHUB

@@ -12,7 +12,7 @@ class Social extends Component {
     return (
       <div className="SocialWrapper" style={{ marginBottom: bottom }}>
         <ExternalLink
-          classNames={["SocialIcon", "animated", "fadeIn", "animatedDelay500ms"]}
+          classNames={['SocialIcon', 'animated', 'fadeIn', 'animatedDelay500ms']}
           href="https://www.github.com/KAHLYM"
         >
           <Github
@@ -22,7 +22,7 @@ class Social extends Component {
           />
         </ExternalLink>
         <ExternalLink
-          classNames={["SocialIcon", "animated", "fadeIn", "animatedDelay500ms"]}
+          classNames={['SocialIcon', 'animated', 'fadeIn', 'animatedDelay500ms']}
           href="https://www.linkedin.com/in/callum-wright-81baa3127"
         >
           <Linkedin
@@ -32,7 +32,7 @@ class Social extends Component {
           />
         </ExternalLink>
         <ExternalLink
-        classNames={["SocialIcon", "animated", "fadeIn", "animatedDelay500ms"]}
+          classNames={['SocialIcon', 'animated', 'fadeIn', 'animatedDelay500ms']}
           href="mailto:wrightci01s@gmail.com"
           style={{ marginRight: '0px' }}
         >

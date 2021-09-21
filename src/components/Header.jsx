@@ -12,7 +12,7 @@ function Header() {
       <div className="HeaderLeft">
         <ThemeToggle />
         <ExternalLink
-          classNames={["HeaderNavLink"]}
+          classNames={['HeaderNavLink']}
           href={resume}
         >
           RÉSUMÉ

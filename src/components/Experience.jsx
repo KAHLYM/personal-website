@@ -48,7 +48,7 @@ class Experience extends Component {
         {this.showWebsite() ? (
           <div className="ExperienceVisitWrapper animated fadeIn">
             <ExternalLink
-              classNames={["ExperienceChip", "ExperienceVisit", "animated", "fadeIn"]}
+              classNames={['ExperienceChip', 'ExperienceVisit', 'animated', 'fadeIn']}
               href={url}
             >
               visit website
@@ -58,7 +58,7 @@ class Experience extends Component {
         {this.showGitHub() ? (
           <div className="ExperienceVisitWrapper animated fadeIn">
             <ExternalLink
-              classNames={["ExperienceChip", "ExperienceVisit", "animated", "fadeIn"]}
+              classNames={['ExperienceChip', 'ExperienceVisit', 'animated', 'fadeIn']}
               href={github}
             >
               github
