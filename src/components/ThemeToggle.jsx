@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import ModeDark from '../assets/mode-dark.png';
 import ModeLight from '../assets/mode-light.png';
+import { LogEventTheme } from './Analytics';
 
 class ThemeToggle extends Component {
   componentDidMount() {
@@ -42,6 +43,8 @@ class ThemeToggle extends Component {
         metaThemeColor.setAttribute('content', '#121212');
       }
     }
+
+    LogEventTheme(enableLightTheme ? "light" : "dark");
   }
 
   render() {

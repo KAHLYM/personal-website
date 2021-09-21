@@ -7,3 +7,11 @@ export function LogEventExternalLink(item_id) {
         item_id: item_id
     });
 }
+
+export function LogEventTheme(item_id) {
+    const analytics = getAnalytics();
+    logEvent(analytics, 'select_content', {
+        content_type: "theme",
+        item_id: item_id
+    });
+}
