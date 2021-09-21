@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import resume from '../assets/Resume.pdf';
+import ExternalLink from './ExternalLink';
 
 import ThemeToggle from './ThemeToggle';
 
@@ -10,7 +11,12 @@ function Header() {
     <div className="Header animated fadeIn animatedDelay500ms">
       <div className="HeaderLeft">
         <ThemeToggle />
-        <a className="HeaderNavLink" href={resume} target="_blank" rel="noopener noreferrer">RÉSUMÉ</a>
+        <ExternalLink
+          classNames={['HeaderNavLink']}
+          href={resume}
+        >
+          RÉSUMÉ
+        </ExternalLink>
         <NavLink to="/about" activeClassName="IsActive">
           <span className="HeaderNavLink">ABOUT</span>
         </NavLink>

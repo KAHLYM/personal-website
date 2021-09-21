@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 
 import RciMap from './RciMap';
 
+import ExternalLink from './ExternalLink';
+
 class Experience extends Component {
   constructor(props) {
     super(props);
@@ -45,26 +47,22 @@ class Experience extends Component {
         }
         {this.showWebsite() ? (
           <div className="ExperienceVisitWrapper animated fadeIn">
-            <a
-              className="ExperienceChip ExperienceVisit animated fadeIn"
+            <ExternalLink
+              classNames={['ExperienceChip', 'ExperienceVisit', 'animated', 'fadeIn']}
               href={url}
-              target="_blank"
-              rel="noopener noreferrer"
             >
               visit website
-            </a>
+            </ExternalLink>
           </div>
         ) : null}
         {this.showGitHub() ? (
           <div className="ExperienceVisitWrapper animated fadeIn">
-            <a
-              className="ExperienceChip ExperienceVisit animated fadeIn"
+            <ExternalLink
+              classNames={['ExperienceChip', 'ExperienceVisit', 'animated', 'fadeIn']}
               href={github}
-              target="_blank"
-              rel="noopener noreferrer"
             >
               github
-            </a>
+            </ExternalLink>
           </div>
         ) : null}
         <div className="ExperienceChildren animated fadeIn animatedDelay500ms">{children}</div>

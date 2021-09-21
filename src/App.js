@@ -1,6 +1,7 @@
 import './App.scss';
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { useEffect } from 'react';
+import { BrowserRouter, useHistory, Switch, Route } from 'react-router-dom'
 
 import About from './components/About.jsx'
 import Footer from './components/Footer.jsx'
@@ -28,11 +29,45 @@ import './components/Width.scss';
 
 require('dotenv').config();
 
+import { initializeApp } from 'firebase/app'
+import { getAnalytics, logEvent } from "firebase/analytics";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBn6hxxiWlrkfqjRw_2KS9MqjLIdcSuWss",
+  authDomain: "personal-website-2d0be.firebaseapp.com",
+  projectId: "personal-website-2d0be",
+  storageBucket: "personal-website-2d0be.appspot.com",
+  messagingSenderId: "1003861772544",
+  appId: "1:1003861772544:web:bede1ba23a8c1d30444be5",
+  measurementId: "G-SYK8S6TJB7"
+};
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+const logCurrentScreen = () => {
+  logEvent(analytics, 'screen_view', {
+    firebase_screen: window.location.pathname
+  });
+};
+
+const AnalyticsComponent = () => {
+  const history = useHistory();
+  useEffect(() => {
+    logCurrentScreen(); // log the first page visit
+    history.listen(() => {
+      logCurrentScreen();
+    });
+  }, [history]);
+  return (null);
+};
+
 function App() {
   return (
     <div className="App">
       <div className="AppContainer">
-        <Router>
+        <BrowserRouter>
+          <AnalyticsComponent />
           <ScrollToTop />
           <Header className="Header"></Header>
           <div className="Container">
@@ -46,7 +81,7 @@ function App() {
             </Switch>
           </div>
           <Footer className="Footer"></Footer>
-        </Router>
+        </BrowserRouter>
       </div>
     </div>
   );

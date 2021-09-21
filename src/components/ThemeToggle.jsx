@@ -2,13 +2,18 @@ import React, { Component } from 'react';
 
 import ModeDark from '../assets/mode-dark.png';
 import ModeLight from '../assets/mode-light.png';
+import { LogEventTheme } from './Analytics';
 
 class ThemeToggle extends Component {
   componentDidMount() {
     const now = new Date();
     const hours = now.getHours();
 
+    this.isComponentMounted = false;
+
     this.updateTheme(hours >= 9 && hours <= 18);
+
+    this.isComponentMounted = true;
   }
 
   switchTheme = () => {
@@ -41,6 +46,11 @@ class ThemeToggle extends Component {
       if (metaThemeColor) {
         metaThemeColor.setAttribute('content', '#121212');
       }
+    }
+
+    // LogEventTheme if user input and not initial componentDidMount
+    if (this.isComponentMounted) {
+      LogEventTheme(enableLightTheme ? 'light' : 'dark');
     }
   }
 
