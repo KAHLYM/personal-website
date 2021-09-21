@@ -9,7 +9,11 @@ class ThemeToggle extends Component {
     const now = new Date();
     const hours = now.getHours();
 
+    this.isComponentMounted = false;
+
     this.updateTheme(hours >= 9 && hours <= 18);
+
+    this.isComponentMounted = true;
   }
 
   switchTheme = () => {
@@ -44,7 +48,10 @@ class ThemeToggle extends Component {
       }
     }
 
-    LogEventTheme(enableLightTheme ? "light" : "dark");
+    // LogEventTheme if user input and not initial componentDidMount
+    if (this.isComponentMounted) {
+      LogEventTheme(enableLightTheme ? "light" : "dark");
+    }
   }
 
   render() {
