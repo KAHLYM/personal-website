@@ -10,7 +10,7 @@ class Education extends Card {
       color, componentName, description, image, title,
     } = this.props;
     return (
-      <div className="Card" style={{ backgroundColor: color }}>
+      <div className="Card" style={{ borderColor: `${color}` }}>
         <div className="CardContainer">
           <div className="CardImageContainer">
             <img className="CardImage" src={image} alt="" />
