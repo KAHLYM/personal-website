@@ -42,7 +42,6 @@
 .SophosChild > p {
     font-size: 1rem;
     margin: 0 0 0 1rem;
-    color: white;
 }
 
 .ExperienceContainer > div > p {
@@ -109,9 +108,13 @@ a:active {
         position: absolute;
         height: 3rem;
         width: 2px;
-        background-color: rgba(white, 0.5);
+        background-color: rgba($color-light-primary, 0.5);
         margin-left: calc(-3rem - 1px);
         margin-top: -3.25rem;
+    }
+
+    .Dark .SophosChild:nth-of-type(n+2)::before {
+        background-color: rgba($color-dark-primary, 0.5);
     }
 
     .SophosChild::after {
@@ -119,21 +122,34 @@ a:active {
         position: absolute;
         height: 0.5rem;
         width: 0.5rem;
-        background-color: rgba(white, 0.75);
+        background-color: rgba($color-light-primary, 0.75);
         margin-left: -3.25rem;
         margin-top: -3.25rem;
         border-radius: 50%;
+    }
+
+    .Dark .SophosChild::after {
+        background-color: rgba($color-dark-primary, 0.75);
     }
 }
 
 .SophosChild > p:nth-child(1) {
     font-family: $font-secondary;
-    color: rgba(white, 0.75);
+    color: rgba($color-light-primary, 0.75);
 }
 
 .SophosChild > p:nth-child(2),
 .SophosChild > p:nth-child(3) {
-    color: rgba(white, 0.5);
+    color: rgba($color-light-primary, 0.5);
+}
+
+.Dark .SophosChild > p:nth-child(1) {
+    color: rgba($color-dark-primary, 0.75);
+}
+
+.Dark .SophosChild > p:nth-child(2),
+.Dark .SophosChild > p:nth-child(3) {
+    color: rgba($color-dark-primary, 0.5);
 }
 
 .Dark .HomeNavLink {

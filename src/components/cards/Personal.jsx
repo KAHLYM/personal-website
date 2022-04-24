@@ -11,7 +11,7 @@ class Personal extends Card {
       color, componentName, description, github, image, title, visit,
     } = this.props;
     return (
-      <div className="Card" style={{ backgroundColor: color }}>
+      <div className="Card" style={{ borderColor: `${color}` }}>
         <div className="CardContainer">
           <div className="CardImageContainer">
             <img className="CardImage Filter" src={image} alt="" />
